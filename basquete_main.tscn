@@ -1,0 +1,93 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Ambiente/basquete/pixil-frame-0 (7).png" type="Texture" id=1]
+[ext_resource path="res://Ambiente/basquete/download-removebg-preview.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 947.989, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 12.3147, 611.352 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 63.5105, 40.175 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 0.43103, -12.8408 )
+b = Vector2( 25.1185, 41.7943 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 29.7178, -52.0339 )
+b = Vector2( 47.457, -112.452 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 13.0156, 853.992 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 892.618, 10 )
+
+[sub_resource type="PhysicsMaterial" id=8]
+bounce = 0.71
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 11.9919
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 514.139, 581.032 )
+scale = Vector2( 0.55, 0.55 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pixil-frame-0 (7)" type="Sprite" parent="StaticBody2D"]
+position = Vector2( -297.893, -519.455 )
+scale = Vector2( 1.81818, 1.81818 )
+texture = ExtResource( 1 )
+
+[node name="ground" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -158.362, -386.855 )
+shape = SubResource( 1 )
+
+[node name="wall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 787.431, -777.209 )
+shape = SubResource( 2 )
+
+[node name="cesta" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 615.657, -910.702 )
+rotation = 0.127409
+shape = SubResource( 3 )
+
+[node name="rede" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 468.39, -843.028 )
+shape = SubResource( 4 )
+
+[node name="rede2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 524.332, -750.281 )
+shape = SubResource( 5 )
+
+[node name="wall2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -926.541, -436.74 )
+shape = SubResource( 6 )
+
+[node name="teto" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -97.9603, -1059.2 )
+shape = SubResource( 7 )
+
+[node name="body ball" type="RigidBody2D" parent="."]
+position = Vector2( 52.3042, -13.7787 )
+physics_material_override = SubResource( 8 )
+linear_velocity = Vector2( 150, -140 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="bola" type="Sprite" parent="body ball"]
+position = Vector2( 423.717, 117.886 )
+scale = Vector2( 0.287888, 0.292878 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="body ball"]
+position = Vector2( 423.801, 117.827 )
+shape = SubResource( 9 )
