@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/download-removebg-preview.png-3289a31942f3d901c9eedb3724c7cb01.stex"
+path="res://.import/download-removebg-preview.png-06462f2802a18af17d994f5b58b48665.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ambiente/basquete/download-removebg-preview.png"
-dest_files=[ "res://.import/download-removebg-preview.png-3289a31942f3d901c9eedb3724c7cb01.stex" ]
+source_file="res://basquete/download-removebg-preview.png"
+dest_files=[ "res://.import/download-removebg-preview.png-06462f2802a18af17d994f5b58b48665.stex" ]
 
 [params]
 

@@ -1,24 +1,14 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Paddle.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/fonts/m6x11.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/audio/hitSound.wav" type="AudioStream" id=4]
-[ext_resource path="res://Base.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/t1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/t2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/t2.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/t1.gd" type="Script" id=9]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 34.8838
-height = 83.6955
-
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 36.3814
-height = 82.7196
-
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 64
 font_data = ExtResource( 3 )
 
@@ -36,40 +26,12 @@ __meta__ = {
 }
 
 [node name="t2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 941.978, 292.967 )
+position = Vector2( 978.955, 285.223 )
 script = ExtResource( 8 )
 
 [node name="t1" parent="." instance=ExtResource( 6 )]
 position = Vector2( 67.5977, 284.572 )
 script = ExtResource( 9 )
-
-[node name="Player1" parent="." instance=ExtResource( 2 )]
-position = Vector2( -108.28, 89.7194 )
-
-[node name="Sprite" type="Sprite" parent="Player1"]
-position = Vector2( 43.2415, -2.71675 )
-texture = ExtResource( 5 )
-hframes = 4
-vframes = 4
-frame = 13
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player1"]
-position = Vector2( 40.5389, 8.15021 )
-shape = SubResource( 1 )
-
-[node name="Player2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 984.684, -92.1735 )
-
-[node name="Sprite2" type="Sprite" parent="Player2"]
-position = Vector2( 172.966, 50.2598 )
-texture = ExtResource( 5 )
-hframes = 4
-vframes = 4
-frame = 10
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2"]
-position = Vector2( 172.966, 52.2951 )
-shape = SubResource( 2 )
 
 [node name="MiddleField" type="ColorRect" parent="."]
 margin_left = 508.0
@@ -85,7 +47,7 @@ __meta__ = {
 margin_left = 226.0
 margin_top = 500.0
 margin_bottom = 556.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "Press SPACE to start!"
 align = 1
 __meta__ = {
@@ -97,7 +59,7 @@ margin_left = 430.0
 margin_top = 30.0
 margin_right = 472.0
 margin_bottom = 114.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -109,7 +71,7 @@ margin_left = 552.0
 margin_top = 30.0
 margin_right = 594.0
 margin_bottom = 114.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -118,9 +80,3 @@ __meta__ = {
 
 [node name="ScoreSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
-
-[node name="t3" parent="." instance=ExtResource( 6 )]
-position = Vector2( -112.903, 222.403 )
-
-[node name="t4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1176.85, 199.285 )
