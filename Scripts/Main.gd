@@ -46,6 +46,8 @@ func _ready():
 func _input(_event):
 	if Input.is_key_pressed(KEY_SPACE):
 		play()
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().change_scene("res://map.tscn")
 
 
 func _process(delta):
@@ -67,6 +69,7 @@ func play():
 	playing = true
 	ball.set_playing(playing)
 	$DisplayMessage.visible = false
+	$DisplayMessage2.visible = false
 
 
 func check_point_scored():
@@ -144,3 +147,4 @@ func handle_game_end():
 func display_message():
 	$DisplayMessage.text = message
 	$DisplayMessage.visible = true
+	$DisplayMessage2.visible = true

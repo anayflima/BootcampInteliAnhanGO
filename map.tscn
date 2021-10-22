@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Ambiente/TX Plant.png" type="Texture" id=1]
 [ext_resource path="res://Ambiente/TX Tileset Grass.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://Ambiente/props_mid_stone.png" type="Texture" id=22]
 [ext_resource path="res://7d595a64c99a634d94759de8096cca142.png" type="Texture" id=23]
 [ext_resource path="res://pingpongracket.png" type="Texture" id=24]
+[ext_resource path="res://map.gd" type="Script" id=25]
 
 [sub_resource type="TileSet" id=1]
 0/name = "TX Tileset Grass.png 0"
@@ -458,8 +459,19 @@ points = PoolVector2Array( 48, 16, 48, 48, 16, 32, 16, 32 )
 } ]
 3/z_index = 0
 
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxEmpty" id=18]
+
+[sub_resource type="StyleBoxEmpty" id=19]
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 448.371, 575.539 )
+script = ExtResource( 25 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -520,7 +532,7 @@ scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 4 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 287.122, -250.973 )
+position = Vector2( 268.04, 1039.86 )
 script = ExtResource( 19 )
 __meta__ = {
 "_edit_group_": true
@@ -731,6 +743,7 @@ position = Vector2( 77.2438, 1826.6 )
 texture = ExtResource( 22 )
 
 [node name="props_mid_stone2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 71.5805, 1985.17 )
 texture = ExtResource( 22 )
 
@@ -762,15 +775,20 @@ texture = ExtResource( 6 )
 position = Vector2( 1453.41, 2164.51 )
 texture = ExtResource( 6 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 509.18
-margin_top = 1165.93
-margin_right = 745.18
-margin_bottom = 1418.93
-rect_scale = Vector2( 0.2, 0.2 )
+[node name="button_pingpong" type="Button" parent="."]
+margin_left = 499.0
+margin_top = 1159.0
+margin_right = 723.0
+margin_bottom = 1434.0
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/hover = SubResource( 16 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/focus = SubResource( 18 )
+custom_styles/disabled = SubResource( 19 )
+custom_styles/normal = SubResource( 15 )
 icon = ExtResource( 24 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button" to="KinematicBody2D" method="_on_Button_pressed"]
+[connection signal="pressed" from="button_pingpong" to="KinematicBody2D" method="_on_Button_pressed"]
