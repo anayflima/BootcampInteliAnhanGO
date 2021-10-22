@@ -12,4 +12,4 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://map.tscn")
+	get_tree().change_scene("res://historia_inicial/initial_story_scene_1.tscn")

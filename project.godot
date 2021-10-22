@@ -8,6 +8,11 @@
 
 config_version=4
 
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
 [application]
 
 config/name="projetoAula_1"
@@ -23,7 +28,7 @@ Globals="*res://Globals.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [input]
 

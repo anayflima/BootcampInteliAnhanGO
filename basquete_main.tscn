@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=1]
+[ext_resource path="res://basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
-[ext_resource path="res://basquete_main.gd" type="Script" id=3]
+[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=3]
 [ext_resource path="res://Assets/fonts/m6x11.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -36,7 +36,7 @@ size = 64
 font_data = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -0.0308762 ],
 "_edit_vertical_guides_": [ -114.825, 0.327759 ]
@@ -89,7 +89,7 @@ __meta__ = {
 [node name="bola" type="Sprite" parent="bodyball"]
 position = Vector2( 423.717, 117.886 )
 scale = Vector2( 0.287888, 0.292878 )
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bodyball"]
 position = Vector2( 423.801, 117.827 )
