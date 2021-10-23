@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not stop:
-		region_rect = Rect2(pixel_frame, 104, 640, 26)
+		region_rect = Rect2(pixel_frame, 104, 640, 145)
 		pixel_frame += Global.game_speed * delta
 
 
