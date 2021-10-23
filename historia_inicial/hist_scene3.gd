@@ -14,10 +14,10 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/initial_story_scene_1.tscn")
+	get_tree().change_scene("res://historia_inicial/hist_scene2.tscn")
 	pass # Replace with function body.
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/hist_scene3.tscn")
+	get_tree().change_scene("res://historia_inicial/hist_scene4.tscn")
 	pass # Replace with function body.

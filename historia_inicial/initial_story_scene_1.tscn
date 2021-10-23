@@ -1,19 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://historia_inicial/main.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Speech.tscn" type="PackedScene" id=2]
-[ext_resource path="res://historia_inicial/Speech.gd" type="Script" id=3]
-[ext_resource path="res://historia_inicial/INICIAR.png" type="Texture" id=4]
+[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="main" type="Node2D" parent="."]
 script = ExtResource( 1 )
 bubble = ExtResource( 2 )
-
-[node name="Speech" type="Node2D" parent="main" instance=ExtResource( 2 )]
-position = Vector2( 515.213, 154.353 )
-script = ExtResource( 3 )
 
 [node name="Button" type="Button" parent="main"]
 anchor_top = 1.0
@@ -22,7 +17,10 @@ margin_left = 869.798
 margin_top = 541.003
 margin_right = 1228.8
 margin_bottom = 667.003
-rect_scale = Vector2( 0.4, 0.4 )
-icon = ExtResource( 4 )
+rect_scale = Vector2( 0.398085, 0.4 )
+icon = ExtResource( 3 )
+
+[node name="Speech" parent="." instance=ExtResource( 2 )]
+position = Vector2( 506, 190 )
 
 [connection signal="pressed" from="main/Button" to="main" method="_on_Button_pressed"]
