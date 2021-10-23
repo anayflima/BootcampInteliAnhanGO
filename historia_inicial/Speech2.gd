@@ -2,7 +2,7 @@ extends Node2D
 
 #var bubble_text = "Em 1920, numa floresta de São Paulo encontrava-se*personagem*"
 var character_name = "Ariel"
-var bubble_text = "Em 1920, numa floresta de São Paulo, encontrava-se {name},\n que era conhecido entre os exploradores como 'Devasta',\n pelo seu costume e prazer em devastar a fauna e a flora local. \n Certo dia, ao derrubar o último pau-brasil de sua cidade,\n foi surpreendido por algo intrigante...".format({"name": character_name})
+var bubble_text = "Em 1920, numa floresta de São Paulo, encontrava-se {name},\n que era conhecido entre os exploradores como 'Devasta',\n por seu costume e prazer em devastar a fauna e a flora local. \n Certo dia, ao derrubar o último pau-brasil de sua cidade,\n foi surpreendido por algo intrigante...".format({"name": character_name})
 #var bubble_text = "Você não pode desmatar a floresta!".format({"name": character_name})
 #var bubble_text = "Nossa, onde estou??\n Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro!! \n Olha, Parque do Povo... Será que aquela floresta em que eu estava virou esse parque?"
 var can_shrink = false
