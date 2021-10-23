@@ -10,22 +10,21 @@ var point = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var initial_x = $bodyball.position.x
-	var initial_y = $bodyball.position.y
 	$button_play_again.visible = false
+	$botaoJogar.visible = true
 	$button_get_out.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	x = $bodyball.position.x
-	y = $bodyball.position.y
-	if y>321:
+	x = $KinematicBody2D/bodyball.position.x
+	y = $KinematicBody2D/bodyball.position.y
+	if y>348:
 		count += 1
 	if count == 150:
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 
-	if (y<-118):
+	if (y<0):
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 	if verif:
@@ -54,7 +53,9 @@ func _on_Button_pressed():
 	var angle = $Node2D/angleslide.value
 	var offset = Vector2(0,0)
 	var impulse = get_impulse(angle,force)
-	$bodyball.apply_impulse(offset,impulse)
+	$KinematicBody2D/bodyball.apply_impulse(offset,impulse)
+	$KinematicBody2D/AnimationPlayer.play("jogando")
+	$botaoJogar.visible = false
 	
 func get_impulse(angle,size):
 	angle = angle*PI/180
@@ -66,7 +67,7 @@ func get_impulse(angle,size):
 	return out
 	
 func point():
-	if (x>320 && x<324 && y>89 && point== true ):
+	if (x>776 && x<814 && y>132 && y<163 && point== true ):
 		Globals.score += 1
 		point = false
 
