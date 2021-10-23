@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/soccer-field.png-a301c7db981327f8f64c0b636af5c09c.stex"
+path="res://.import/Chessboard.png-26e31e7fbc6e7ed7fa9a6f95cf6cd476.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ambiente/soccer-field.png"
-dest_files=[ "res://.import/soccer-field.png-a301c7db981327f8f64c0b636af5c09c.stex" ]
+source_file="res://Ambiente/Chessboard.png"
+dest_files=[ "res://.import/Chessboard.png-26e31e7fbc6e7ed7fa9a6f95cf6cd476.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
