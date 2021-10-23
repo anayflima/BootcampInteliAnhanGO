@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprite.png" type="Texture" id=2]
@@ -15,12 +15,12 @@
 [ext_resource path="res://high_score.gd" type="Script" id=13]
 [ext_resource path="res://spawner.gd" type="Script" id=14]
 [ext_resource path="res://Sprite.gd" type="Script" id=15]
+[ext_resource path="res://assets/Background_Skate (1).png" type="Texture" id=16]
 
 [sub_resource type="RayShape2D" id=1]
 length = 45.6372
 
 [sub_resource type="Animation" id=2]
-resource_name = "dying"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:region_rect")
 tracks/0/interp = 1
@@ -35,8 +35,8 @@ tracks/0/keys = {
 }
 
 [sub_resource type="CapsuleShape2D" id=3]
-radius = 12.0
-height = 64.0
+radius = 30.6957
+height = 35.3338
 
 [sub_resource type="Animation" id=4]
 tracks/0/type = "value"
@@ -162,7 +162,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 440.423, 28.3146 )
+extents = Vector2( 440.423, 34.838 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 14
@@ -176,6 +176,17 @@ font_data = ExtResource( 10 )
 position = Vector2( 221.137, 216.169 )
 script = ExtResource( 5 )
 
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 778.754, 184.402 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 16 )
+region_rect = Rect2( 38.0576, 107.127, 435.918, 135.285 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+region_rect = Rect2( 0.228516, 122.019, 709.567, 63.6416 )
+
 [node name="player" type="KinematicBody2D" parent="."]
 position = Vector2( -93.137, 23.831 )
 z_index = 1
@@ -187,10 +198,10 @@ z_index = 1
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( 1.16638, 0 )
+position = Vector2( -0.433001, -0.8909 )
 texture = ExtResource( 2 )
 region_enabled = true
-region_rect = Rect2( 1855, 3, 86, 94 )
+region_rect = Rect2( 1678, 3, 86, 94 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
 anims/dying = SubResource( 2 )
@@ -201,7 +212,7 @@ anims/squatting = SubResource( 7 )
 [node name="Area2D" type="Area2D" parent="player"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D"]
-position = Vector2( 5, 0 )
+position = Vector2( -4.98306, 1.12372 )
 shape = SubResource( 3 )
 
 [node name="floor" type="StaticBody2D" parent="."]
@@ -209,8 +220,9 @@ position = Vector2( 2.86301, -0.169014 )
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="floor"]
-position = Vector2( 96, 72 )
+position = Vector2( -776.707, -96.6412 )
 texture = ExtResource( 2 )
+offset = Vector2( 872, 233.695 )
 region_enabled = true
 region_rect = Rect2( 2, 104, 640, 18 )
 script = ExtResource( 15 )
@@ -219,7 +231,9 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor"]
-position = Vector2( 218.522, 111.338 )
+modulate = Color( 0.298039, 0.298039, 0.298039, 1 )
+self_modulate = Color( 0.298039, 0.298039, 0.298039, 1 )
+position = Vector2( 217.031, 111.722 )
 shape = SubResource( 8 )
 
 [node name="controller" type="Node2D" parent="."]
@@ -316,13 +330,14 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="pause/Button" method="_on_player_game_over"]
+
 [connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="pause/Button" method="_on_player_game_over"]
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_Area2D_area_entered"]
 [connection signal="button_down" from="controller/up" to="player" method="_on_up_button_down"]
 [connection signal="button_up" from="controller/up" to="player" method="_on_up_button_up"]
