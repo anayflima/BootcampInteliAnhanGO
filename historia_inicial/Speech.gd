@@ -1,7 +1,7 @@
 extends Node2D
 
 #var bubble_text = "Em 1920, numa floresta de São Paulo encontrava-se*personagem*"
-var character_name = "Ariel"
+var character_name = Global.character_name
 #var bubble_text = "{name}, você não pode desmatar a floresta!".format({"name": character_name})
 var bubble_text = "Há muito tempo, contava-se a lenda de um espírito protetor das \n florestas, rios e animais, denominado Anhangá, um ser metamorfo e\ncapaz de criar ilusões. Ele comumente se revelava como um veado\nbranco, iluminado, que defendia e punia os que faziam mal a selva.\n Com o passar dos anos, a cidade foi tomando conta da floresta \n e, por conta do desmatamento, o Anhangá ressurgiu..."
 
