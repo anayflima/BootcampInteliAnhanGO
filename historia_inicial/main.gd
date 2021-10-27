@@ -20,5 +20,10 @@ func _process(delta):
 		add_child(new_bubble)
 
 
+func _on_Button2_pressed():
+	get_tree().change_scene("res://UserInput/UserNameInput.tscn")
+
 func _on_Button_pressed():
 	get_tree().change_scene("res://historia_inicial/hist_scene2.tscn")
+
+
