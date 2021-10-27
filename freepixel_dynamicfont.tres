@@ -3,5 +3,6 @@
 [ext_resource path="res://historia_inicial/FreePixel.ttf" type="DynamicFontData" id=1]
 
 [resource]
+size = 24
 font_data = ExtResource( 1 )
 

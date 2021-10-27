@@ -574,9 +574,6 @@ texture = ExtResource( 10 )
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 315.406, 1027.48 )
 script = ExtResource( 11 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 scale = Vector2( 0.3, 0.3 )
@@ -838,8 +835,8 @@ texture = ExtResource( 28 )
 [node name="button_pingpong" type="Button" parent="."]
 margin_left = 490.993
 margin_top = 1147.94
-margin_right = 571.993
-margin_bottom = 1217.94
+margin_right = 714.993
+margin_bottom = 1371.94
 rect_scale = Vector2( 0.3, 0.3 )
 custom_styles/hover = SubResource( 17 )
 custom_styles/pressed = SubResource( 18 )
