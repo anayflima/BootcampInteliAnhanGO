@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://Ambiente/TX Plant.png" type="Texture" id=1]
 [ext_resource path="res://Ambiente/TX Tileset Grass.png" type="Texture" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Ambiente/soccer-field.png" type="Texture" id=26]
 [ext_resource path="res://Ambiente/[A]Flower_pipo.png" type="Texture" id=27]
 [ext_resource path="res://Ambiente/Chessboard.png" type="Texture" id=28]
+[ext_resource path="res://map.gd" type="Script" id=29]
 
 [sub_resource type="TileSet" id=1]
 0/name = "TX Tileset Grass.png 0"
@@ -626,8 +627,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 } ]
 5/z_index = 0
 
+[sub_resource type="StyleBoxEmpty" id=17]
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 448.371, 575.539 )
+script = ExtResource( 29 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -935,12 +939,13 @@ texture = ExtResource( 6 )
 position = Vector2( 1453.41, 2164.51 )
 texture = ExtResource( 6 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 509.18
-margin_top = 1165.93
-margin_right = 745.18
-margin_bottom = 1418.93
-rect_scale = Vector2( 0.2, 0.2 )
+[node name="button_pingpong" type="Button" parent="."]
+margin_left = 501.53
+margin_top = 1146.92
+margin_right = 743.53
+margin_bottom = 1478.92
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/normal = SubResource( 17 )
 icon = ExtResource( 24 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -961,4 +966,4 @@ position = Vector2( 5767.98, -1390.57 )
 rotation = 0.959931
 texture = ExtResource( 28 )
 
-[connection signal="pressed" from="Button" to="KinematicBody2D" method="_on_Button_pressed"]
+[connection signal="pressed" from="button_pingpong" to="KinematicBody2D" method="_on_Button_pressed"]

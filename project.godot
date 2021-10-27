@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="projetoAula_1"
-run/main_scene="res://basquete_main.tscn"
+run/main_scene="res://map.tscn"
 config/icon="res://icon.png"
 
 [autoload]

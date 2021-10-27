@@ -73,6 +73,8 @@ func _on_Button_pressed():
 	$KinematicBody2D/AnimationPlayer.play("jogando")
 	$botaoJogar.visible = false
 	slides = false
+	$Node2D/angleslide.editable = false
+	$Node2D/forceslide.editable = false
 	$linha.clear_points()
 	
 	
