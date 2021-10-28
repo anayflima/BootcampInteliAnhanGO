@@ -2,7 +2,7 @@ extends KinematicBody2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-const GRAVITY = 1.4
+const GRAVITY = 1.3
 const JUMP_FORCE = 1300
 
 signal game_over
