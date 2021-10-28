@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cover-image.png-3ad0aabf3199ff8f4ddba23a268c761e.stex"
+path="res://.import/cover-image.png-4d43fbc909928f9d45a0693c4cad219a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/cover-image.png"
-dest_files=[ "res://.import/cover-image.png-3ad0aabf3199ff8f4ddba23a268c761e.stex" ]
+source_file="res://MeteorDash 6.47.10 PM/Graphics/cover-image.png"
+dest_files=[ "res://.import/cover-image.png-4d43fbc909928f9d45a0693c4cad219a.stex" ]
 
 [params]
 

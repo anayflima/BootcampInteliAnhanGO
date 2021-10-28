@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Main.gd" type="Script" id=1]
-[ext_resource path="res://Score.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Meteor.tscn" type="PackedScene" id=3]
-[ext_resource path="res://ShieldItem.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Boost.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Graphics/background.png" type="Texture" id=6]
-[ext_resource path="res://Ship.tscn" type="PackedScene" id=7]
-[ext_resource path="res://HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Main.gd" type="Script" id=1]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Score.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Meteor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://MeteorDash 6.47.10 PM/ShieldItem.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Boost.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Graphics/background.png" type="Texture" id=6]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Ship.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MeteorDash 6.47.10 PM/HUD.tscn" type="PackedScene" id=8]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
@@ -37,8 +37,6 @@ region_rect = Rect2( 0, 0, 1e+06, 1e+06 )
 [node name="Ship" parent="." instance=ExtResource( 7 )]
 position = Vector2( 301.571, 400 )
 z_index = 1
-speed = 500
-speed_increase = 0.15
 
 [node name="Meteor" parent="." instance=ExtResource( 3 )]
 position = Vector2( 611.476, -1.1752 )
@@ -65,7 +63,4 @@ position = Vector2( 273.308, -180.804 )
 wait_time = 0.9
 autostart = true
 
-[connection signal="add_points" from="Ship" to="." method="_on_Ship_add_points"]
-[connection signal="death" from="Ship" to="." method="_on_Ship_death"]
-[connection signal="restart_game" from="HUD" to="." method="_on_HUD_restart_game"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]

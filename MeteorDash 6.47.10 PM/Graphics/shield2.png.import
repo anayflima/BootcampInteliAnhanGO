@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shield2.png-4165a2d5c8ab1e8be7549bbf61e59213.stex"
+path="res://.import/shield2.png-186066b62352e2e206f35983e98d8c1e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/shield2.png"
-dest_files=[ "res://.import/shield2.png-4165a2d5c8ab1e8be7549bbf61e59213.stex" ]
+source_file="res://MeteorDash 6.47.10 PM/Graphics/shield2.png"
+dest_files=[ "res://.import/shield2.png-186066b62352e2e206f35983e98d8c1e.stex" ]
 
 [params]
 

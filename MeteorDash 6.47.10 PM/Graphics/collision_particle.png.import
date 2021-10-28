@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/collision_particle.png-3d702b8cd00392cafdfe3637d509ffe3.stex"
+path="res://.import/collision_particle.png-bad1ea01ce0bb31817d23468a5e5a8c8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/collision_particle.png"
-dest_files=[ "res://.import/collision_particle.png-3d702b8cd00392cafdfe3637d509ffe3.stex" ]
+source_file="res://MeteorDash 6.47.10 PM/Graphics/collision_particle.png"
+dest_files=[ "res://.import/collision_particle.png-bad1ea01ce0bb31817d23468a5e5a8c8.stex" ]
 
 [params]
 

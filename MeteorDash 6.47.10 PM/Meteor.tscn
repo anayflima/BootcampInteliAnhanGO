@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Meteor.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/meteor.png" type="Texture" id=2]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Meteor.gd" type="Script" id=1]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Graphics/meteor.png" type="Texture" id=2]
 
 [node name="Meteor" type="KinematicBody2D" groups=[
 "items",

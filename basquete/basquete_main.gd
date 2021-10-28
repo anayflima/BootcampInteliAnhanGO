@@ -59,7 +59,7 @@ func _process(delta):
 			draw_line_angle(from,to)
 			if $Node2D/angleslide.value == $Node2D/angleslide.min_value:
 				verif_1 = true
-	$pontuacao.text = str(Globals.score)
+	$pontuacao.text = str(Global.score)
 	point()
 
 
@@ -90,7 +90,7 @@ func get_impulse(angle,size):
 	
 func point():
 	if (x>776 && x<814 && y>132 && y<163 && point== true ):
-		Globals.score += 1
+		Global.score += 1
 		point = false
 
 

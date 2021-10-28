@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/screenshot.png-6e47df6141810abd1eb8270131890533.stex"
+path="res://.import/screenshot.png-30ee2992af7bdaf96861ae29ce4eb908.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/screenshot.png"
-dest_files=[ "res://.import/screenshot.png-6e47df6141810abd1eb8270131890533.stex" ]
+source_file="res://MeteorDash 6.47.10 PM/Graphics/screenshot.png"
+dest_files=[ "res://.import/screenshot.png-30ee2992af7bdaf96861ae29ce4eb908.stex" ]
 
 [params]
 

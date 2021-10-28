@@ -22,9 +22,9 @@ func _process(delta):
 	if !(x > 2950 && x < 3750 && y > -400 && y < 400):
 		$button_basquete.visible = false
 
-
-func _on_Button_pressed():
-	get_tree().change_scene("res://pingpong.tscn")
-
 func _on_button_basquete_pressed():
 	get_tree().change_scene("res://basquete/basquete_main.tscn")
+
+
+func _on_button_pingpong_pressed():
+	get_tree().change_scene("res://pingpong.tscn")

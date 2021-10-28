@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/score.png-647683949673875566da1cdb847394b8.stex"
+path="res://.import/score.png-99b65ef3c54c5875de5b822804e68689.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/score.png"
-dest_files=[ "res://.import/score.png-647683949673875566da1cdb847394b8.stex" ]
+source_file="res://MeteorDash 6.47.10 PM/Graphics/score.png"
+dest_files=[ "res://.import/score.png-99b65ef3c54c5875de5b822804e68689.stex" ]
 
 [params]
 
