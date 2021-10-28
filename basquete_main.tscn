@@ -1,11 +1,12 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
 [ext_resource path="res://basquete_main.gd" type="Script" id=3]
 [ext_resource path="res://Assets/fonts/m6x11.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://pixil-frame-0 (8) (1).png" type="Texture" id=5]
+[ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=5]
 [ext_resource path="res://player_basquete.gd" type="Script" id=6]
+[ext_resource path="res://freepixel_dynamicfont.tres" type="DynamicFont" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 947.989, 24.3528 )
@@ -59,6 +60,8 @@ extents = Vector2( 15.4303, 10 )
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 20.1497, 60.4389 )
 
+[sub_resource type="LargeTexture" id=13]
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 __meta__ = {
@@ -102,31 +105,31 @@ shape = SubResource( 6 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="forceslide" type="VSlider" parent="Node2D"]
-margin_left = 12.2703
-margin_top = 83.0609
-margin_right = 120.27
-margin_bottom = 250.061
-max_value = 500.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="angleslide" type="VSlider" parent="Node2D"]
-margin_left = 29.0
-margin_top = 84.0
-margin_right = 58.0
-margin_bottom = 252.0
+[node name="angleslide" type="HSlider" parent="Node2D"]
+margin_left = 120.0
+margin_top = 41.0
+margin_right = 242.0
+margin_bottom = 91.0
 max_value = 90.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="forceslide" type="HSlider" parent="Node2D"]
+margin_left = 102.0
+margin_top = 74.0
+margin_right = 243.0
+margin_bottom = 116.0
+max_value = 500.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="botaoJogar" type="Button" parent="."]
-margin_left = 116.095
-margin_top = 294.49
-margin_right = 198.095
-margin_bottom = 343.49
+margin_left = 458.34
+margin_top = 4.38074
+margin_right = 540.34
+margin_bottom = 53.3807
 text = "jogar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -152,7 +155,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DisplayMessage" type="Label" parent="."]
+[node name="pontos" type="Label" parent="."]
 margin_left = -275.0
 margin_right = 461.0
 margin_bottom = 112.0
@@ -163,7 +166,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DisplayMessage2" type="Label" parent="."]
+[node name="pontuacao" type="Label" parent="."]
 margin_left = -148.029
 margin_top = 2.466
 margin_right = 563.971
@@ -210,6 +213,33 @@ shape = SubResource( 11 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 338.852, 316.199 )
 shape = SubResource( 12 )
+
+[node name="linha" type="Line2D" parent="."]
+width = 3.0
+default_color = Color( 0.0470588, 0.0627451, 0.137255, 1 )
+texture = SubResource( 13 )
+
+[node name="angulo" type="Label" parent="."]
+margin_left = 5.04538
+margin_top = 50.4538
+margin_right = 117.045
+margin_bottom = 82.4538
+custom_fonts/font = ExtResource( 7 )
+text = "Ângulo:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="força" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 77.0
+margin_right = 116.0
+margin_bottom = 109.0
+custom_fonts/font = ExtResource( 7 )
+text = "Força:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="botaoJogar" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="button_play_again" to="." method="_on_button_play_again_pressed"]

@@ -50,10 +50,14 @@ texture = ExtResource( 2 )
 hframes = 16
 frame = 10
 
+[node name="AnhanGO_LOGO" type="Sprite" parent="AnimatedSprite/Sprite/gif"]
+position = Vector2( 10.0457, -188.92 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 3 )
+
 [node name="AnhanGO_LOGO" type="Sprite" parent="AnimatedSprite/Sprite"]
 position = Vector2( -15.9157, -166.982 )
 scale = Vector2( 0.8, 0.8 )
-texture = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite"]
 anims/MenuAnimacao = SubResource( 2 )

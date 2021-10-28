@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pixil-frame-0 (8) (1).png-f2722d4b7c71403a72b3da688f271c83.stex"
+path="res://.import/pingpongracket.png-54e9330223b95973c6663769ea05d428.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (8) (1).png"
-dest_files=[ "res://.import/pixil-frame-0 (8) (1).png-f2722d4b7c71403a72b3da688f271c83.stex" ]
+source_file="res://button_assets/pingpongracket.png"
+dest_files=[ "res://.import/pingpongracket.png-54e9330223b95973c6663769ea05d428.stex" ]
 
 [params]
 
