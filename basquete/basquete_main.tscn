@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://basquete_main.gd" type="Script" id=1]
+[ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
 [ext_resource path="res://Assets/fonts/m6x11.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://player_basquete.gd" type="Script" id=4]
