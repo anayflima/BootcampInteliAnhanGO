@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Graphics/boost.png" type="Texture" id=1]
+[ext_resource path="res://MeteorDash 6.47.10 PM/Graphics/boost.png" type="Texture" id=1]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 15.6601
 
 [node name="Score" type="Area2D" groups=[
-"boost",
 "items",
+"boost",
 ]]
 scale = Vector2( 0.2, 0.2 )
 collision_layer = 2
@@ -20,3 +20,4 @@ texture = ExtResource( 1 )
 position = Vector2( -0.405813, 0.520943 )
 scale = Vector2( 0.97064, 0.955978 )
 shape = SubResource( 1 )
+

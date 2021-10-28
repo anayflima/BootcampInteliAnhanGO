@@ -9,6 +9,7 @@ extends Node2D
 func _ready():
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
+	$StaticBody2D/CollisionPolygon2D.disabled = false
 	
 func _process(delta):
 	var x = $KinematicBody2D.position.x
@@ -21,6 +22,9 @@ func _process(delta):
 		$button_basquete.visible = true
 	if !(x > 2950 && x < 3750 && y > -400 && y < 400):
 		$button_basquete.visible = false
+	
+	if (Global.unlock_area2):
+		$StaticBody2D/CollisionPolygon2D.disabled = true
 
 func _on_button_basquete_pressed():
 	get_tree().change_scene("res://basquete/basquete_main.tscn")
@@ -28,3 +32,8 @@ func _on_button_basquete_pressed():
 
 func _on_button_pingpong_pressed():
 	get_tree().change_scene("res://pingpong.tscn")
+	
+
+
+func _on_button_unlock_area2_pressed():
+	get_tree().change_scene("res://map_unlock/Control.tscn")

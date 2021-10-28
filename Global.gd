@@ -2,6 +2,7 @@ extends Node
 
 var character_name = "Ana"
 var score = 0
+var unlock_area2 = false
 
 # Declare member variables here. Examples:
 # var a = 2
