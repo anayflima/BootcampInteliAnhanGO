@@ -71,14 +71,13 @@ rect_scale = Vector2( 0.4, 0.4 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 icon = ExtResource( 5 )
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="BG" type="Sprite" parent="."]
 show_behind_parent = true
-margin_right = 6566.0
-margin_bottom = 4191.0
-rect_scale = Vector2( 0.16, 0.16 )
+position = Vector2( 508.752, 301.021 )
+scale = Vector2( 0.154568, 0.140968 )
 texture = ExtResource( 6 )
 
 [connection signal="text_entered" from="LineEdit" to="LineEdit" method="_on_LineEdit_text_entered"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

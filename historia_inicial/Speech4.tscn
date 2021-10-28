@@ -15,7 +15,7 @@ grow_vertical = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer"]
-margin_bottom = 16.0
+margin_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 custom_fonts/font = ExtResource( 2 )
