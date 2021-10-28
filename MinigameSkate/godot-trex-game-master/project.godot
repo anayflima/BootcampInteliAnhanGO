@@ -14,10 +14,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Rex Game"
+config/name="Skate Park"
 run/main_scene="res://game.tscn"
 boot_splash/bg_color=Color( 0.890196, 0.890196, 0.890196, 1 )
-config/icon="res://assets/icon.png"
 
 [autoload]
 
@@ -45,5 +44,5 @@ ui_accept={
 
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-environment/default_clear_color=Color( 0.890196, 0.890196, 0.890196, 1 )
+environment/default_clear_color=Color( 0.14902, 0.796078, 0.992157, 1 )
 environment/default_environment="res://default_env.tres"

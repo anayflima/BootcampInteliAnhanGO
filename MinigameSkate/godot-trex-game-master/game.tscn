@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprite.png" type="Texture" id=2]
@@ -15,7 +15,6 @@
 [ext_resource path="res://high_score.gd" type="Script" id=13]
 [ext_resource path="res://spawner.gd" type="Script" id=14]
 [ext_resource path="res://Sprite.gd" type="Script" id=15]
-[ext_resource path="res://assets/Background_Skate (1).png" type="Texture" id=16]
 
 [sub_resource type="RayShape2D" id=1]
 length = 45.6372
@@ -175,12 +174,6 @@ font_data = ExtResource( 10 )
 [node name="game" type="Node2D"]
 position = Vector2( 221.137, 216.169 )
 script = ExtResource( 5 )
-
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 778.754, 184.402 )
-scale = Vector2( 4, 4 )
-texture = ExtResource( 16 )
-region_rect = Rect2( 38.0576, 107.127, 435.918, 135.285 )
 
 [node name="Sprite" type="Sprite" parent="."]
 visible = false
