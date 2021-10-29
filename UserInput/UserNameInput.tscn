@@ -1,12 +1,11 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://UserInput/UserNameInput.gd" type="Script" id=1]
 [ext_resource path="res://freepixel_dynamicfont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://UserInput/LineEdit.gd" type="Script" id=3]
 [ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=4]
-[ext_resource path="res://historia_inicial/gray_dialog_box.png" type="Texture" id=5]
-[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=6]
-[ext_resource path="res://Assets/BG.jpg" type="Texture" id=7]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=5]
+[ext_resource path="res://Assets/BG.jpg" type="Texture" id=6]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -90,11 +89,6 @@ grow_vertical = 2
 custom_fonts/font = ExtResource( 2 )
 align = 1
 
-[node name="Sprite" type="Sprite" parent="Label2"]
-position = Vector2( 12, 25 )
-scale = Vector2( 0.472153, 0.21126 )
-texture = ExtResource( 5 )
-
 [node name="Button2" type="Button" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -109,13 +103,13 @@ custom_styles/focus = SubResource( 8 )
 custom_styles/disabled = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-icon = ExtResource( 6 )
+icon = ExtResource( 5 )
 
 [node name="BG" type="Sprite" parent="."]
 show_behind_parent = true
 position = Vector2( 515.694, 298.021 )
 scale = Vector2( 0.158, 0.155 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
 [connection signal="text_entered" from="LineEdit" to="LineEdit" method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
