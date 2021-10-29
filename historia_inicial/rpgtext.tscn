@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = SubResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_top = -250.0
+margin_right = -150.0
+margin_bottom = -80.0
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+margin_right = 724.0
+margin_bottom = 170.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+margin_right = 724.0
+margin_bottom = 170.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+visible = false
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 716.0
+margin_bottom = 162.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 716.0
+margin_bottom = 162.0
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 67.0
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 3 )
+text = "*
+"
+
+[node name="Label_principal" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 690.0
+margin_bottom = 154.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Helloo
+"
+autowrap = true
+clip_text = true
+
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+margin_left = 694.0
+margin_top = 122.0
+margin_right = 708.0
+margin_bottom = 154.0
+size_flags_vertical = 8
+custom_fonts/font = SubResource( 3 )
+text = "v"
+

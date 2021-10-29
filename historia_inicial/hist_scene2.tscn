@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://historia_inicial/hist_scene2.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=2]
 [ext_resource path="res://historia_inicial/Speech2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://historia_inicial/Speech2.gd" type="Script" id=4]
 [ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=5]
+[ext_resource path="res://historia_inicial/Cena2.png" type="Texture" id=6]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -43,7 +44,7 @@ custom_styles/normal = SubResource( 5 )
 icon = ExtResource( 2 )
 
 [node name="Speech" parent="." instance=ExtResource( 3 )]
-position = Vector2( 506, 190 )
+position = Vector2( 506, 100 )
 script = ExtResource( 4 )
 
 [node name="Button2" type="Button" parent="."]
@@ -58,6 +59,12 @@ custom_styles/focus = SubResource( 8 )
 custom_styles/disabled = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 icon = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 502.635, 303.402 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 6 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
