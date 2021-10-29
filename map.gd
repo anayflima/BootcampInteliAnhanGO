@@ -29,6 +29,7 @@ func _process(delta):
 	
 	if (Global.unlock_area2):
 		$StaticBody2D/CollisionPolygon2D.disabled = true
+		$StaticBody2D/TileMap.visible = false
 
 func _on_button_basquete_pressed():
 	get_tree().change_scene("res://basquete/basquete_main.tscn")

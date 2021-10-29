@@ -10,7 +10,9 @@ extends Node2D
 func _ready():
 	$pause/Button.visible = false
 
-
+func _process(delta):
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().change_scene("res://map.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
