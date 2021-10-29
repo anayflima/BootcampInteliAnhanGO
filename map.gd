@@ -1,12 +1,13 @@
-
 extends Node2D
 
 
-
-
+#onready var map = preload("res://minimap.tscn")
+#
+#var mm
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+#	set_mm()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$StaticBody2D/CollisionPolygon2D.disabled = false
@@ -30,6 +31,10 @@ func _process(delta):
 	if (Global.unlock_area2):
 		$StaticBody2D/CollisionPolygon2D.disabled = true
 		$StaticBody2D/TileMap.visible = false
+#
+#func set_mm():
+#	mm = map.instance()
+#	$KinematicBody2D/Camera2D.add_child(mm)
 
 func _on_button_basquete_pressed():
 	get_tree().change_scene("res://basquete/basquete_main.tscn")

@@ -1,8 +1,6 @@
-extends MarginContainer
+extends Control
 
 
-export 
-export (NodePath) var player
-export var zoom = 1.5
 
-onready var player_maker = $
+func _ready():
+	$ViewportContainer/Viewport/Node2D/KinematicBody2D/Camera2D.zoom = Vector2(8,8)
