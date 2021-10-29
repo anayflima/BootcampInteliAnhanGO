@@ -1,8 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://historia_inicial/main.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Speech.tscn" type="PackedScene" id=2]
 [ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=3]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -18,7 +29,22 @@ margin_top = 541.003
 margin_right = 1228.8
 margin_bottom = 667.003
 rect_scale = Vector2( 0.398085, 0.4 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
 icon = ExtResource( 3 )
+
+[node name="Button2" type="Button" parent="main"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 4.211
+margin_top = 548.466
+margin_right = 377.211
+margin_bottom = 688.466
+rect_scale = Vector2( 0.4, 0.4 )
+icon = ExtResource( 4 )
 
 [node name="Speech" parent="." instance=ExtResource( 2 )]
 position = Vector2( 506, 190 )

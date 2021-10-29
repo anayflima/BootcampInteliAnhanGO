@@ -22,6 +22,10 @@ func _process(delta):
 		$button_basquete.visible = true
 	if !(x > 2950 && x < 3750 && y > -400 && y < 400):
 		$button_basquete.visible = false
+	if x > 5364 && x < 6164 && y > -100 && y < 724:
+		$button_skate.visible = true
+	if !(x > 5364 && x < 6164 && y > -100 && y < 724):
+		$button_skate.visible = false
 	
 	if (Global.unlock_area2):
 		$StaticBody2D/CollisionPolygon2D.disabled = true
@@ -37,3 +41,7 @@ func _on_button_pingpong_pressed():
 
 func _on_button_unlock_area2_pressed():
 	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+
+func _on_button_skate_pressed():
+	get_tree().change_scene("res://MinigameSkate/game.tscn")

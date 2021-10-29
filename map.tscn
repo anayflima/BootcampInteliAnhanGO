@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://map.gd" type="Script" id=1]
 [ext_resource path="res://Ambiente/TX Tileset Grass.png" type="Texture" id=2]
@@ -13,27 +13,28 @@
 [ext_resource path="res://Ambiente/d82c4a8abefce20.png" type="Texture" id=11]
 [ext_resource path="res://Ambiente/soccer-field.png" type="Texture" id=12]
 [ext_resource path="res://Ambiente/basketball.png" type="Texture" id=13]
-[ext_resource path="res://Ambiente/skateboarding_edit.png" type="Texture" id=14]
+[ext_resource path="res://MinigameSkate/assets/map_scene.png" type="Texture" id=14]
 [ext_resource path="res://Ambiente/Chessboard.png" type="Texture" id=15]
 [ext_resource path="res://basquete/Basquete_1.png" type="Texture" id=16]
-[ext_resource path="res://button_assets/pingpongracket.png" type="Texture" id=17]
-[ext_resource path="res://player.gd" type="Script" id=18]
-[ext_resource path="res://Assets/7d595a64c99a634d94759de8096cca142.png" type="Texture" id=19]
-[ext_resource path="res://Ambiente/mini_map.png" type="Texture" id=20]
-[ext_resource path="res://Ambiente/TX Plant.png" type="Texture" id=21]
-[ext_resource path="res://Ambiente/Stone-1.png" type="Texture" id=22]
-[ext_resource path="res://Ambiente/Stone-2.png" type="Texture" id=23]
-[ext_resource path="res://Ambiente/Grass-1.png" type="Texture" id=24]
-[ext_resource path="res://Ambiente/grama 5.png" type="Texture" id=25]
-[ext_resource path="res://Ambiente/Bush-1.png" type="Texture" id=26]
-[ext_resource path="res://Ambiente/grama 8.png" type="Texture" id=27]
-[ext_resource path="res://Ambiente/grama 10.png" type="Texture" id=28]
-[ext_resource path="res://Ambiente/Grass-2.png" type="Texture" id=29]
-[ext_resource path="res://Ambiente/Bush-2.png" type="Texture" id=30]
-[ext_resource path="res://Ambiente/Bush-3.png" type="Texture" id=31]
-[ext_resource path="res://Ambiente/props_big_stone.png" type="Texture" id=32]
-[ext_resource path="res://Ambiente/props_mid_stone.png" type="Texture" id=33]
-[ext_resource path="res://CollisionPolygon2D.gd" type="Script" id=34]
+[ext_resource path="res://MinigameSkate/assets/skate_button.png" type="Texture" id=17]
+[ext_resource path="res://button_assets/pingpongracket.png" type="Texture" id=18]
+[ext_resource path="res://player.gd" type="Script" id=19]
+[ext_resource path="res://Assets/7d595a64c99a634d94759de8096cca142.png" type="Texture" id=20]
+[ext_resource path="res://Ambiente/mini_map.png" type="Texture" id=21]
+[ext_resource path="res://Ambiente/TX Plant.png" type="Texture" id=22]
+[ext_resource path="res://Ambiente/Stone-1.png" type="Texture" id=23]
+[ext_resource path="res://Ambiente/Stone-2.png" type="Texture" id=24]
+[ext_resource path="res://Ambiente/Grass-1.png" type="Texture" id=25]
+[ext_resource path="res://Ambiente/grama 5.png" type="Texture" id=26]
+[ext_resource path="res://Ambiente/Bush-1.png" type="Texture" id=27]
+[ext_resource path="res://Ambiente/grama 8.png" type="Texture" id=28]
+[ext_resource path="res://Ambiente/grama 10.png" type="Texture" id=29]
+[ext_resource path="res://Ambiente/Grass-2.png" type="Texture" id=30]
+[ext_resource path="res://Ambiente/Bush-2.png" type="Texture" id=31]
+[ext_resource path="res://Ambiente/Bush-3.png" type="Texture" id=32]
+[ext_resource path="res://Ambiente/props_big_stone.png" type="Texture" id=33]
+[ext_resource path="res://Ambiente/props_mid_stone.png" type="Texture" id=34]
+[ext_resource path="res://CollisionPolygon2D.gd" type="Script" id=35]
 
 [sub_resource type="TileSet" id=1]
 0/name = "TX Tileset Grass.png 0"
@@ -361,6 +362,16 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
 [sub_resource type="StyleBoxEmpty" id=11]
 
+[sub_resource type="StyleBoxEmpty" id=29]
+
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
+
+[sub_resource type="StyleBoxEmpty" id=32]
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
 [sub_resource type="StyleBoxEmpty" id=12]
 
 [sub_resource type="StyleBoxEmpty" id=13]
@@ -456,7 +467,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 
 [sub_resource type="TileSet" id=27]
 0/name = "TX Plant.png 0"
-0/texture = ExtResource( 21 )
+0/texture = ExtResource( 22 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 208, 176, 64, 64 )
@@ -472,7 +483,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 } ]
 0/z_index = 0
 1/name = "TX Plant.png 1"
-1/texture = ExtResource( 21 )
+1/texture = ExtResource( 22 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 16, 0, 128, 160 )
@@ -488,7 +499,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 } ]
 1/z_index = 0
 2/name = "TX Plant.png 2"
-2/texture = ExtResource( 21 )
+2/texture = ExtResource( 22 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 288, 32, 96, 128 )
@@ -504,7 +515,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 } ]
 2/z_index = 0
 3/name = "TX Plant.png 3"
-3/texture = ExtResource( 21 )
+3/texture = ExtResource( 22 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 272, 176, 64, 64 )
@@ -520,7 +531,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 } ]
 3/z_index = 0
 4/name = "TX Plant.png 4"
-4/texture = ExtResource( 21 )
+4/texture = ExtResource( 22 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 160, 94, 6, 0 )
@@ -539,7 +550,7 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 4/shapes = [  ]
 4/z_index = 0
 5/name = "TX Plant.png 5"
-5/texture = ExtResource( 21 )
+5/texture = ExtResource( 22 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 155, 4, 111, 157 )
@@ -634,12 +645,12 @@ rotation = 1.8326
 scale = Vector2( 2.62347, 2.78202 )
 texture = ExtResource( 13 )
 
-[node name="Skateboarding" type="Sprite" parent="."]
-
-[node name="skateboarding_edit" type="Sprite" parent="Skateboarding"]
-position = Vector2( 5910.95, 481.036 )
-scale = Vector2( 1.3005, 1.35839 )
+[node name="map_scene" type="Sprite" parent="."]
+position = Vector2( 5977, 258.907 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 14 )
+
+[node name="Skateboarding" type="Sprite" parent="."]
 
 [node name="Chessboard" type="Sprite" parent="."]
 
@@ -662,6 +673,19 @@ custom_styles/disabled = SubResource( 10 )
 custom_styles/normal = SubResource( 11 )
 icon = ExtResource( 16 )
 
+[node name="button_skate" type="Button" parent="."]
+margin_left = 5764.14
+margin_top = 324.72
+margin_right = 6676.14
+margin_bottom = 630.72
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 29 )
+custom_styles/pressed = SubResource( 30 )
+custom_styles/focus = SubResource( 31 )
+custom_styles/disabled = SubResource( 32 )
+custom_styles/normal = SubResource( 33 )
+icon = ExtResource( 17 )
+
 [node name="button_pingpong" type="Button" parent="."]
 margin_left = 506.51
 margin_top = 1161.26
@@ -673,7 +697,7 @@ custom_styles/pressed = SubResource( 13 )
 custom_styles/focus = SubResource( 14 )
 custom_styles/disabled = SubResource( 15 )
 custom_styles/normal = SubResource( 16 )
-icon = ExtResource( 17 )
+icon = ExtResource( 18 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -687,11 +711,11 @@ rect_rotation = 2.0
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 2987.12, -250.973 )
-script = ExtResource( 18 )
+script = ExtResource( 19 )
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 vframes = 4
 hframes = 4
 frame = 7
@@ -712,7 +736,7 @@ current = true
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D/Camera2D"]
 position = Vector2( 2248.63, 673.48 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="TileMap3" type="TileMap" parent="."]
 editor/display_folded = true
@@ -725,43 +749,43 @@ __meta__ = {
 
 [node name="Stone-1" type="Sprite" parent="TileMap3"]
 position = Vector2( 810.252, 549.647 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-2" type="Sprite" parent="TileMap3"]
 position = Vector2( 1764.9, 285.962 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="Stone-3" type="Sprite" parent="TileMap3"]
 position = Vector2( 383.303, 361.803 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-4" type="Sprite" parent="TileMap3"]
 position = Vector2( 934.697, 144.476 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="Stone-5" type="Sprite" parent="TileMap3"]
 position = Vector2( 1550.29, 420.826 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="Stone-6" type="Sprite" parent="TileMap3"]
 position = Vector2( 882.641, -178.364 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-7" type="Sprite" parent="TileMap3"]
 position = Vector2( -158.195, 218.747 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Grass-1" type="Sprite" parent="TileMap3"]
 position = Vector2( 1697.04, 848.093 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="grama 5" type="Sprite" parent="TileMap3"]
 position = Vector2( 1227.64, 992.632 )
-texture = ExtResource( 25 )
+texture = ExtResource( 26 )
 
 [node name="grama 6" type="Sprite" parent="TileMap3"]
 position = Vector2( 1315.18, 1145.77 )
-texture = ExtResource( 25 )
+texture = ExtResource( 26 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 520.892, 1468.48 )
@@ -769,32 +793,32 @@ scale = Vector2( 0.734879, 0.634002 )
 
 [node name="Bush-1" type="Sprite" parent="."]
 position = Vector2( 716.589, 725.209 )
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 
 [node name="Bush-2" type="Sprite" parent="."]
 position = Vector2( 2318.44, 938.429 )
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 
 [node name="Bush-3" type="Sprite" parent="."]
 position = Vector2( 338.354, 676.724 )
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 
 [node name="Grass-1" type="Sprite" parent="."]
 position = Vector2( 1193.6, -87.4487 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="Grass-2" type="Sprite" parent="."]
 position = Vector2( 658.051, 322.401 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="grama 8" type="Sprite" parent="."]
 position = Vector2( 2259.18, 164.468 )
 scale = Vector2( 1.27778, 1.24953 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 9" type="Sprite" parent="."]
 position = Vector2( 2130.29, -340.698 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 7" type="Sprite" parent="."]
 position = Vector2( 1602.55, -197.194 )
@@ -826,11 +850,11 @@ texture = ExtResource( 7 )
 
 [node name="grama 16" type="Sprite" parent="."]
 position = Vector2( 1037.01, -73.6812 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 17" type="Sprite" parent="."]
 position = Vector2( 772.222, -22.3278 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 18" type="Sprite" parent="."]
 position = Vector2( 892.825, -181.194 )
@@ -838,19 +862,19 @@ texture = ExtResource( 7 )
 
 [node name="grama 19" type="Sprite" parent="."]
 position = Vector2( 1819.75, 482.987 )
-texture = ExtResource( 28 )
+texture = ExtResource( 29 )
 
 [node name="Grass-3" type="Sprite" parent="."]
 position = Vector2( 1655.49, -197.194 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="Grass-4" type="Sprite" parent="."]
 position = Vector2( 1672.7, 547.835 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="Grass-5" type="Sprite" parent="."]
 position = Vector2( 492.948, 483.711 )
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
 
 [node name="grama 20" type="Sprite" parent="."]
 position = Vector2( -94.5278, 396.39 )
@@ -858,11 +882,11 @@ texture = ExtResource( 7 )
 
 [node name="grama 21" type="Sprite" parent="."]
 position = Vector2( 354.354, 611.816 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 22" type="Sprite" parent="."]
 position = Vector2( 330.381, 614.813 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="grama 23" type="Sprite" parent="."]
 position = Vector2( 1034.69, 927.166 )
@@ -870,15 +894,15 @@ texture = ExtResource( 7 )
 
 [node name="Bush-4" type="Sprite" parent="."]
 position = Vector2( 1192.32, 1087.74 )
-texture = ExtResource( 30 )
+texture = ExtResource( 31 )
 
 [node name="Bush-5" type="Sprite" parent="."]
 position = Vector2( 64.0295, 325.843 )
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 
 [node name="Bush-6" type="Sprite" parent="."]
 position = Vector2( 2028.38, -169.16 )
-texture = ExtResource( 31 )
+texture = ExtResource( 32 )
 
 [node name="grama 2" type="Sprite" parent="."]
 position = Vector2( 439.943, 245.991 )
@@ -890,54 +914,55 @@ texture = ExtResource( 10 )
 
 [node name="props_big_stone" type="Sprite" parent="."]
 position = Vector2( 430.504, 666.961 )
-texture = ExtResource( 32 )
+texture = ExtResource( 33 )
 
 [node name="props_mid_stone" type="Sprite" parent="."]
 position = Vector2( 451.27, 963.331 )
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 
 [node name="props_mid_stone2" type="Sprite" parent="."]
 position = Vector2( 522.224, 990.941 )
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 
 [node name="Stone-1" type="Sprite" parent="."]
 position = Vector2( 1085.93, 772.135 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-2" type="Sprite" parent="."]
 position = Vector2( 640.738, 1018.53 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-3" type="Sprite" parent="."]
 position = Vector2( 1209.74, 1780.2 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="Stone-4" type="Sprite" parent="."]
 position = Vector2( 696.79, 2194.66 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-5" type="Sprite" parent="."]
 position = Vector2( 197.667, 1832.74 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-6" type="Sprite" parent="."]
 position = Vector2( 31.1478, 490.978 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="Stone-7" type="Sprite" parent="."]
 position = Vector2( 1081.66, 1167.82 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 2223.38, 1611.56 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 72.7603, 11.8735, 1248.15, -7.71631, 2188.47, -1339.83, 1972.98, -2769.89, 640.867, -3240.05, 131.53, -2789.48, 106.093, -2306.19, -5.59937, -184.025, -5.59937, -144.845, -5.59937, -144.845 )
-script = ExtResource( 34 )
+script = ExtResource( 35 )
 
 [node name="Sprite" type="Sprite" parent="StaticBody2D"]
 texture = SubResource( 28 )
 
 [connection signal="pressed" from="button_basquete" to="." method="_on_button_basquete_pressed"]
+[connection signal="pressed" from="button_skate" to="." method="_on_button_skate_pressed"]
 [connection signal="pressed" from="button_pingpong" to="." method="_on_button_pingpong_pressed"]
 [connection signal="pressed" from="button_unlock_area2" to="." method="_on_Button_pressed"]
