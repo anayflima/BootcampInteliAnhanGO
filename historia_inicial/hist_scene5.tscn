@@ -17,6 +17,7 @@ rect_scale = Vector2( 0.4, 0.4 )
 icon = ExtResource( 2 )
 
 [node name="Speech" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 506, 190 )
 
 [node name="Button2" type="Button" parent="."]
