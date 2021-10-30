@@ -10,6 +10,8 @@ var unlock_area2 = false
 var game_speed
 var game_score
 var audio_player = AudioStreamPlayer.new()
+var player_global_y = 463
+var player_global_x = 361
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
