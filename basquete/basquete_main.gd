@@ -24,8 +24,7 @@ func _process(delta):
 	var angle = deg2rad($Node2D/angleslide.value)
 	var from = Vector2(15+x,y)
 	var to = get_point(angle,radius)
-	print($Node2D/angleslide.value)
-	print($Node2D/forceslide.value)
+	
 	
 	#valores de acerto = 60, 275  // 66, 297 // 62, 281
 	
@@ -111,7 +110,7 @@ func get_point(angle,radius):
 	return point
 
 func draw_line_angle(from, to):
-
-	$linha.clear_points()
+	$linha.points = []
+	
 	$linha.add_point(from)
 	$linha.add_point(to)
