@@ -11,7 +11,7 @@ func _ready():
 	$KinematicBody2D.position = load_data()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
-	$StaticBody2D/CollisionPolygon2D.disabled = true
+	$StaticBody2D/CollisionPolygon2D.disabled = false
 	
 	
 func _process(delta):
@@ -69,8 +69,10 @@ func save():
 	file.open("user://saved_data.dat", File.WRITE)
 	file.store_line(to_json(saved_position))
 	file.close()
-	
 
+
+	
+	
 func load_data():
 	var file = File.new()
 	if not file.file_exists("user://saved_data.dat"):

@@ -1,9 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://historia_inicial/hist_scene4.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=2]
 [ext_resource path="res://historia_inicial/Speech4.tscn" type="PackedScene" id=3]
 [ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -14,7 +34,15 @@ margin_top = 548.466
 margin_right = 363.211
 margin_bottom = 674.466
 rect_scale = Vector2( 0.4, 0.4 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
 icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Speech" parent="." instance=ExtResource( 3 )]
 position = Vector2( 506, 190 )
@@ -25,6 +53,11 @@ margin_top = 548.466
 margin_right = 1235.26
 margin_bottom = 674.466
 rect_scale = Vector2( 0.4, 0.4 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
 icon = ExtResource( 4 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
