@@ -90,3 +90,4 @@ func load_data():
 			player_position.y = content.get(i)
 	file.close()
 	return player_position
+
