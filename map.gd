@@ -48,7 +48,6 @@ func _on_button_basquete_pressed():
 func _on_button_pingpong_pressed():
 	save()
 	get_tree().change_scene("res://pingpong.tscn")
-	
 
 
 func _on_button_unlock_area2_pressed():
