@@ -11,7 +11,6 @@ var velocidade = Vector2.ZERO
 var moving: bool = false
 
 func _ready():
-	print(position)
 	initposition = position #pega a posição do player
 	
 func _physics_process(delta):

@@ -1,0 +1,75 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://historia_inicial/main.gd" type="Script" id=1]
+[ext_resource path="res://historia_inicial/Speech.tscn" type="PackedScene" id=2]
+[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=3]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=4]
+[ext_resource path="res://historia_inicial/Cena1.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="main" type="Node2D" parent="."]
+script = ExtResource( 1 )
+bubble = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="main"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 869.798
+margin_top = 541.003
+margin_right = 1228.8
+margin_bottom = 667.003
+rect_scale = Vector2( 0.398085, 0.4 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+icon = ExtResource( 3 )
+
+[node name="Button2" type="Button" parent="main"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 4.211
+margin_top = 548.466
+margin_right = 377.211
+margin_bottom = 688.466
+rect_scale = Vector2( 0.4, 0.4 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+icon = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="main"]
+show_behind_parent = true
+position = Vector2( 519.409, 354.206 )
+scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 5 )
+
+[node name="Speech" parent="." instance=ExtResource( 2 )]
+position = Vector2( 506, 450 )
+
+[connection signal="pressed" from="main/Button" to="main" method="_on_Button_pressed"]
+[connection signal="pressed" from="main/Button2" to="main" method="_on_Button2_pressed"]

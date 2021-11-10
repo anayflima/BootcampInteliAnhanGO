@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://map.gd" type="Script" id=1]
 [ext_resource path="res://Ambiente/TX Tileset Grass.png" type="Texture" id=2]
@@ -13,7 +13,7 @@
 [ext_resource path="res://Ambiente/d82c4a8abefce20.png" type="Texture" id=11]
 [ext_resource path="res://Ambiente/basketball.png" type="Texture" id=12]
 [ext_resource path="res://MinigameSkate/assets/map_scene.png" type="Texture" id=13]
-[ext_resource path="res://Ambiente/Chessboard.png" type="Texture" id=14]
+[ext_resource path="res://historia_inicial/Cena4.png" type="Texture" id=14]
 [ext_resource path="res://basquete/Basquete_1.png" type="Texture" id=15]
 [ext_resource path="res://MinigameSkate/assets/skate_button.png" type="Texture" id=16]
 [ext_resource path="res://button_assets/pingpongracket.png" type="Texture" id=17]
@@ -665,20 +665,6 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="DynamicFontData" id=49]
-font_path = "res://historia_inicial/Born2bSportyV10.ttf"
-
-[sub_resource type="DynamicFont" id=50]
-size = 28
-font_data = SubResource( 49 )
-
-[sub_resource type="DynamicFontData" id=51]
-font_path = "res://historia_inicial/Born2bSportyV10.ttf"
-
-[sub_resource type="DynamicFont" id=52]
-size = 28
-font_data = SubResource( 51 )
-
 [node name="Node2D" type="Node2D"]
 position = Vector2( 448.371, 575.539 )
 script = ExtResource( 1 )
@@ -768,12 +754,14 @@ texture = ExtResource( 13 )
 
 [node name="Chessboard" type="Sprite" parent="."]
 
-[node name="Chessboard" type="Sprite" parent="Chessboard"]
-position = Vector2( 6296.85, -2472.71 )
-rotation = 0.959931
-texture = ExtResource( 14 )
-
 [node name="Basketball" type="Sprite" parent="."]
+
+[node name="button_back_in_time" type="Button" parent="."]
+margin_left = 6251.46
+margin_top = -2605.76
+margin_right = 6637.46
+margin_bottom = -2225.76
+icon = ExtResource( 14 )
 
 [node name="button_basquete" type="Button" parent="."]
 margin_left = 4185.38
@@ -821,11 +809,10 @@ __meta__ = {
 }
 
 [node name="button_unlock_area2" type="Button" parent="."]
-margin_left = 2261.51
+margin_left = 1900.0
 margin_top = -666.74
-margin_right = 2634.51
+margin_right = 2273.0
 margin_bottom = -259.74
-rect_rotation = 90.0
 rect_scale = Vector2( 0.8, 0.8 )
 custom_styles/hover = SubResource( 23 )
 custom_styles/pressed = SubResource( 24 )
@@ -838,11 +825,10 @@ __meta__ = {
 }
 
 [node name="button_unlock_area3" type="Button" parent="."]
-margin_left = 3744.74
-margin_top = 1200.0
-margin_right = 4117.74
-margin_bottom = 1607.0
-rect_rotation = 90.0
+margin_left = 3250.0
+margin_top = 1130.0
+margin_right = 3623.0
+margin_bottom = 1537.0
 rect_scale = Vector2( 0.8, 0.8 )
 custom_styles/hover = SubResource( 23 )
 custom_styles/pressed = SubResource( 24 )
@@ -855,11 +841,10 @@ __meta__ = {
 }
 
 [node name="button_unlock_area4" type="Button" parent="."]
-margin_left = 5713.75
-margin_top = -952.619
-margin_right = 6086.75
-margin_bottom = -545.619
-rect_rotation = 90.0
+margin_left = 5513.75
+margin_top = -850.0
+margin_right = 5886.75
+margin_bottom = -443.0
 rect_scale = Vector2( 0.8, 0.8 )
 custom_styles/hover = SubResource( 23 )
 custom_styles/pressed = SubResource( 24 )
@@ -872,11 +857,10 @@ __meta__ = {
 }
 
 [node name="button_unlock_area5" type="Button" parent="."]
-margin_left = 5336.39
+margin_left = 5050.0
 margin_top = -2972.58
-margin_right = 5709.39
+margin_right = 5423.0
 margin_bottom = -2565.58
-rect_rotation = 90.0
 rect_scale = Vector2( 0.8, 0.8 )
 custom_styles/hover = SubResource( 23 )
 custom_styles/pressed = SubResource( 24 )
@@ -902,10 +886,10 @@ custom_styles/normal = SubResource( 32 )
 icon = ExtResource( 19 )
 
 [node name="lixo2" type="Button" parent="."]
-margin_left = 510.222
-margin_top = -303.658
-margin_right = 792.222
-margin_bottom = 82.3427
+margin_left = 3500.0
+margin_top = -1100.0
+margin_right = 3782.0
+margin_bottom = -713.999
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )
 custom_styles/pressed = SubResource( 29 )
@@ -915,10 +899,10 @@ custom_styles/normal = SubResource( 32 )
 icon = ExtResource( 19 )
 
 [node name="lixo3" type="Button" parent="."]
-margin_left = 2788.0
-margin_top = 1319.0
-margin_right = 3070.0
-margin_bottom = 1699.0
+margin_left = 4658.0
+margin_top = 1019.0
+margin_right = 4928.0
+margin_bottom = 1399.0
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )
 custom_styles/pressed = SubResource( 29 )
@@ -928,10 +912,10 @@ custom_styles/normal = SubResource( 32 )
 icon = ExtResource( 19 )
 
 [node name="lixo4" type="Button" parent="."]
-margin_left = 1158.07
-margin_top = 41.5996
-margin_right = 1440.07
-margin_bottom = 427.6
+margin_left = 3550.0
+margin_top = -3000.0
+margin_right = 3832.0
+margin_bottom = -2614.0
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )
 custom_styles/pressed = SubResource( 29 )
@@ -1187,6 +1171,7 @@ texture = ExtResource( 23 )
 position = Vector2( 2223.38, 1611.56 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area2"]
+visible = false
 position = Vector2( -21.1714, 0 )
 polygon = PoolVector2Array( 123.647, 91.3398, 1040.28, 129.183, 1212.68, 116.568, 1248.15, -7.71631, 1918.25, -377.099, 2128.25, -677.099, 2188.47, -1339.83, 2668.25, -2537.1, 1972.98, -2769.89, 554.526, -3269.91, 282.178, -3075.38, 126.55, -2966.44, 106.093, -2306.19, 38.249, -1587.1, -51.751, -1307.1, 15.8042, -1195.11, -61.751, -697.099, -79.4663, -517.631, -79.4663, -422.361, -5.59937, -184.025, -5.59937, -144.845, -5.59937, -144.845 )
 disabled = true
@@ -1208,6 +1193,7 @@ position = Vector2( 2223.38, 1611.56 )
 texture = SubResource( 44 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area3"]
+visible = false
 polygon = PoolVector2Array( 1209.85, 118.546, 1195.06, 22.446, 1232.02, -14.5156, 1357.69, -58.8696, 1904.72, -376.74, 2126.49, -694.609, 2163.46, -1345.13, 2658.74, -2550.08, 3937.61, -2675.75, 5105.6, -2624.01, 4432.9, -768.532, 4536.39, -746.355, 4506.82, -576.332, 4381.15, -524.586, 4285.05, -524.586, 4196.34, -332.385, 4366.37, -317.601, 4358.98, -199.324, 4233.31, -118.008, 4115.03, -88.4387, 4041.1, -81.0464, 4041.1, 52.0154, 3893.26, 59.4077, 3826.73, 96.3691, 3641.92, 133.331, 3375.8, 259, 3257.52, 177.685, 2096.92, 192.469, 2089.53, 96.3691 )
 disabled = true
 
@@ -1224,6 +1210,7 @@ position = Vector2( 2223.38, 1611.56 )
 texture = SubResource( 44 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area4"]
+visible = false
 polygon = PoolVector2Array( 565.865, -3280.95, 1978.25, -2777.1, 2688.25, -2547.1, 3088.25, -2587.1, 3911.09, -2673.72, 3708.25, -3037.1, 3168.25, -4357.1, 3338.25, -4907.1, 3328.25, -5007.1, 1288.25, -4977.1, 938.249, -4297.1, 948.249, -3677.1 )
 disabled = true
 
@@ -1237,6 +1224,7 @@ tile_data = PoolIntArray( -5505008, 0, 0, -5439473, 0, 0, -5439471, 0, 0, -54394
 position = Vector2( 2223.38, 1611.56 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area5"]
+visible = false
 position = Vector2( 245.169, 141.894 )
 polygon = PoolVector2Array( 3178.99, -5186.78, 2961.48, -4537, 3529.76, -3066.15, 3696.9, -2821.01, 5067.46, -2754.16, 5057.28, -3648.96, 4693.99, -4694.4, 4139.15, -5031.88, 3864.59, -5071.92 )
 disabled = true
@@ -1245,7 +1233,6 @@ disabled = true
 texture = SubResource( 44 )
 
 [node name="mist" type="TileMap" parent="area5"]
-visible = false
 tile_set = SubResource( 48 )
 format = 1
 tile_data = PoolIntArray( -5504976, 0, 0, -5439440, 0, 0, -5373905, 0, 0, -5373904, 0, 0, -5373903, 0, 0, -5373902, 0, 0, -5308369, 0, 0, -5308368, 0, 0, -5308367, 0, 0, -5308366, 0, 0, -5308365, 0, 0, -5242833, 0, 0, -5242832, 0, 0, -5242831, 0, 0, -5242830, 0, 0, -5242828, 0, 0, -5242827, 0, 0, -5177298, 0, 0, -5177297, 0, 0, -5177296, 0, 0, -5177294, 0, 0, -5177290, 0, 0, -5111762, 0, 0, -5111760, 0, 0, -5111759, 0, 0, -5111753, 0, 0, -5111752, 0, 0, -5046226, 0, 0, -5046225, 0, 0, -5046224, 0, 0, -5046223, 0, 0, -5046215, 0, 0, -4980690, 0, 0, -4980688, 0, 0, -4980687, 0, 0, -4980686, 0, 0, -4980678, 0, 0, -4980677, 0, 0, -4915154, 0, 0, -4915152, 0, 0, -4915150, 0, 0, -4915140, 0, 0, -4849618, 0, 0, -4849617, 0, 0, -4849615, 0, 0, -4849613, 0, 0, -4849604, 0, 0, -4784081, 0, 0, -4784079, 0, 0, -4784077, 0, 0, -4784067, 0, 0, -4718545, 0, 0, -4718543, 0, 0, -4718540, 0, 0, -4718531, 0, 0, -4653009, 0, 0, -4653008, 0, 0, -4653007, 0, 0, -4653004, 0, 0, -4652994, 0, 0, -4587473, 0, 0, -4587472, 0, 0, -4587471, 0, 0, -4587467, 0, 0, -4587458, 0, 0, -4521936, 0, 0, -4521935, 0, 0, -4521931, 0, 0, -4521922, 0, 0, -4456400, 0, 0, -4456399, 0, 0, -4456394, 0, 0, -4456386, 0, 0, -4390863, 0, 0, -4390862, 0, 0, -4390858, 0, 0, -4390850, 0, 0, -4325327, 0, 0, -4325326, 0, 0, -4325322, 0, 0, -4325314, 0, 0, -4259791, 0, 0, -4259790, 0, 0, -4259789, 0, 0, -4259786, 0, 0, -4259778, 0, 0, -4194254, 0, 0, -4194253, 0, 0, -4194252, 0, 0, -4194249, 0, 0, -4194241, 0, 0, -4128718, 0, 0, -4128717, 0, 0, -4128716, 0, 0, -4128713, 0, 0, -4128705, 0, 0, -4063182, 0, 0, -4063180, 0, 0, -4063177, 0, 0, -4063169, 0, 0, -3997645, 0, 0, -3997644, 0, 0, -3997640, 0, 0, -3997633, 0, 0, -3932109, 0, 0, -3932108, 0, 0, -3932104, 0, 0, -3932097, 0, 0, -3866572, 0, 0, -3866571, 0, 0, -3866567, 0, 0, -3866561, 0, 0, -3801036, 0, 0, -3801035, 0, 0, -3801034, 0, 0, -3801031, 0, 0, -3801025, 0, 0, -3735499, 0, 0, -3735498, 0, 0, -3735497, 0, 0, -3735494, 0, 0, -3735489, 0, 0, -3669962, 0, 0, -3669961, 0, 0, -3669958, 0, 0, -3669953, 0, 0, -3604426, 0, 0, -3604425, 0, 0, -3604424, 0, 0, -3604422, 0, 0, -3604417, 0, 0, -3538889, 0, 0, -3538888, 0, 0, -3538887, 0, 0, -3538885, 0, 0, -3538881, 0, 0, -3473351, 0, 0, -3473350, 0, 0, -3473349, 0, 0, -3473345, 0, 0, -3407815, 0, 0, -3407814, 0, 0, -3407813, 0, 0, -3407812, 0, 0, -3407811, 0, 0, -3407809, 0, 0, -3342277, 0, 0, -3342274, 0, 0, -3342273, 0, 0, -3276742, 0, 0, -3276741, 0, 0, -3276739, 0, 0, -3276738, 0, 0, -3211206, 0, 0, -3211205, 0, 0, -3211204, 0, 0, -3145668, 0, 0 )
@@ -1253,20 +1240,14 @@ tile_data = PoolIntArray( -5504976, 0, 0, -5439440, 0, 0, -5373905, 0, 0, -53739
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 75.0
-margin_bottom = 38.0
-custom_fonts/font = SubResource( 50 )
-text = "Score:"
+margin_right = 40.0
+margin_bottom = 14.0
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
-margin_left = 80.0
-margin_top = 10.0
-margin_right = 120.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 52 )
+margin_right = 40.0
+margin_bottom = 14.0
 
+[connection signal="pressed" from="button_back_in_time" to="." method="_on_button_back_in_time_pressed"]
 [connection signal="pressed" from="button_basquete" to="." method="_on_button_basquete_pressed"]
 [connection signal="pressed" from="button_skate" to="." method="_on_button_skate_pressed"]
 [connection signal="pressed" from="button_pingpong" to="." method="_on_button_pingpong_pressed"]
@@ -1275,3 +1256,6 @@ custom_fonts/font = SubResource( 52 )
 [connection signal="pressed" from="button_unlock_area4" to="." method="_on_button_unlock_area4_pressed"]
 [connection signal="pressed" from="button_unlock_area5" to="." method="_on_button_unlock_area5_pressed"]
 [connection signal="pressed" from="lixo1" to="." method="_on_lixo1_pressed"]
+[connection signal="pressed" from="lixo2" to="." method="_on_lixo2_pressed"]
+[connection signal="pressed" from="lixo3" to="." method="_on_lixo3_pressed"]
+[connection signal="pressed" from="lixo4" to="." method="_on_lixo4_pressed"]

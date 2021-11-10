@@ -6,8 +6,6 @@ onready var start_symbol = $TextboxContainer/MarginContainer/HBoxContainer/Start
 onready var end_symbol = $TextboxContainer/MarginContainer/HBoxContainer/End
 onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
 
-var character_name = Global.character_name
-
 enum State {
 	READY,
 	READING,
@@ -20,9 +18,9 @@ var text_queue = []
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	#queue_text("{name}, você não pode desmatar a floresta! Isso é um tremendo desrespeito à natureza e a tudo o que ela lhe oferece! Eu, como protetor das matas, vou puni-lo por isso. Você irá para o futuro para ver as consequências de seu desmatamento e só poderá voltar após cumprir determinadas tarefas.".format({"name": character_name}))
-	queue_text("Volteiiiii")
+	queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
+#	queue_text("Why do we not look like the others?")
+#	queue_text("Because we are free assets from opengameart!")
 #	queue_text("Thanks for watching!")
 
 func _process(delta):
@@ -77,7 +75,7 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/scene4.tscn")
+	get_tree().change_scene("res://UserInput/UserNameInput.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://map.tscn")
+	get_tree().change_scene("res://historia_inicial/scene2.tscn")

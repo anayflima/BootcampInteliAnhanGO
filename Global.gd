@@ -7,6 +7,7 @@ var unlock_area4 = false
 var unlock_area5 = false
 var area_to_unlock = 1
 var first = true
+var first_score = true
 var main_score = 0
 var unlock_back_in_time = false 
 

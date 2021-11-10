@@ -1,5 +1,4 @@
 extends Node
-
 export (PackedScene) var ScoreItem
 export (PackedScene) var MeteorItem
 export (PackedScene) var ShieldItem

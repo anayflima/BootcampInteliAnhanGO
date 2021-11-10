@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://coleta_de_lixo_main.gd" type="Script" id=1]
 [ext_resource path="res://Score.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Meteor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ShieldItem.tscn" type="PackedScene" id=4]

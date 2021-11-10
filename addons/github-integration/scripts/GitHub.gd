@@ -40,7 +40,7 @@ var debug : bool
 func _ready():
 	ConnectionIcon.set_texture(connection_status[0])
 	
-	debug = true
+	debug = false
 	LoadNode.hide()
 	Debug.set_pressed(debug)
 	

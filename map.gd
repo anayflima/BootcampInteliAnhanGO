@@ -1,9 +1,6 @@
 extends Node2D
 
-
-#onready var map = preload("res://minimap.tscn")
-#
-#var mm
+onready var score_label: = $CanvasLayer/Label2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,6 +9,10 @@ func _ready():
 		var dir = Directory.new()
 		dir.remove("user://saved_data.dat")
 		Global.first = false
+	if (Global.first_score):
+		var dir = Directory.new()
+		dir.remove("user://saved_score.dat")
+		Global.first_score = false
 	$KinematicBody2D.position = load_data()
 	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
@@ -21,6 +22,7 @@ func _ready():
 	$area3/CollisionPolygon2D.disabled = false
 	$area4/CollisionPolygon2D.disabled = false
 	$area5/CollisionPolygon2D.disabled = false
+	$button_back_in_time.disabled = true
 	
 	
 func _process(delta):
@@ -55,61 +57,18 @@ func _process(delta):
 		$area5/CollisionPolygon2D.disabled = true
 		$area5/mist.visible = false
 		$button_unlock_area5.disabled = true
-	print(Global.main_score)
+	
+	if (Global.main_score >= 1):
+		$button_back_in_time.disabled = false
+	#print(Global.main_score)
 	print(str(Global.main_score))
-	$CanvasLayer/Label2.text = str(Global.main_score)
+	score_label.text = str(Global.main_score)
 	save()
 	Global.save_score(Global.main_score)
 #
 #func set_mm():
 #	mm = map.instance()
 #	$KinematicBody2D/Camera2D.add_child(mm)
-	
-
-func _on_button_basquete_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://basquete/basquete_main.tscn")
-
-
-func _on_button_pingpong_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://pingpong.tscn")
-
-func _on_button_skate_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://MinigameSkate/game.tscn")
-
-
-func _on_button_unlock_area2_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	Global.area_to_unlock = 2
-	get_tree().change_scene("res://map_unlock/Control.tscn")
-
-func _on_button_unlock_area3_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	Global.area_to_unlock = 3
-	get_tree().change_scene("res://map_unlock/Control.tscn")
-
-func _on_button_unlock_area4_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	Global.area_to_unlock = 4
-	get_tree().change_scene("res://map_unlock/Control.tscn")
-
-func _on_button_unlock_area5_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	Global.area_to_unlock = 5
-	get_tree().change_scene("res://map_unlock/Control.tscn")
-
-
-func _on_lixo1_pressed():
-	get_tree().change_scene("res://Main.tscn")
 
 func save():
 	var saved_position = {
@@ -139,5 +98,61 @@ func load_data():
 	file.close()
 	return player_position
 
+func _on_button_basquete_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://basquete/basquete_main.tscn")
 
+
+func _on_button_pingpong_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://pingpong.tscn")
+
+func _on_button_skate_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://MinigameSkate/game.tscn")
+
+func _on_button_unlock_area2_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	Global.area_to_unlock = 2
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area3_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	Global.area_to_unlock = 3
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area4_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	Global.area_to_unlock = 4
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area5_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	Global.area_to_unlock = 5
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+
+
+func _on_button_back_in_time_pressed():
+	get_tree().change_scene("res://historia_final/scene5.tscn")
+
+
+func _on_lixo1_pressed():
+	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+
+func _on_lixo2_pressed():
+	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+
+func _on_lixo3_pressed():
+	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+
+func _on_lixo4_pressed():
+	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
