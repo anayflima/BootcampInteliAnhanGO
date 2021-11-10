@@ -1,12 +1,10 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
-[ext_resource path="res://Assets/fonts/m6x11.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://player_basquete.gd" type="Script" id=4]
-[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=5]
-[ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=6]
-[ext_resource path="res://freepixel_dynamicfont.tres" type="DynamicFont" id=7]
+[ext_resource path="res://player_basquete.gd" type="Script" id=3]
+[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 947.989, 24.3528 )
@@ -28,9 +26,30 @@ b = Vector2( 47.457, -112.452 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 13.0156, 853.992 )
 
+[sub_resource type="DynamicFontData" id=14]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=15]
+font_data = SubResource( 14 )
+
+[sub_resource type="DynamicFontData" id=16]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=17]
+font_data = SubResource( 16 )
+
+[sub_resource type="DynamicFontData" id=18]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=19]
+font_data = SubResource( 18 )
+
+[sub_resource type="DynamicFontData" id=20]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
 [sub_resource type="DynamicFont" id=7]
-size = 64
-font_data = ExtResource( 3 )
+size = 58
+font_data = SubResource( 20 )
 
 [sub_resource type="PhysicsMaterial" id=8]
 bounce = 0.71
@@ -62,6 +81,20 @@ extents = Vector2( 20.1497, 60.4389 )
 
 [sub_resource type="LargeTexture" id=13]
 
+[sub_resource type="DynamicFontData" id=21]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=22]
+size = 27
+font_data = SubResource( 21 )
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 27
+font_data = SubResource( 23 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
@@ -74,7 +107,7 @@ position = Vector2( 507.532, 596.133 )
 scale = Vector2( 0.55, 0.55 )
 
 [node name="pixil-frame-0 (7)" type="Sprite" parent="StaticBody2D"]
-position = Vector2( -297.893, -519.455 )
+position = Vector2( -279.668, -511.644 )
 scale = Vector2( 1.81818, 1.81818 )
 texture = ExtResource( 2 )
 
@@ -128,20 +161,22 @@ __meta__ = {
 
 [node name="botaoJogar" type="Button" parent="."]
 margin_left = 458.34
-margin_top = 4.38074
-margin_right = 540.34
-margin_bottom = 53.3807
-text = "jogar"
+margin_top = 6.719
+margin_right = 544.34
+margin_bottom = 55.719
+custom_fonts/font = SubResource( 15 )
+text = "Arremessar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="button_play_again" type="Button" parent="."]
-margin_left = 552.148
+margin_left = 555.148
 margin_top = 6.71948
-margin_right = 671.148
+margin_right = 674.148
 margin_bottom = 41.7195
-text = "jogar novamente"
+custom_fonts/font = SubResource( 17 )
+text = "Jogar novamente"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -151,14 +186,15 @@ margin_left = 683.979
 margin_top = 6.6635
 margin_right = 789.979
 margin_bottom = 41.6635
-text = "voltar ao mapa"
+custom_fonts/font = SubResource( 19 )
+text = "Voltar ao mapa"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="pontos" type="Label" parent="."]
-margin_left = -275.0
-margin_right = 461.0
+margin_left = -283.0
+margin_right = 453.0
 margin_bottom = 112.0
 custom_fonts/font = SubResource( 7 )
 text = "Pontos:"
@@ -168,9 +204,9 @@ __meta__ = {
 }
 
 [node name="pontuacao" type="Label" parent="."]
-margin_left = -148.029
+margin_left = -151.512
 margin_top = 2.466
-margin_right = 563.971
+margin_right = 560.488
 margin_bottom = 117.466
 custom_fonts/font = SubResource( 7 )
 align = 1
@@ -180,7 +216,7 @@ __meta__ = {
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 16.9898, 0.943878 )
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 
 [node name="bodyball" type="RigidBody2D" parent="KinematicBody2D"]
 position = Vector2( 373.743, 264.688 )
@@ -192,7 +228,7 @@ __meta__ = {
 [node name="bola" type="Sprite" parent="KinematicBody2D/bodyball"]
 position = Vector2( -0.246552, 0.0579224 )
 scale = Vector2( 0.287888, 0.292878 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/bodyball"]
 position = Vector2( -0.163651, -0.157623 )
@@ -201,7 +237,7 @@ shape = SubResource( 9 )
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 352.538, 340.74 )
 scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 hframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D"]
@@ -222,22 +258,22 @@ texture = SubResource( 13 )
 texture_mode = 9371648
 
 [node name="angulo" type="Label" parent="."]
-margin_left = 5.04538
-margin_top = 50.4538
-margin_right = 117.045
-margin_bottom = 82.4538
-custom_fonts/font = ExtResource( 7 )
+margin_left = 10.0
+margin_top = 50.454
+margin_right = 122.0
+margin_bottom = 82.454
+custom_fonts/font = SubResource( 22 )
 text = "Ângulo:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="força" type="Label" parent="."]
-margin_left = 5.0
+margin_left = 10.0
 margin_top = 77.0
-margin_right = 116.0
+margin_right = 121.0
 margin_bottom = 109.0
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = SubResource( 24 )
 text = "Força:"
 __meta__ = {
 "_edit_use_anchors_": false
