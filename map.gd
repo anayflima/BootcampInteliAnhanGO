@@ -8,7 +8,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 #	set_mm()
-	$KinematicBody2D.position = load_data()
+#	$KinematicBody2D.position = load_data()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$area2/CollisionPolygon2D.disabled = false

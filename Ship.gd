@@ -23,9 +23,9 @@ func get_input():
 		return
 	
 	# keyboard controls
-	if Input.is_action_pressed('right'):
+	if Input.is_action_pressed('ui_right'):
 		rotation_dir = lerp(rotation_dir, 1.25, 0.1)
-	elif Input.is_action_pressed('left'):
+	elif Input.is_action_pressed('ui_left'):
 		rotation_dir = lerp(rotation_dir, -1.25, 0.1)
 	else:
 		rotation_dir = lerp(rotation_dir, 0, 0.25)

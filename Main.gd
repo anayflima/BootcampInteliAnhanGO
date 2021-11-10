@@ -26,10 +26,10 @@ func on_screen_resize():
 func _process(delta):
 	
 	var ship_pos = $Ship.position
-	$Background.position  = 0.80 * $Ship.position
-	$Background2.position = 0.85 * $Ship.position
-	$Background3.position = 0.90 * $Ship.position
-	
+#	$Background.position  = 0.80 * $Ship.position
+#	$Background2.position = 0.85 * $Ship.position
+#	$Background3.position = 0.90 * $Ship.position
+	$Sprite.position = 0.8 * $Ship.position
 	# delete objects when they are far enough from the ship
 	for node in get_children():
 		if node.is_in_group("items"):

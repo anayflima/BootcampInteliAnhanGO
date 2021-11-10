@@ -5,7 +5,7 @@
 [ext_resource path="res://Meteor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ShieldItem.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Boost.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Graphics/background.png" type="Texture" id=6]
+[ext_resource path="res://folha-de-e-v-a-48x40cm-lisa-cor-verde-escuro-5mm_1_600.jpg" type="Texture" id=6]
 [ext_resource path="res://Ship.tscn" type="PackedScene" id=7]
 [ext_resource path="res://HUD.tscn" type="PackedScene" id=8]
 
@@ -16,24 +16,10 @@ MeteorItem = ExtResource( 3 )
 ShieldItem = ExtResource( 4 )
 BoostItem = ExtResource( 5 )
 
-[node name="Background" type="Sprite" parent="."]
-scale = Vector2( 0.8, 0.8 )
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1342, 1113.5 )
+scale = Vector2( 53.338, 30.1444 )
 texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 1e+06, 1e+06 )
-
-[node name="Background2" type="Sprite" parent="."]
-position = Vector2( 0, 0.873779 )
-rotation = 1.5708
-scale = Vector2( 0.75, 0.75 )
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 1e+06, 1e+06 )
-
-[node name="Background3" type="Sprite" parent="."]
-position = Vector2( -10.2432, 1.13815 )
-rotation = 3.14159
-scale = Vector2( 0.510003, 0.498889 )
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 1e+06, 1e+06 )
 
 [node name="Ship" parent="." instance=ExtResource( 7 )]
 position = Vector2( 301.571, 400 )
