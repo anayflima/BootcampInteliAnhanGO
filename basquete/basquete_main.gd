@@ -74,7 +74,7 @@ func _on_Button_pressed():
 	slides = false
 	$Node2D/angleslide.editable = false
 	$Node2D/forceslide.editable = false
-	$linha.clear_points()
+	$linha.points = []
 	
 	
 	

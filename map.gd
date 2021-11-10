@@ -8,10 +8,18 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 #	set_mm()
+	if (Global.first):
+		var dir = Directory.new()
+		dir.remove("user://saved_data.dat")
+		Global.first = false
 	$KinematicBody2D.position = load_data()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
+	$button_skate.visible = false
 	$area2/CollisionPolygon2D.disabled = false
+	$area3/CollisionPolygon2D.disabled = false
+	$area4/CollisionPolygon2D.disabled = false
+	$area5/CollisionPolygon2D.disabled = false
 	
 	
 func _process(delta):
@@ -33,6 +41,19 @@ func _process(delta):
 	if (Global.unlock_area2):
 		$area2/CollisionPolygon2D.disabled = true
 		$area2/mist.visible = false
+		$button_unlock_area2.disabled = true
+	if (Global.unlock_area3):
+		$area3/CollisionPolygon2D.disabled = true
+		$area3/mist.visible = false
+		$button_unlock_area3.disabled = true
+	if (Global.unlock_area4):
+		$area4/CollisionPolygon2D.disabled = true
+		$area4/mist.visible = false
+		$button_unlock_area4.disabled = true
+	if (Global.unlock_area5):
+		$area5/CollisionPolygon2D.disabled = true
+		$area5/mist.visible = false
+		$button_unlock_area5.disabled = true
 	save()
 #
 #func set_mm():
@@ -49,15 +70,30 @@ func _on_button_pingpong_pressed():
 	save()
 	get_tree().change_scene("res://pingpong.tscn")
 
-
-func _on_button_unlock_area2_pressed():
-	save()
-	get_tree().change_scene("res://map_unlock/Control.tscn")
-
-
 func _on_button_skate_pressed():
 	save()
 	get_tree().change_scene("res://MinigameSkate/game.tscn")
+
+
+func _on_button_unlock_area2_pressed():
+	save()
+	Global.area_to_unlock = 2
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area3_pressed():
+	save()
+	Global.area_to_unlock = 3
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area4_pressed():
+	save()
+	Global.area_to_unlock = 4
+	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+func _on_button_unlock_area5_pressed():
+	save()
+	Global.area_to_unlock = 5
+	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 func save():
 	var saved_position = {
@@ -69,12 +105,10 @@ func save():
 	file.store_line(to_json(saved_position))
 	file.close()
 
-
-	
-	
 func load_data():
 	var file = File.new()
 	if not file.file_exists("user://saved_data.dat"):
+		print("entrei em novo")
 		var player_position = Vector2(0,0)
 		player_position.y = 463
 		player_position.x= 361
@@ -89,4 +123,3 @@ func load_data():
 			player_position.y = content.get(i)
 	file.close()
 	return player_position
-

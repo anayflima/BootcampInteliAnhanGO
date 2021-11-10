@@ -1,17 +1,19 @@
 extends Node
 
-var character_name = "Ana"
+var character_name = "Ariel"
 var score = 0
 var unlock_area2 = false
+var unlock_area3 = false
+var unlock_area4 = false
+var unlock_area5 = false
+var area_to_unlock = 1
+var first = true
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var game_speed
 var game_score
 var audio_player = AudioStreamPlayer.new()
-var player_global_y = 463
 var player_global_x = 361
+var player_global_y = 463
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
