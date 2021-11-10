@@ -26,39 +26,38 @@ b = Vector2( 47.457, -112.452 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 13.0156, 853.992 )
 
-[sub_resource type="DynamicFontData" id=14]
+[sub_resource type="DynamicFontData" id=7]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=15]
-font_data = SubResource( 14 )
+[sub_resource type="DynamicFont" id=8]
+font_data = SubResource( 7 )
 
-[sub_resource type="DynamicFontData" id=16]
+[sub_resource type="DynamicFontData" id=9]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=17]
-font_data = SubResource( 16 )
+[sub_resource type="DynamicFont" id=10]
+font_data = SubResource( 9 )
 
-[sub_resource type="DynamicFontData" id=18]
+[sub_resource type="DynamicFontData" id=11]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=19]
-font_data = SubResource( 18 )
+[sub_resource type="DynamicFont" id=12]
+font_data = SubResource( 11 )
 
-[sub_resource type="DynamicFontData" id=20]
+[sub_resource type="DynamicFontData" id=13]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=14]
 size = 58
-font_data = SubResource( 20 )
+font_data = SubResource( 13 )
 
-[sub_resource type="PhysicsMaterial" id=8]
+[sub_resource type="PhysicsMaterial" id=15]
 bounce = 0.71
 
-[sub_resource type="CircleShape2D" id=9]
+[sub_resource type="CircleShape2D" id=16]
 radius = 12.599
 
-[sub_resource type="Animation" id=10]
-resource_name = "jogando"
+[sub_resource type="Animation" id=17]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -73,13 +72,13 @@ tracks/0/keys = {
 "values": [ 0, 1, 2 ]
 }
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 15.4303, 10 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 20.1497, 60.4389 )
 
-[sub_resource type="LargeTexture" id=13]
+[sub_resource type="LargeTexture" id=20]
 
 [sub_resource type="DynamicFontData" id=21]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
@@ -164,7 +163,7 @@ margin_left = 458.34
 margin_top = 6.719
 margin_right = 544.34
 margin_bottom = 55.719
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 8 )
 text = "Arremessar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -175,7 +174,7 @@ margin_left = 555.148
 margin_top = 6.71948
 margin_right = 674.148
 margin_bottom = 41.7195
-custom_fonts/font = SubResource( 17 )
+custom_fonts/font = SubResource( 10 )
 text = "Jogar novamente"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -186,7 +185,7 @@ margin_left = 683.979
 margin_top = 6.6635
 margin_right = 789.979
 margin_bottom = 41.6635
-custom_fonts/font = SubResource( 19 )
+custom_fonts/font = SubResource( 12 )
 text = "Voltar ao mapa"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -196,7 +195,7 @@ __meta__ = {
 margin_left = -283.0
 margin_right = 453.0
 margin_bottom = 112.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 14 )
 text = "Pontos:"
 align = 1
 __meta__ = {
@@ -208,7 +207,7 @@ margin_left = -151.512
 margin_top = 2.466
 margin_right = 560.488
 margin_bottom = 117.466
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 14 )
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -220,7 +219,7 @@ script = ExtResource( 3 )
 
 [node name="bodyball" type="RigidBody2D" parent="KinematicBody2D"]
 position = Vector2( 373.743, 264.688 )
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 15 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -232,7 +231,7 @@ texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/bodyball"]
 position = Vector2( -0.163651, -0.157623 )
-shape = SubResource( 9 )
+shape = SubResource( 16 )
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 352.538, 340.74 )
@@ -241,20 +240,20 @@ texture = ExtResource( 5 )
 hframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D"]
-anims/jogando = SubResource( 10 )
+anims/jogando = SubResource( 17 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 378.495, 285.995 )
-shape = SubResource( 11 )
+shape = SubResource( 18 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 338.852, 316.199 )
-shape = SubResource( 12 )
+shape = SubResource( 19 )
 
 [node name="linha" type="Line2D" parent="."]
 width = 3.0
 default_color = Color( 0.0470588, 0.0627451, 0.137255, 1 )
-texture = SubResource( 13 )
+texture = SubResource( 20 )
 texture_mode = 9371648
 
 [node name="angulo" type="Label" parent="."]

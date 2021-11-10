@@ -18,7 +18,7 @@ BoostItem = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1342, 1113.5 )
-scale = Vector2( 53.338, 30.1444 )
+scale = Vector2( 10000, 100000 )
 texture = ExtResource( 6 )
 
 [node name="Ship" parent="." instance=ExtResource( 7 )]

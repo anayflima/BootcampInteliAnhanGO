@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://HUD.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
@@ -7,11 +7,11 @@
 size = 64
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=2]
 size = 64
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 2 )
 
@@ -20,6 +20,10 @@ size = 32
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=5]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
 size = 50
 font_data = ExtResource( 2 )
 
@@ -41,9 +45,9 @@ align = 1
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_top = -113.0
-margin_bottom = -35.0
-custom_fonts/font = SubResource( 6 )
+margin_top = -119.0
+margin_bottom = -41.0
+custom_fonts/font = SubResource( 2 )
 text = "Game over!"
 align = 1
 __meta__ = {
@@ -58,7 +62,7 @@ margin_left = 3.0
 margin_top = -6.0
 margin_right = 3.0
 margin_bottom = 34.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 3 )
 text = "High score"
 align = 1
 
@@ -77,11 +81,20 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -150.0
-margin_top = -150.0
-margin_right = 149.0
-margin_bottom = -83.0
+margin_left = -139.93
+margin_top = -208.903
+margin_right = 159.07
+margin_bottom = -141.903
 custom_fonts/font = SubResource( 5 )
-text = "Restart"
+text = "Reiniciar"
+
+[node name="GetOutButton" type="Button" parent="."]
+margin_left = 323.635
+margin_top = 491.0
+margin_right = 736.635
+margin_bottom = 558.0
+custom_fonts/font = SubResource( 6 )
+text = "Voltar ao mapa"
 
 [connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="GetOutButton" to="." method="_on_GetOutButton_pressed"]

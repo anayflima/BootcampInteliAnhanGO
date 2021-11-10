@@ -22,5 +22,5 @@ func _process(delta):
 
 
 func _on_player_game_over():
-	print_debug("here")
+	#print_debug("here")
 	stop = true

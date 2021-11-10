@@ -10,8 +10,10 @@ func _ready():
 	$RestartButton.hide()
 	$HighScoreCaption.hide()
 	$HighScoreLabel.hide()
-
+	$GetOutButton.hide()
+	
 func update_score(score):
+	Global.main_score = score
 	$ScoreLabel.text = str(score)
 
 func game_over():
@@ -19,6 +21,7 @@ func game_over():
 	$RestartButton.show()
 	$HighScoreCaption.show()
 	$HighScoreLabel.show()
+	$GetOutButton.show()
 	
 	if int($ScoreLabel.text) > high_score:
 		high_score = int($ScoreLabel.text)
@@ -30,6 +33,9 @@ func game_over():
 func _on_RestartButton_pressed():
 	emit_signal("restart_game")
 
+func _on_GetOutButton_pressed():
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://map.tscn")
 
 func save_highscore():
 	var f = File.new()

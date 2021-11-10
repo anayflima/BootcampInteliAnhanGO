@@ -1,10 +1,6 @@
 extends Label
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-var score = 0
+#var score = 0
 var is_scoring = true
 
 # Called when the node enters the scene tree for the first time.
@@ -24,6 +20,8 @@ func _on_player_game_over():
 func _on_Timer2_timeout():
 	if is_scoring:
 		Global.game_score += 1
+		Global.main_score += 0.01
 		if (Global.game_score > 0 and Global.game_score % 100 == 0):
 			Global.play_next_level_sound()
 			Global.game_speed += 100
+ 

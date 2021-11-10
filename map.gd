@@ -13,6 +13,7 @@ func _ready():
 		dir.remove("user://saved_data.dat")
 		Global.first = false
 	$KinematicBody2D.position = load_data()
+	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$button_skate.visible = false
@@ -54,7 +55,11 @@ func _process(delta):
 		$area5/CollisionPolygon2D.disabled = true
 		$area5/mist.visible = false
 		$button_unlock_area5.disabled = true
+	print(Global.main_score)
+	print(str(Global.main_score))
+	$CanvasLayer/Label2.text = str(Global.main_score)
 	save()
+	Global.save_score(Global.main_score)
 #
 #func set_mm():
 #	mm = map.instance()
@@ -63,37 +68,48 @@ func _process(delta):
 
 func _on_button_basquete_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://basquete/basquete_main.tscn")
 
 
 func _on_button_pingpong_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://pingpong.tscn")
 
 func _on_button_skate_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MinigameSkate/game.tscn")
 
 
 func _on_button_unlock_area2_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	Global.area_to_unlock = 2
 	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 func _on_button_unlock_area3_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	Global.area_to_unlock = 3
 	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 func _on_button_unlock_area4_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	Global.area_to_unlock = 4
 	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 func _on_button_unlock_area5_pressed():
 	save()
+	Global.save_score(Global.main_score)
 	Global.area_to_unlock = 5
 	get_tree().change_scene("res://map_unlock/Control.tscn")
+
+
+func _on_lixo1_pressed():
+	get_tree().change_scene("res://Main.tscn")
 
 func save():
 	var saved_position = {
@@ -108,7 +124,6 @@ func save():
 func load_data():
 	var file = File.new()
 	if not file.file_exists("user://saved_data.dat"):
-		print("entrei em novo")
 		var player_position = Vector2(0,0)
 		player_position.y = 463
 		player_position.x= 361
@@ -123,3 +138,6 @@ func load_data():
 			player_position.y = content.get(i)
 	file.close()
 	return player_position
+
+
+
