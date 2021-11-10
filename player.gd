@@ -22,8 +22,6 @@ func _physics_process(delta):
 #		initposition = position #atualiza a sposição e faz ele se mexer
 #		moving = true
 	if (vetor_entrada == Vector2.ZERO):
-		pass
-		#$AnimationPlayer.play("move_right")
 		$AnimationPlayer.stop()
 	else:
 		if (vetor_entrada.x > 0):

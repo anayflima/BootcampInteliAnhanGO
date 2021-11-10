@@ -11,7 +11,7 @@ func _ready():
 	$KinematicBody2D.position = load_data()
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
-	$StaticBody2D/CollisionPolygon2D.disabled = false
+	$area2/CollisionPolygon2D.disabled = false
 	
 	
 func _process(delta):
@@ -21,9 +21,9 @@ func _process(delta):
 		$button_pingpong.visible = true
 	if !(x > 172 && x < 1002 && y > 1012 && y < 1534):
 		$button_pingpong.visible = false
-	if x > 2900 && x < 3700 && y > -400 && y < 400:
+	if x > 3785 && x < 4585 && y > -2421 && y < 1621:
 		$button_basquete.visible = true
-	if !(x > 2950 && x < 3750 && y > -400 && y < 400):
+	if !(x > 3785 && x < 4585 && y > -2421 && y < -1621):
 		$button_basquete.visible = false
 	if x > 5364 && x < 6164 && y > -100 && y < 724:
 		$button_skate.visible = true
@@ -31,8 +31,8 @@ func _process(delta):
 		$button_skate.visible = false
 	
 	if (Global.unlock_area2):
-		$StaticBody2D/CollisionPolygon2D.disabled = true
-		$StaticBody2D/mist.visible = false
+		$area2/CollisionPolygon2D.disabled = true
+		$area2/mist.visible = false
 	save()
 #
 #func set_mm():
