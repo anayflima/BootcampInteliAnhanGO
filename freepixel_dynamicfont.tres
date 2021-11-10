@@ -3,7 +3,7 @@
 [ext_resource path="res://historia_inicial/FreePixel.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 24
+size = 28
 outline_color = Color( 0.701961, 0.0666667, 0.0666667, 1 )
 font_data = ExtResource( 1 )
 
