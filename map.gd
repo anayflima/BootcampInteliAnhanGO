@@ -61,7 +61,7 @@ func _process(delta):
 	if (Global.main_score >= 1):
 		$button_back_in_time.disabled = false
 	#print(Global.main_score)
-	print(str(Global.main_score))
+	#(str(Global.main_score))
 	score_label.text = str(Global.main_score)
 	save()
 	Global.save_score(Global.main_score)
@@ -144,7 +144,6 @@ func _on_button_back_in_time_pressed():
 	get_tree().change_scene("res://historia_final/scene5.tscn")
 
 func _on_lixo1_pressed():
-	print("oi")
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
 func _on_lixo2_pressed():

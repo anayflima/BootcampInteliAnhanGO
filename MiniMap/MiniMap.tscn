@@ -920,10 +920,10 @@ __meta__ = {
 }
 
 [node name="lixo1" type="Button" parent="Node2D"]
-margin_left = 142.406
-margin_top = -293.849
-margin_right = 424.406
-margin_bottom = 92.1514
+margin_left = 716.194
+margin_top = -29.906
+margin_right = 998.194
+margin_bottom = 356.095
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )
 custom_styles/pressed = SubResource( 29 )
@@ -933,9 +933,9 @@ custom_styles/normal = SubResource( 32 )
 icon = ExtResource( 22 )
 
 [node name="lixo2" type="Button" parent="Node2D"]
-margin_left = 3500.0
+margin_left = 3502.0
 margin_top = -1100.0
-margin_right = 3782.0
+margin_right = 3784.0
 margin_bottom = -713.999
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )

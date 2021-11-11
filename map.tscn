@@ -887,10 +887,10 @@ __meta__ = {
 }
 
 [node name="lixo1" type="Button" parent="."]
-margin_left = 142.406
-margin_top = -293.849
-margin_right = 424.406
-margin_bottom = 92.1514
+margin_left = 716.194
+margin_top = -29.906
+margin_right = 998.194
+margin_bottom = 356.094
 rect_scale = Vector2( 0.2, 0.2 )
 custom_styles/hover = SubResource( 28 )
 custom_styles/pressed = SubResource( 29 )
