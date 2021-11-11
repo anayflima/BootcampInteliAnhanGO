@@ -8,6 +8,10 @@ func _ready():
 	if (Global.first):
 		var dir = Directory.new()
 		dir.remove("user://saved_data.dat")
+		$area2/CollisionPolygon2D.disabled = false
+		$area3/CollisionPolygon2D.disabled = false
+		$area4/CollisionPolygon2D.disabled = false
+		$area5/CollisionPolygon2D.disabled = false
 		Global.first = false
 #	if (Global.first_score):
 #		var dir = Directory.new()
@@ -18,10 +22,6 @@ func _ready():
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$button_skate.visible = false
-	$area2/CollisionPolygon2D.disabled = false
-	$area3/CollisionPolygon2D.disabled = false
-	$area4/CollisionPolygon2D.disabled = false
-	$area5/CollisionPolygon2D.disabled = false
 	$button_back_in_time.disabled = true
 	
 	
@@ -30,16 +30,30 @@ func _process(delta):
 	var y = $KinematicBody2D.position.y
 	if x > 172 && x < 1002 && y > 1012 && y < 1534:
 		$button_pingpong.visible = true
+		$CanvasLayer/MarginContainer/Panel/label_pingpong.visible = true
+		$CanvasLayer/MarginContainer/Panel.visible = true
 	if !(x > 172 && x < 1002 && y > 1012 && y < 1534):
 		$button_pingpong.visible = false
+		$CanvasLayer/MarginContainer/Panel/label_pingpong.visible = false
+		$CanvasLayer/MarginContainer/Panel.visible = false
+		
+		
 	if x > 3785 && x < 4585 && y > -2421 && y < 1621:
 		$button_basquete.visible = true
+		$CanvasLayer/MarginContainerBasquete/Panel/label_basquete.visible = true
+		$CanvasLayer/MarginContainerBasquete/Panel.visible = true
 	if !(x > 3785 && x < 4585 && y > -2421 && y < -1621):
 		$button_basquete.visible = false
+		$CanvasLayer/MarginContainerBasquete/Panel/label_basquete.visible = false
+		$CanvasLayer/MarginContainerBasquete/Panel.visible = false
 	if x > 5364 && x < 6164 && y > -100 && y < 724:
 		$button_skate.visible = true
+		$CanvasLayer/MarginContainerSkate/Panel/label_skate.visible = true
+		$CanvasLayer/MarginContainerSkate/Panel.visible = true
 	if !(x > 5364 && x < 6164 && y > -100 && y < 724):
 		$button_skate.visible = false
+		$CanvasLayer/MarginContainerSkate/Panel/label_skate.visible = false
+		$CanvasLayer/MarginContainerSkate/Panel.visible = false
 	
 	if (Global.unlock_area2):
 		$area2/CollisionPolygon2D.disabled = true
@@ -80,6 +94,7 @@ func save():
 	file.store_line(to_json(saved_position))
 	file.close()
 
+
 func load_data():
 	var file = File.new()
 	if not file.file_exists("user://saved_data.dat"):
@@ -106,7 +121,6 @@ func _on_button_basquete_pressed():
 
 func _on_button_pingpong_pressed():
 	save()
-	print("OLAA")
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://pingpong.tscn")
 

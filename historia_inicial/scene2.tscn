@@ -13,12 +13,12 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color( 1, 1, 1, 1 )
 
-[sub_resource type="DynamicFontData" id=2]
+[sub_resource type="DynamicFontData" id=14]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=3]
 size = 22
-font_data = SubResource( 2 )
+font_data = SubResource( 14 )
 
 [sub_resource type="StyleBoxEmpty" id=4]
 
@@ -57,6 +57,9 @@ margin_left = 50.0
 margin_top = -150.0
 margin_right = -50.0
 margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
 margin_right = 924.0

@@ -25,7 +25,7 @@ const SPACE_TO_PLAY = "Aperte espaco para jogar"
 const P1_WIN = "Voce venceu"
 const P2_WIN = "Voce perdeu"
 var message = SPACE_TO_PLAY
-var my_random_number = rng.randi_range(150, 300)
+var my_random_number = rng.randi_range(100, 200)
 
 func _ready():
 	set_ball()
@@ -33,7 +33,8 @@ func _ready():
 	$t2.set_paddle_position(p2_x, p2_y)
 	display_message()
 	update_score()
-	
+	get_node("cima").visible = false
+	get_node("baixo").visible = false
 #	timer = Timer.new()
 #	timer.set_one_shot(true)
 #	timer.set_wait_time(my_random_number)
@@ -44,7 +45,7 @@ func _ready():
 #	can_walk = true
 
 func _input(_event):
-	if Input.is_key_pressed(KEY_SPACE):
+	if Input.is_action_just_pressed("ui_accept"):
 		play()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		Global.save_score(Global.main_score)
@@ -71,8 +72,10 @@ func play():
 	ball.set_playing(playing)
 	$DisplayMessage.visible = false
 	$DisplayMessage2.visible = false
-
-
+	$DisplayMessage3.visible = false
+	get_node("TouchScreenButton").visible = false
+	get_node("cima").visible = true
+	get_node("baixo").visible = true
 func check_point_scored():
 	if ball.position.x <= 0:
 		score_event = true
@@ -147,7 +150,9 @@ func handle_game_end():
 		display_message()
 
 
-func display_message():
+func display_message():	
 	$DisplayMessage.text = message
 	$DisplayMessage.visible = true
 	$DisplayMessage2.visible = true
+	$DisplayMessage3.visible = true
+	get_node("TouchScreenButton").visible = true

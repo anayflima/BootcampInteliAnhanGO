@@ -16,25 +16,30 @@ func _ready():
 	$button_play_again.visible = false
 	$botaoJogar.visible = true
 	$button_get_out.visible = false
+	$MarginContainer.visible = true
+	
+	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	x = $KinematicBody2D/bodyball.position.x
-	y = $KinematicBody2D/bodyball.position.y
+	x = $KinematicBody2D.position.x
+	y = $KinematicBody2D.position.y
 	var angle = deg2rad($Node2D/angleslide.value)
-	var from = Vector2(15+x,y)
+	var from = Vector2(36+x,y-51)
 	var to = get_point(angle,radius)
+	
+	
 	
 	
 	#valores de acerto = 60, 275  // 66, 297 // 62, 281
 	
-	if y>348:
+	if $KinematicBody2D/bodyball.position.y>13:
 		count += 1
 	if count == 150:
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 
-	if (y<-10):
+	if ($KinematicBody2D/bodyball.position.y<-335):
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 	if slides :
@@ -71,6 +76,7 @@ func _on_Button_pressed():
 	$KinematicBody2D/bodyball.apply_impulse(offset,impulse)
 	$KinematicBody2D/AnimationPlayer.play("jogando")
 	$botaoJogar.visible = false
+	$MarginContainer.visible = false
 	slides = false
 	$Node2D/angleslide.editable = false
 	$Node2D/forceslide.editable = false
@@ -106,9 +112,9 @@ func _on_button_get_out_pressed():
 func get_point(angle,radius):
 	var c = cos(angle)
 	var s = sin(angle)
-	x = $KinematicBody2D/bodyball.position.x
-	y = $KinematicBody2D/bodyball.position.y
-	var point = Vector2(15+x+c*radius,y-s*radius)
+	x = $KinematicBody2D.position.x
+	y = $KinematicBody2D.position.y
+	var point = Vector2(36+x+c*radius,y-51-s*radius)
 	return point
 
 func draw_line_angle(from, to):
