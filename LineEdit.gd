@@ -1,6 +1,6 @@
 extends LineEdit
 
-var correct_answer: String = 'Parabéns! O código está correto!'
+var correct_answer: String = 'Parabéns! O código está correto! Pode voltar ao mapa.'
 var wrong_answer: String = 'O código está incorreto. Tente novamente!'
 onready var response_node: Label = self.get_parent().get_node("Label2")
 

@@ -22,8 +22,6 @@ func _ready():
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
 	queue_text("Em 1920, numa floresta de São Paulo, encontrava-se {name}, que era conhecido (a) entre os exploradores como 'Devasta', por seu costume e prazer em devastar a fauna e a flora local. Certo dia, ao derrubar o último pau-brasil de sua cidade, foi surpreendido por algo intrigante...".format({"name": character_name}))
-#	queue_text("Because we are free assets from opengameart!")
-#	queue_text("Thanks for watching!")
 
 func _process(delta):
 	match current_state:

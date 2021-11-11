@@ -106,6 +106,7 @@ func _on_button_basquete_pressed():
 
 func _on_button_pingpong_pressed():
 	save()
+	print("OLAA")
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://pingpong.tscn")
 
@@ -141,7 +142,7 @@ func _on_button_unlock_area5_pressed():
 
 
 func _on_button_back_in_time_pressed():
-	get_tree().change_scene("res://historia_final/scene5.tscn")
+	get_tree().change_scene("res://historia_final/scene1.tscn")
 
 func _on_lixo1_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")

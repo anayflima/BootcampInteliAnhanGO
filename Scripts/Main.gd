@@ -92,7 +92,7 @@ func handle_movement_input(delta):
 	if Input.is_action_pressed("ui_down"):
 		p1_y += 300 * delta
 	# IA 
-	my_random_number = 0
+	#my_random_number = 0
 	if abs(ball.position.y - p2_y) > 25:
 		if ball.position.y > p2_y :
 			p2_y += my_random_number * delta
