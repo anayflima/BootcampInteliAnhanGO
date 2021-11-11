@@ -9,10 +9,10 @@ func _ready():
 		var dir = Directory.new()
 		dir.remove("user://saved_data.dat")
 		Global.first = false
-	if (Global.first_score):
-		var dir = Directory.new()
-		dir.remove("user://saved_score.dat")
-		Global.first_score = false
+#	if (Global.first_score):
+#		var dir = Directory.new()
+#		dir.remove("user://saved_score.dat")
+#		Global.first_score = false
 	$KinematicBody2D.position = load_data()
 	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
@@ -143,8 +143,8 @@ func _on_button_unlock_area5_pressed():
 func _on_button_back_in_time_pressed():
 	get_tree().change_scene("res://historia_final/scene5.tscn")
 
-
 func _on_lixo1_pressed():
+	print("oi")
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
 func _on_lixo2_pressed():

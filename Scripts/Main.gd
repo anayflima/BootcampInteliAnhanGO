@@ -48,7 +48,7 @@ func _input(_event):
 		play()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		Global.save_score(Global.main_score)
-		get_tree().change_scene("res://map.tscn")
+		get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 
 func _process(delta):

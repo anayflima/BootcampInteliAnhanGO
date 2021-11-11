@@ -100,7 +100,7 @@ func _on_button_play_again_pressed():
 
 func _on_button_get_out_pressed():
 	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://map.tscn")
+	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 
 func get_point(angle,radius):

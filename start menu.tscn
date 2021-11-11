@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://start menu.gd" type="Script" id=1]
 [ext_resource path="res://button_assets/gif.png" type="Texture" id=2]
 [ext_resource path="res://AnhanGO_LOGO.png" type="Texture" id=3]
-[ext_resource path="res://button_assets/INICIAR.png" type="Texture" id=4]
+[ext_resource path="res://button_assets/Jogar.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -29,6 +29,16 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
 }
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -67,14 +77,20 @@ anims/MenuAnimacao = SubResource( 2 )
 [node name="Button" type="Button" parent="."]
 margin_left = 663.0
 margin_top = 472.0
-margin_right = 984.0
+margin_right = 911.0
 margin_bottom = 576.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="INICIAR" type="Sprite" parent="."]
-position = Vector2( 821.867, 524.637 )
+position = Vector2( 853.661, 533.526 )
+scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 4 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

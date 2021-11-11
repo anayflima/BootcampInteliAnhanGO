@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpeachBubbleBoarder.png-cac73d1a711cfefdd60ddaa4a0d0e9b9.stex"
+path="res://.import/Jogar.png-5fb6b1c3b7e45a53ed6e7042d8dbe11d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://historia_inicial/SpeachBubbleBoarder.png"
-dest_files=[ "res://.import/SpeachBubbleBoarder.png-cac73d1a711cfefdd60ddaa4a0d0e9b9.stex" ]
+source_file="res://button_assets/Jogar.png"
+dest_files=[ "res://.import/Jogar.png-5fb6b1c3b7e45a53ed6e7042d8dbe11d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gray_dialog_box.png-f67b177446ecd3e027af409728f338ba.stex"
+path="res://.import/Jogar_menor.png-29df6274e6a1c43a418dfbab37e1b336.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://historia_inicial/gray_dialog_box.png"
-dest_files=[ "res://.import/gray_dialog_box.png-f67b177446ecd3e027af409728f338ba.stex" ]
+source_file="res://button_assets/Jogar_menor.png"
+dest_files=[ "res://.import/Jogar_menor.png-29df6274e6a1c43a418dfbab37e1b336.stex" ]
 
 [params]
 

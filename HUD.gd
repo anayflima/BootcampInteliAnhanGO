@@ -35,7 +35,7 @@ func _on_RestartButton_pressed():
 
 func _on_GetOutButton_pressed():
 	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://map.tscn")
+	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 func save_highscore():
 	var f = File.new()
