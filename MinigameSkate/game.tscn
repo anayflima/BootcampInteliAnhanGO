@@ -181,13 +181,13 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 20
 font_data = SubResource( 11 )
 
-[sub_resource type="DynamicFontData" id=60]
+[sub_resource type="DynamicFontData" id=13]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=61]
+[sub_resource type="DynamicFont" id=14]
 resource_local_to_scene = true
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 60 )
+font_data = SubResource( 13 )
 
 [node name="game" type="Node2D"]
 position = Vector2( 331.138, 380.049 )
@@ -286,8 +286,8 @@ margin_left = 330.215
 margin_top = -235.0
 margin_right = 412.215
 margin_bottom = -200.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "SCORE"
 script = ExtResource( 11 )
 __meta__ = {
@@ -299,8 +299,8 @@ margin_left = 21.5443
 margin_top = -235.0
 margin_right = 181.544
 margin_bottom = -215.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "HIGH SCORE"
 script = ExtResource( 12 )
 __meta__ = {
@@ -369,8 +369,8 @@ margin_top = -172.033
 margin_right = 214.908
 margin_bottom = -156.033
 rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/font = SubResource( 14 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 61 )
 text = "Passe pelos obstáculos pulando e abaixando com os botões!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -383,8 +383,8 @@ pressed = ExtResource( 18 )
 action = "ui_down"
 
 [connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]

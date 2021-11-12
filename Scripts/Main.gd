@@ -71,7 +71,6 @@ func play():
 	playing = true
 	ball.set_playing(playing)
 	$DisplayMessage.visible = false
-	$DisplayMessage2.visible = false
 	$DisplayMessage3.visible = false
 	get_node("TouchScreenButton").visible = false
 	get_node("cima").visible = true
@@ -153,6 +152,10 @@ func handle_game_end():
 func display_message():	
 	$DisplayMessage.text = message
 	$DisplayMessage.visible = true
-	$DisplayMessage2.visible = true
 	$DisplayMessage3.visible = true
 	get_node("TouchScreenButton").visible = true
+
+
+func _on_Button_pressed():
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://MiniMap/MiniMap.tscn")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Base.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Play2_Pong.png" type="Texture" id=1]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 33.9543
@@ -9,14 +9,12 @@ height = 65.37
 [node name="t2" type="KinematicBody2D"]
 position = Vector2( -0.75922, 0.84222 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 2.771, -7.86359 )
-texture = ExtResource( 1 )
-vframes = 4
-hframes = 4
-frame = 8
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 2.41171, -1.84137 )
 shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
 

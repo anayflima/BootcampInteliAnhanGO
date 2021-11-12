@@ -8,15 +8,19 @@ func _ready():
 	if (Global.first):
 		var dir = Directory.new()
 		dir.remove("user://saved_data.dat")
-		$area2/CollisionPolygon2D.disabled = false
-		$area3/CollisionPolygon2D.disabled = false
-		$area4/CollisionPolygon2D.disabled = false
-		$area5/CollisionPolygon2D.disabled = false
+		#$area2/CollisionPolygon2D.disabled = false
+		#$area3/CollisionPolygon2D.disabled = false
+		#$area4/CollisionPolygon2D.disabled = false
+		#$area5/CollisionPolygon2D.disabled = false
+		$area2/CollisionPolygon2D.disabled = true
+		$area3/CollisionPolygon2D.disabled = true
+		$area4/CollisionPolygon2D.disabled = true
+		$area5/CollisionPolygon2D.disabled = true
 		Global.first = false
-#	if (Global.first_score):
-#		var dir = Directory.new()
-#		dir.remove("user://saved_score.dat")
-#		Global.first_score = false
+	if (Global.first_score):
+		var dir = Directory.new()
+		dir.remove("user://saved_score.dat")
+		Global.first_score = false
 	$KinematicBody2D.position = load_data()
 	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
@@ -54,7 +58,14 @@ func _process(delta):
 		$button_skate.visible = false
 		$CanvasLayer/MarginContainerSkate/Panel/label_skate.visible = false
 		$CanvasLayer/MarginContainerSkate/Panel.visible = false
-	
+	if x > 5818 && x < 6618 && y > -2727 && y < -1927:
+		#$button_back_in_time.visible = true
+		$CanvasLayer/MarginContainerBackInTime/Panel/label_backintime.visible = true
+		$CanvasLayer/MarginContainerBackInTime/Panel.visible = true
+	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
+		#$button_back_in_time.visible = false
+		$CanvasLayer/MarginContainerBackInTime/Panel/label_backintime.visible = false
+		$CanvasLayer/MarginContainerBackInTime/Panel.visible = false
 	if (Global.unlock_area2):
 		$area2/CollisionPolygon2D.disabled = true
 		$area2/mist.visible = false
@@ -154,8 +165,11 @@ func _on_button_unlock_area5_pressed():
 	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 
+func _on_button_voltarNoTempo_pressed():
+	pass # Replace with function body.
 
 func _on_button_back_in_time_pressed():
+	print("EU")
 	get_tree().change_scene("res://historia_final/scene1.tscn")
 
 func _on_lixo1_pressed():
@@ -169,4 +183,6 @@ func _on_lixo3_pressed():
 
 func _on_lixo4_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+
+
 
