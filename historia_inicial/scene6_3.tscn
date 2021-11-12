@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://historia_inicial/scene6_3.gd" type="Script" id=1]
 [ext_resource path="res://Assets/placa.png" type="Texture" id=2]
 [ext_resource path="res://Assets/rosto_personagem.png" type="Texture" id=3]
-[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=4]
-[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=5]
+[ext_resource path="res://historia_final/anhanga_rosto.jpg" type="Texture" id=4]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=5]
+[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -54,6 +55,17 @@ texture = ExtResource( 2 )
 position = Vector2( 846.537, 288.492 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 162, 134 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 170, 494 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( -20, -122.5 )
 
 [node name="TextboxContainer" type="MarginContainer" parent="."]
 anchor_top = 1.0
@@ -278,7 +290,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/disabled = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
-icon = ExtResource( 4 )
+icon = ExtResource( 5 )
 
 [node name="Button" type="Button" parent="."]
 margin_left = 882.148
@@ -291,7 +303,7 @@ custom_styles/pressed = SubResource( 10 )
 custom_styles/focus = SubResource( 11 )
 custom_styles/disabled = SubResource( 12 )
 custom_styles/normal = SubResource( 13 )
-icon = ExtResource( 5 )
+icon = ExtResource( 6 )
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

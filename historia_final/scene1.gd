@@ -78,4 +78,4 @@ func _on_Button2_pressed():
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_final/sceme2.tscn")
+	get_tree().change_scene("res://historia_final/scene2.tscn")

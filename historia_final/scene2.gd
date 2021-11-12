@@ -21,7 +21,7 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("Em 1920, numa floresta de São Paulo, encontrava-se {name}, que era conhecido (a) entre os exploradores como 'Devasta', por seu costume e prazer em devastar a fauna e a flora local. Certo dia, ao derrubar o último pau-brasil de sua cidade, foi surpreendido por algo intrigante...".format({"name": character_name}))
+	queue_text("Uau, que experiência! Eu nem pensava sobre as consequências das minhas ações para o futuro. Se não fossem pessoas que não desmataram no passado, nem existiria aquele espaço verde de lazer no futuro. Olha, o Anhangá me deixou uma chance de recomeçar com essas mudas. Não vou desmatar mais! E, não só, isso, ajudarei a plantar e formar novas florestas! ".format({"name": character_name}))
 
 func _process(delta):
 	match current_state:
@@ -75,7 +75,8 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/rpgtext.tscn")
+	get_tree().change_scene("res://historia_final/rpgtext.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/scene3.tscn")
+	pass
+	#get_tree().change_scene("res://historia_final/scene3.tscn")

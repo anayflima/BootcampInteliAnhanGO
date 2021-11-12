@@ -1,9 +1,8 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://historia_final/scene2.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Cena2.png" type="Texture" id=2]
 [ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=3]
-[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -29,16 +28,6 @@ font_data = SubResource( 2 )
 [sub_resource type="StyleBoxEmpty" id=7]
 
 [sub_resource type="StyleBoxEmpty" id=8]
-
-[sub_resource type="StyleBoxEmpty" id=9]
-
-[sub_resource type="StyleBoxEmpty" id=10]
-
-[sub_resource type="StyleBoxEmpty" id=11]
-
-[sub_resource type="StyleBoxEmpty" id=12]
-
-[sub_resource type="StyleBoxEmpty" id=13]
 
 [node name="Textbox" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -130,18 +119,4 @@ custom_styles/disabled = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
 icon = ExtResource( 3 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 865.252
-margin_top = 411.191
-margin_right = 1238.25
-margin_bottom = 550.191
-rect_scale = Vector2( 0.3, 0.3 )
-custom_styles/hover = SubResource( 9 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/focus = SubResource( 11 )
-custom_styles/disabled = SubResource( 12 )
-custom_styles/normal = SubResource( 13 )
-icon = ExtResource( 4 )
-
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
