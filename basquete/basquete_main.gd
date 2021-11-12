@@ -16,7 +16,7 @@ func _ready():
 	$button_play_again.visible = false
 	$botaoJogar.visible = true
 	$button_get_out.visible = false
-	$MarginContainer.visible = true
+	$Popup.popup()
 	
 	
 	
@@ -76,7 +76,6 @@ func _on_Button_pressed():
 	$KinematicBody2D/bodyball.apply_impulse(offset,impulse)
 	$KinematicBody2D/AnimationPlayer.play("jogando")
 	$botaoJogar.visible = false
-	$MarginContainer.visible = false
 	slides = false
 	$Node2D/angleslide.editable = false
 	$Node2D/forceslide.editable = false

@@ -8,14 +8,14 @@ func _ready():
 	if (Global.first):
 		var dir = Directory.new()
 		dir.remove("user://saved_data.dat")
-		#$area2/CollisionPolygon2D.disabled = false
-		#$area3/CollisionPolygon2D.disabled = false
-		#$area4/CollisionPolygon2D.disabled = false
-		#$area5/CollisionPolygon2D.disabled = false
-		$area2/CollisionPolygon2D.disabled = true
-		$area3/CollisionPolygon2D.disabled = true
-		$area4/CollisionPolygon2D.disabled = true
-		$area5/CollisionPolygon2D.disabled = true
+		$area2/CollisionPolygon2D.disabled = false
+		$area3/CollisionPolygon2D.disabled = false
+		$area4/CollisionPolygon2D.disabled = false
+		$area5/CollisionPolygon2D.disabled = false
+#		$area2/CollisionPolygon2D.disabled = true
+#		$area3/CollisionPolygon2D.disabled = true
+#		$area4/CollisionPolygon2D.disabled = true
+#		$area5/CollisionPolygon2D.disabled = true
 		Global.first = false
 	if (Global.first_score):
 		var dir = Directory.new()
@@ -34,38 +34,63 @@ func _process(delta):
 	var y = $KinematicBody2D.position.y
 	if x > 172 && x < 1002 && y > 1012 && y < 1534:
 		$button_pingpong.visible = true
-		$CanvasLayer/MarginContainer/Panel/label_pingpong.visible = true
-		$CanvasLayer/MarginContainer/Panel.visible = true
+		$CanvasLayer/sprite_pingpong.visible = true
+		$CanvasLayer/label_pingpong.visible = true
 	if !(x > 172 && x < 1002 && y > 1012 && y < 1534):
 		$button_pingpong.visible = false
-		$CanvasLayer/MarginContainer/Panel/label_pingpong.visible = false
-		$CanvasLayer/MarginContainer/Panel.visible = false
+		$CanvasLayer/sprite_pingpong.visible = false
+		$CanvasLayer/label_pingpong.visible = false
+	if y > -666 && y < -264 && x > 1694 && x < 2227 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -666 && y < -264 && x > 1694 && x < 2227) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > 1053 && y < 1485 && x > 3031 && x < 3689 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > 1053 && y < 1485 && x > 3031 && x < 3689) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > -927 && y < -390 && x > 5348 && x < 5881 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -927 && y < -390 && x > 5348 && x < 5881) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > -3079 && y < -2455 && x > 4713 && x < 5570 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
 		
-		
+	
 	if x > 3785 && x < 4585 && y > -2421 && y < 1621:
 		$button_basquete.visible = true
-		$CanvasLayer/MarginContainerBasquete/Panel/label_basquete.visible = true
-		$CanvasLayer/MarginContainerBasquete/Panel.visible = true
+		$CanvasLayer/sprite_basquete.visible = true
+		$CanvasLayer/label_basquete.visible = true
 	if !(x > 3785 && x < 4585 && y > -2421 && y < -1621):
 		$button_basquete.visible = false
-		$CanvasLayer/MarginContainerBasquete/Panel/label_basquete.visible = false
-		$CanvasLayer/MarginContainerBasquete/Panel.visible = false
+		$CanvasLayer/sprite_basquete.visible = false
+		$CanvasLayer/label_basquete.visible = false
 	if x > 5364 && x < 6164 && y > -100 && y < 724:
 		$button_skate.visible = true
-		$CanvasLayer/MarginContainerSkate/Panel/label_skate.visible = true
-		$CanvasLayer/MarginContainerSkate/Panel.visible = true
+		$CanvasLayer/sprite_skate.visible = true
+		$CanvasLayer/label_skate.visible = true
 	if !(x > 5364 && x < 6164 && y > -100 && y < 724):
 		$button_skate.visible = false
-		$CanvasLayer/MarginContainerSkate/Panel/label_skate.visible = false
-		$CanvasLayer/MarginContainerSkate/Panel.visible = false
+		$CanvasLayer/sprite_skate.visible = false
+		$CanvasLayer/label_skate.visible = false
 	if x > 5818 && x < 6618 && y > -2727 && y < -1927:
 		#$button_back_in_time.visible = true
-		$CanvasLayer/MarginContainerBackInTime/Panel/label_backintime.visible = true
-		$CanvasLayer/MarginContainerBackInTime/Panel.visible = true
+		
+		$CanvasLayer/label_backtime.visible = true
+		$CanvasLayer/sprite_backtime.visible = true
 	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
 		#$button_back_in_time.visible = false
-		$CanvasLayer/MarginContainerBackInTime/Panel/label_backintime.visible = false
-		$CanvasLayer/MarginContainerBackInTime/Panel.visible = false
+		$CanvasLayer/label_backtime.visible = false
+		$CanvasLayer/sprite_backtime.visible = false
 	if (Global.unlock_area2):
 		$area2/CollisionPolygon2D.disabled = true
 		$area2/mist.visible = false

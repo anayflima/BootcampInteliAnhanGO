@@ -35,6 +35,7 @@ func _ready():
 	update_score()
 	get_node("cima").visible = false
 	get_node("baixo").visible = false
+	$Popup.popup()
 #	timer = Timer.new()
 #	timer.set_one_shot(true)
 #	timer.set_wait_time(my_random_number)
@@ -70,8 +71,7 @@ func play():
 		update_score()
 	playing = true
 	ball.set_playing(playing)
-	$DisplayMessage.visible = false
-	$DisplayMessage3.visible = false
+	
 	get_node("TouchScreenButton").visible = false
 	get_node("cima").visible = true
 	get_node("baixo").visible = true
@@ -150,9 +150,6 @@ func handle_game_end():
 
 
 func display_message():	
-	$DisplayMessage.text = message
-	$DisplayMessage.visible = true
-	$DisplayMessage3.visible = true
 	get_node("TouchScreenButton").visible = true
 
 

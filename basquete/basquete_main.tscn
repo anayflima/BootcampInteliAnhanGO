@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=4]
 [ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=5]
 [ext_resource path="res://MiniMap/120px-Ponto_Vermelho (2).png" type="Texture" id=6]
+[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 947.989, 24.3528 )
@@ -95,18 +96,12 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 27
 font_data = SubResource( 23 )
 
-[sub_resource type="Theme" id=58]
-
-[sub_resource type="StyleBoxFlat" id=59]
-bg_color = Color( 0, 0, 0, 1 )
-border_color = Color( 1, 1, 1, 1 )
-
-[sub_resource type="DynamicFontData" id=57]
+[sub_resource type="DynamicFontData" id=25]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=60]
-resource_local_to_scene = true
-font_data = SubResource( 57 )
+[sub_resource type="DynamicFont" id=26]
+size = 28
+font_data = SubResource( 25 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -299,33 +294,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-margin_left = 137.0
-margin_top = 458.0
-margin_right = 874.0
-margin_bottom = 503.0
-theme = SubResource( 58 )
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_left = 591.0
+margin_top = 336.0
+margin_right = 770.0
+margin_bottom = 459.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Panel" type="Panel" parent="MarginContainer"]
-margin_right = 737.0
-margin_bottom = 45.0
-custom_styles/panel = SubResource( 59 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Sprite" type="Sprite" parent="Popup"]
+position = Vector2( 95.1589, 63.093 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
 
-[node name="label_pingpong" type="Label" parent="MarginContainer/Panel"]
-margin_left = 15.0
-margin_top = 6.0
-margin_right = 289.0
-margin_bottom = 22.0
-rect_scale = Vector2( 2, 2 )
-custom_fonts/font = SubResource( 60 )
-text = "Arremesse a bola após o ajuste correto de ângulo e força."
+[node name="Label" type="Label" parent="Popup"]
+margin_left = -102.969
+margin_top = -80.4741
+margin_right = 312.031
+margin_bottom = 273.526
+custom_fonts/font = SubResource( 26 )
+text = "Essa é a nossa quadra de basquete! 
+Seu objetivo aqui é combinar a direção 
+e a força certa para acertar a cesta 
+e acumular pontos! 
+Como jogar: Clique na botão quando 
+achar que tem a combinação exata de 
+ângulo e força!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

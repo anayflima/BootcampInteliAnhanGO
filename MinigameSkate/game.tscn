@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://MinigameSkate/game.gd" type="Script" id=1]
 [ext_resource path="res://MinigameSkate/assets/sky-blue-183874_960_720.jpg" type="Texture" id=2]
@@ -18,6 +18,7 @@
 [ext_resource path="res://MinigameSkate/Button.gd" type="Script" id=16]
 [ext_resource path="res://Assets/cima.png" type="Texture" id=17]
 [ext_resource path="res://Assets/baixo.png" type="Texture" id=18]
+[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=19]
 
 [sub_resource type="RayShape2D" id=1]
 length = 45.6372
@@ -185,8 +186,7 @@ font_data = SubResource( 11 )
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=14]
-resource_local_to_scene = true
-outline_color = Color( 0, 0, 0, 1 )
+size = 28
 font_data = SubResource( 13 )
 
 [node name="game" type="Node2D"]
@@ -205,9 +205,12 @@ texture = ExtResource( 3 )
 region_rect = Rect2( 0.228516, 122.019, 709.567, 63.6416 )
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( -93.137, 23.831 )
+position = Vector2( -97.4253, 89.3007 )
 z_index = 1
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="floor_raycast" type="CollisionShape2D" parent="player"]
 position = Vector2( 0, -2.3327 )
@@ -229,7 +232,7 @@ anims/squatting = SubResource( 7 )
 [node name="Area2D" type="Area2D" parent="player"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D"]
-position = Vector2( -4.98306, 1.12372 )
+position = Vector2( -2.28833, 6.13632 )
 shape = SubResource( 3 )
 
 [node name="floor" type="StaticBody2D" parent="."]
@@ -253,6 +256,9 @@ modulate = Color( 0.298039, 0.298039, 0.298039, 1 )
 self_modulate = Color( 0.298039, 0.298039, 0.298039, 1 )
 position = Vector2( 212.541, 113.219 )
 shape = SubResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="controller" type="Node2D" parent="."]
 visible = false
@@ -286,8 +292,8 @@ margin_left = 330.215
 margin_top = -235.0
 margin_right = 412.215
 margin_bottom = -200.0
-custom_fonts/font = SubResource( 9 )
 custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
+custom_fonts/font = SubResource( 9 )
 text = "SCORE"
 script = ExtResource( 11 )
 __meta__ = {
@@ -299,8 +305,8 @@ margin_left = 21.5443
 margin_top = -235.0
 margin_right = 181.544
 margin_bottom = -215.0
-custom_fonts/font = SubResource( 10 )
 custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
+custom_fonts/font = SubResource( 10 )
 text = "HIGH SCORE"
 script = ExtResource( 12 )
 __meta__ = {
@@ -356,6 +362,9 @@ margin_right = -48.0
 margin_bottom = -211.0
 custom_fonts/font = SubResource( 12 )
 text = "Voltar ao mapa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="pular" type="TouchScreenButton" parent="."]
 position = Vector2( 393.241, -56.0327 )
@@ -363,28 +372,50 @@ normal = ExtResource( 17 )
 pressed = ExtResource( 17 )
 action = "ui_accept"
 
-[node name="label_skate" type="Label" parent="."]
-margin_left = -146.092
-margin_top = -172.033
-margin_right = 214.908
-margin_bottom = -156.033
-rect_scale = Vector2( 1.5, 1.5 )
-custom_fonts/font = SubResource( 14 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Passe pelos obstáculos pulando e abaixando com os botões!"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="abaixar" type="TouchScreenButton" parent="."]
 position = Vector2( 394.575, 3.96733 )
 normal = ExtResource( 18 )
 pressed = ExtResource( 18 )
 action = "ui_down"
 
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_left = 439.908
+margin_top = 225.967
+margin_right = 618.908
+margin_bottom = 348.967
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Popup"]
+position = Vector2( 95.1589, 63.093 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 19 )
+
+[node name="Label" type="Label" parent="Popup"]
+margin_left = -98.0
+margin_top = -83.0
+margin_right = 313.0
+margin_bottom = 274.0
+custom_fonts/font = SubResource( 14 )
+text = "Essa é a nossa pista de skate! Seja 
+bem-vindo! Nela, a cada segundo que 
+passa o desafio aumenta! Tente pular 
+os muros e desviar dos pássaros para
+juntar mais pontos!  Como jogar: 
+controle o personagem atravéz das 
+setas direcionais para cima e para 
+baixo, localizadas na direita da tela, e
+desvie dos obstáculos! "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]

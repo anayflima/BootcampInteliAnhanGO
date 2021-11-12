@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
 [ext_resource path="res://MiniMap/120px-Ponto_Vermelho (2).png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scenes/t1.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/t1.gd" type="Script" id=9]
 [ext_resource path="res://Assets/audio/hitSound.wav" type="AudioStream" id=10]
+[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
@@ -24,6 +25,13 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 [sub_resource type="DynamicFont" id=4]
 size = 59
 font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 28
+font_data = SubResource( 7 )
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 0.987821, 0.982676 )
@@ -79,29 +87,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DisplayMessage" type="Label" parent="."]
-margin_left = 173.025
-margin_top = 523.441
-margin_right = 885.025
-margin_bottom = 638.441
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Aperte espaço para começar
-"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Player1Score" type="Label" parent="."]
 margin_left = 244.984
 margin_top = 18.3173
 margin_right = 286.984
 margin_bottom = 102.317
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -113,10 +107,10 @@ margin_left = 757.222
 margin_top = 17.2997
 margin_right = 799.222
 margin_bottom = 101.3
-custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -126,17 +120,37 @@ __meta__ = {
 [node name="ScoreSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 
-[node name="DisplayMessage3" type="Label" parent="."]
-margin_left = 258.742
-margin_top = 433.521
-margin_right = 1174.74
-margin_bottom = 556.521
-rect_scale = Vector2( 0.57, 0.5 )
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Aperte na metade de cima para subir
-e na metade de baixo para descer"
-align = 1
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_left = 430.24
+margin_top = 238.125
+margin_right = 609.24
+margin_bottom = 361.125
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Popup"]
+position = Vector2( 95.1589, 63.093 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="Popup"]
+margin_left = -102.969
+margin_top = -80.4741
+margin_right = 312.031
+margin_bottom = 273.526
+custom_fonts/font = SubResource( 6 )
+text = "Bem-vindo ao ping pong! Aqui você deve
+vencer nosso mestre fantasma para 
+ganhar pontos e conseguir desbloquear
+novos games e áreas do mapa! Você é 
+o personagem á esquerda da tela e 
+o controla clicando na parte superior
+da tela para ir para cima, e clicando na
+parte inferior para ir para baixo.
+                 Boa sorte!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
