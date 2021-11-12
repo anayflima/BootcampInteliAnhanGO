@@ -292,8 +292,8 @@ margin_left = 330.215
 margin_top = -235.0
 margin_right = 412.215
 margin_bottom = -200.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "SCORE"
 script = ExtResource( 11 )
 __meta__ = {
@@ -305,8 +305,8 @@ margin_left = 21.5443
 margin_top = -235.0
 margin_right = 181.544
 margin_bottom = -215.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "HIGH SCORE"
 script = ExtResource( 12 )
 __meta__ = {
@@ -405,7 +405,7 @@ bem-vindo! Nela, a cada segundo que
 passa o desafio aumenta! Tente pular 
 os muros e desviar dos pássaros para
 juntar mais pontos!  Como jogar: 
-controle o personagem atravéz das 
+controle o personagem através das 
 setas direcionais para cima e para 
 baixo, localizadas na direita da tela, e
 desvie dos obstáculos! "

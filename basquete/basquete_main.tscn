@@ -2,10 +2,10 @@
 
 [ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
-[ext_resource path="res://player_basquete.gd" type="Script" id=3]
-[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=4]
-[ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=5]
-[ext_resource path="res://MiniMap/120px-Ponto_Vermelho (2).png" type="Texture" id=6]
+[ext_resource path="res://MiniMap/120px-Ponto_Vermelho (2).png" type="Texture" id=3]
+[ext_resource path="res://player_basquete.gd" type="Script" id=4]
+[ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=5]
+[ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=6]
 [ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -151,9 +151,9 @@ margin_left = 100.0
 margin_top = 41.0
 margin_right = 242.0
 margin_bottom = 91.0
-custom_icons/grabber_disabled = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
+custom_icons/grabber_disabled = ExtResource( 3 )
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
 max_value = 90.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -164,9 +164,9 @@ margin_left = 102.0
 margin_top = 74.0
 margin_right = 243.0
 margin_bottom = 116.0
-custom_icons/grabber_disabled = ExtResource( 6 )
-custom_icons/grabber_highlight = ExtResource( 6 )
-custom_icons/grabber = ExtResource( 6 )
+custom_icons/grabber_disabled = ExtResource( 3 )
+custom_icons/grabber_highlight = ExtResource( 3 )
+custom_icons/grabber = ExtResource( 3 )
 max_value = 500.0
 ticks_on_borders = true
 __meta__ = {
@@ -230,7 +230,7 @@ __meta__ = {
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 378, 322 )
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="bodyball" type="RigidBody2D" parent="KinematicBody2D"]
 position = Vector2( 38, -52 )
@@ -243,7 +243,7 @@ __meta__ = {
 [node name="bola" type="Sprite" parent="KinematicBody2D/bodyball"]
 position = Vector2( -0.246552, 0.0579224 )
 scale = Vector2( 0.287888, 0.292878 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/bodyball"]
 position = Vector2( -0.163651, -0.157623 )
@@ -252,7 +252,7 @@ shape = SubResource( 16 )
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 15, 26 )
 scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 hframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D"]
@@ -318,7 +318,7 @@ margin_bottom = 273.526
 custom_fonts/font = SubResource( 26 )
 text = "Essa é a nossa quadra de basquete! 
 Seu objetivo aqui é combinar a direção 
-e a força certa para acertar a cesta 
+e a força certas para acertar a cesta 
 e acumular pontos! 
 Como jogar: Clique na botão quando 
 achar que tem a combinação exata de 

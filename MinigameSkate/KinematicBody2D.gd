@@ -25,7 +25,7 @@ func _process(delta):
 			$AnimationPlayer.play("squatting")
 			stomping = true
 		elif Input.is_action_pressed("ui_accept") and not is_jumping:
-			Global.play_jump_sound()
+			#Global.play_jump_sound()
 			is_jumping = true
 			velocity.y -= JUMP_FORCE
 			print_debug("ui_accept")

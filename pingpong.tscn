@@ -26,12 +26,12 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 59
 font_data = SubResource( 3 )
 
-[sub_resource type="DynamicFontData" id=7]
+[sub_resource type="DynamicFontData" id=5]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=6]
 size = 28
-font_data = SubResource( 7 )
+font_data = SubResource( 5 )
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 0.987821, 0.982676 )
@@ -92,10 +92,10 @@ margin_left = 244.984
 margin_top = 18.3173
 margin_right = 286.984
 margin_bottom = 102.317
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 4 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -107,10 +107,10 @@ margin_left = 757.222
 margin_top = 17.2997
 margin_right = 799.222
 margin_bottom = 101.3
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 4 )
 text = "0"
 max_lines_visible = 1
 __meta__ = {
@@ -146,7 +146,7 @@ text = "Bem-vindo ao ping pong! Aqui você deve
 vencer nosso mestre fantasma para 
 ganhar pontos e conseguir desbloquear
 novos games e áreas do mapa! Você é 
-o personagem á esquerda da tela e 
+o personagem à esquerda da tela e 
 o controla clicando na parte superior
 da tela para ir para cima, e clicando na
 parte inferior para ir para baixo.

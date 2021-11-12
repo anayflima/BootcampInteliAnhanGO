@@ -1,10 +1,10 @@
 extends CanvasLayer
 
 const CHAR_READ_RATE = 0.05
-onready var textbox_container = $TextboxContainer
-onready var start_symbol = $TextboxContainer/MarginContainer/HBoxContainer/Start
-onready var end_symbol = $TextboxContainer/MarginContainer/HBoxContainer/End
-onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
+onready var textbox_container = $TextboxContainer3
+onready var start_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/Start
+onready var end_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/End
+onready var label = $TextboxContainer3/MarginContainer/HBoxContainer/Label
 
 var character_name = Global.character_name
 
@@ -21,8 +21,9 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	#queue_text("{name}, você não pode desmatar a floresta! Isso é um tremendo desrespeito à natureza e a tudo o que ela lhe oferece! Eu, como protetor das matas, vou puni-lo por isso. Você irá para o futuro para ver as consequências de seu desmatamento e só poderá voltar após cumprir determinadas tarefas.".format({"name": character_name}))
-	queue_text("{name}: AaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAa".format({"name": character_name}))
+	queue_text("Anhangá: Juntar pontuação só será possível por meio de minigames espalhados pelo mapa, que vão desde atividades físicas e esportes até coletar o lixo do parque. Não será fácil, mas só assim eu poderei permitir que você retorne ao seu tempo. Lembre-se: essa área de preservação e lazer só existe porque pessoas do passado escolheram não desmatar!")
+	#queue_text("Nossa, onde estou??? Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro! Olha, Parque do Povo... Será que a floresta em que eu estava virou esse parque?")
+#	queue_text("Thanks for watching!")
 
 func _process(delta):
 	match current_state:
@@ -76,7 +77,7 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/scene3.tscn")
+	get_tree().change_scene("res://historia_inicial/scene6_2.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/scene5.tscn")
+	get_tree().change_scene("res://historia_inicial/scene7_1.tscn")
