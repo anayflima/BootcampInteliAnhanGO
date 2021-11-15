@@ -18,6 +18,9 @@ func _ready():
 	$button_get_out.visible = false
 	$Popup.popup()
 	
+
+
+	
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

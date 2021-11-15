@@ -1388,7 +1388,7 @@ position = Vector2( 1081.66, 1167.82 )
 texture = ExtResource( 23 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 361, 463 )
+position = Vector2( 1729.63, -225.539 )
 script = ExtResource( 35 )
 __meta__ = {
 "_edit_group_": true
