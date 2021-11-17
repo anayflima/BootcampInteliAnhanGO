@@ -53,7 +53,7 @@ scale = Vector2( 2.70444, 1.78519 )
 texture = ExtResource( 2 )
 
 [node name="cadeado" type="Sprite" parent="."]
-position = Vector2( 156.946, 102.349 )
+position = Vector2( 148, 110 )
 scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 3 )
 
@@ -63,7 +63,7 @@ scale = Vector2( 4, 4 )
 texture = ExtResource( 4 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 162.686, 426.772 )
+position = Vector2( 146, 426.772 )
 scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 5 )
 
