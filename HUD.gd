@@ -10,7 +10,6 @@ func _ready():
 	$RestartButton.hide()
 	$HighScoreCaption.hide()
 	$HighScoreLabel.hide()
-	$GetOutButton.hide()
 	
 func update_score(score):
 	Global.main_score = score
@@ -21,7 +20,7 @@ func game_over():
 	$RestartButton.show()
 	$HighScoreCaption.show()
 	$HighScoreLabel.show()
-	$GetOutButton.show()
+	$GetOutButton.hide()
 	
 	if int($ScoreLabel.text) > high_score:
 		high_score = int($ScoreLabel.text)

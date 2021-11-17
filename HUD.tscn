@@ -89,10 +89,11 @@ custom_fonts/font = SubResource( 5 )
 text = "Reiniciar"
 
 [node name="GetOutButton" type="Button" parent="."]
-margin_left = 323.635
-margin_top = 491.0
-margin_right = 736.635
-margin_bottom = 558.0
+margin_left = 12.3609
+margin_top = 9.32031
+margin_right = 425.361
+margin_bottom = 76.3203
+rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 6 )
 text = "Voltar ao mapa"
 
