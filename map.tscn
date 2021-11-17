@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=102 format=2]
 
 [ext_resource path="res://map.gd" type="Script" id=1]
 [ext_resource path="res://Ambiente/TX Tileset Grass.png" type="Texture" id=2]
@@ -726,6 +726,13 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 28
 font_data = SubResource( 60 )
 
+[sub_resource type="DynamicFontData" id=62]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=63]
+size = 20
+font_data = SubResource( 62 )
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 448.371, 575.539 )
 script = ExtResource( 1 )
@@ -1405,6 +1412,23 @@ margin_right = 771.0
 margin_bottom = 580.0
 custom_fonts/font = SubResource( 59 )
 text = "Aperte no cadeado para inserir o código!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel_needScore" type="Panel" parent="CanvasLayer"]
+margin_left = 666.516
+margin_top = 670.018
+margin_right = 1202.52
+margin_bottom = 710.018
+
+[node name="label_needScore" type="Label" parent="CanvasLayer"]
+margin_left = 679.669
+margin_top = 678.017
+margin_right = 1188.67
+margin_bottom = 706.017
+custom_fonts/font = SubResource( 63 )
+text = "Você ainda não tem a pontuação necessária para voltar no tempo!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

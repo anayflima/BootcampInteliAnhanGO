@@ -706,12 +706,12 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 28
 font_data = SubResource( 55 )
 
-[sub_resource type="DynamicFontData" id=57]
+[sub_resource type="DynamicFontData" id=62]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=58]
-size = 28
-font_data = SubResource( 57 )
+[sub_resource type="DynamicFont" id=63]
+size = 20
+font_data = SubResource( 62 )
 
 [sub_resource type="DynamicFontData" id=59]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
@@ -1429,7 +1429,7 @@ margin_left = 296.0
 margin_top = 552.0
 margin_right = 771.0
 margin_bottom = 580.0
-custom_fonts/font = SubResource( 58 )
+custom_fonts/font = SubResource( 63 )
 text = "Aperte na raquete para entrar no mini-game!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1445,14 +1445,32 @@ margin_left = 297.0
 margin_top = 552.0
 margin_right = 767.0
 margin_bottom = 580.0
-custom_fonts/font = SubResource( 58 )
+custom_fonts/font = SubResource( 63 )
 text = "Aperte no tornado para voltar no tempo!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Panel_needScore" type="Panel" parent="Node2D/CanvasLayer"]
+margin_left = 370.516
+margin_top = 118.018
+margin_right = 906.516
+margin_bottom = 158.018
+
+[node name="label_needScore" type="Label" parent="Node2D/CanvasLayer"]
+margin_left = 384.0
+margin_top = 126.0
+margin_right = 893.0
+margin_bottom = 154.0
+custom_fonts/font = SubResource( 63 )
+text = "Você ainda não tem a pontuação necessária para voltar no tempo!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="sprite_unlock2" type="Sprite" parent="Node2D/CanvasLayer"]
-position = Vector2( 513.5, 565 )
+show_behind_parent = true
+position = Vector2( 516.221, 565 )
 scale = Vector2( 0.328758, 0.0421769 )
 texture = ExtResource( 41 )
 
