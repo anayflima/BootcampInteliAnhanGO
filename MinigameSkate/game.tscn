@@ -16,7 +16,7 @@
 [ext_resource path="res://MinigameSkate/sun.gd" type="Script" id=14]
 [ext_resource path="res://MinigameSkate/assets/restart-button.png" type="Texture" id=15]
 [ext_resource path="res://MinigameSkate/Button.gd" type="Script" id=16]
-[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=19]
+[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=17]
 
 [sub_resource type="RayShape2D" id=1]
 length = 45.6372
@@ -290,8 +290,8 @@ margin_left = 330.215
 margin_top = -235.0
 margin_right = 412.215
 margin_bottom = -200.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "SCORE"
 script = ExtResource( 11 )
 __meta__ = {
@@ -303,8 +303,8 @@ margin_left = 21.5443
 margin_top = -235.0
 margin_right = 181.544
 margin_bottom = -215.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "HIGH SCORE"
 script = ExtResource( 12 )
 __meta__ = {
@@ -378,7 +378,7 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="Popup"]
 position = Vector2( 95.1589, 63.093 )
 scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 19 )
+texture = ExtResource( 17 )
 
 [node name="Label" type="Label" parent="Popup"]
 margin_left = -98.0
@@ -399,13 +399,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
 [connection signal="game_over" from="player" to="pause/Button" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_Area2D_area_entered"]
 [connection signal="button_down" from="controller/up" to="player" method="_on_up_button_down"]
 [connection signal="button_up" from="controller/up" to="player" method="_on_up_button_up"]
