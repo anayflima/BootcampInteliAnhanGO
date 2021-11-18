@@ -2,8 +2,12 @@ extends Node2D
 
 onready var score_label: = $CanvasLayer/Label2
 
+<<<<<<< HEAD
+
+=======
 var MIN_SCORE = 1;
 var canBackInTime = false;
+>>>>>>> 0c94168594d84adc04077b8d73697a5121e3c5ad
 # Called when the node enters the scene tree for the first time.
 func _ready():
 #	set_mm()
@@ -62,10 +66,14 @@ func _process(delta):
 		$CanvasLayer/label_skate.visible = false
 	
 	# Mostra texto para apertar no cadeado quando personagem está na região do cadeado
-	if y > -966 && y < -366 && x > 1694 && x < 2227 :
+	if y > -966 && y < -366 && x > 1694 && x < 2227 : 
 		$CanvasLayer/sprite_unlock2.visible = true
 		$CanvasLayer/label_unlock2.visible = true
-	if !(y > -966 && y < -264 && x > 1694 && x < 2227) || Global.unlock_area2 == true: 
+<<<<<<< HEAD
+	if !(y > -666 && y < -264 && x > 1694 && x < 2227) || Global.unlock_area2 == true: 
+=======
+	if !(y > -966 && y < -366 && x > 1694 && x < 2227) : 
+>>>>>>> 0c94168594d84adc04077b8d73697a5121e3c5ad
 		$CanvasLayer/sprite_unlock2.visible = false
 		$CanvasLayer/label_unlock2.visible = false
 	if y > 1053 && y < 1485 && x > 3031 && x < 3689 : 

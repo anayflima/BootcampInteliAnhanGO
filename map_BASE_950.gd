@@ -2,8 +2,6 @@ extends Node2D
 
 onready var score_label: = $CanvasLayer/Label2
 
-var MIN_SCORE = 1;
-var canBackInTime = false;
 # Called when the node enters the scene tree for the first time.
 func _ready():
 #	set_mm()
@@ -28,14 +26,12 @@ func _ready():
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$button_skate.visible = false
-	#$CanvasLayer/Panel_needScore.visible = false
-	#$CanvasLayer/label_needScore.visible = false
-#	Node2D/CanvasLayer/Panel_needScore
-#	Node2D/CanvasLayer/sprite_pingpong
+	$button_back_in_time.disabled = true
+	
+	
 func _process(delta):
 	var x = $KinematicBody2D.position.x
 	var y = $KinematicBody2D.position.y
-	# Mostra botões dos minigames quando o personagem se aproxima deles
 	if x > 172 && x < 1002 && y > 1012 && y < 1534:
 		$button_pingpong.visible = true
 		$CanvasLayer/sprite_pingpong.visible = true
@@ -44,6 +40,32 @@ func _process(delta):
 		$button_pingpong.visible = false
 		$CanvasLayer/sprite_pingpong.visible = false
 		$CanvasLayer/label_pingpong.visible = false
+	if y > -666 && y < -264 && x > 1694 && x < 2227 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -666 && y < -264 && x > 1694 && x < 2227) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > 1053 && y < 1485 && x > 3031 && x < 3689 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > 1053 && y < 1485 && x > 3031 && x < 3689) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > -927 && y < -390 && x > 5348 && x < 5881 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -927 && y < -390 && x > 5348 && x < 5881) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+	if y > -3079 && y < -2455 && x > 4713 && x < 5570 : 
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
+		
+	
 	if x > 3785 && x < 4585 && y > -2421 && y < 1621:
 		$button_basquete.visible = true
 		$CanvasLayer/sprite_basquete.visible = true
@@ -60,46 +82,15 @@ func _process(delta):
 		$button_skate.visible = false
 		$CanvasLayer/sprite_skate.visible = false
 		$CanvasLayer/label_skate.visible = false
-	
-	# Mostra texto para apertar no cadeado quando personagem está na região do cadeado
-	if y > -966 && y < -366 && x > 1694 && x < 2227 :
-		$CanvasLayer/sprite_unlock2.visible = true
-		$CanvasLayer/label_unlock2.visible = true
-	if !(y > -966 && y < -264 && x > 1694 && x < 2227) || Global.unlock_area2 == true: 
-		$CanvasLayer/sprite_unlock2.visible = false
-		$CanvasLayer/label_unlock2.visible = false
-	if y > 1053 && y < 1485 && x > 3031 && x < 3689 : 
-		$CanvasLayer/sprite_unlock3.visible = true
-		$CanvasLayer/label_unlock3.visible = true
-	if !(y > 1053 && y < 1485 && x > 3031 && x < 3689)|| Global.unlock_area3 == true : 
-		$CanvasLayer/sprite_unlock3.visible = false
-		$CanvasLayer/label_unlock3.visible = false
-	if y > -927 && y < -390 && x > 5348 && x < 5881 : 
-		$CanvasLayer/sprite_unlock4.visible = true
-		$CanvasLayer/label_unlock4.visible = true
-	if !(y > -927 && y < -390 && x > 5348 && x < 5881) || Global.unlock_area4 == true : 
-		$CanvasLayer/sprite_unlock4.visible = false
-		$CanvasLayer/label_unlock4.visible = false
-	if y > -3079 && y < -2455 && x > 4713 && x < 5570 : 
-		$CanvasLayer/sprite_unlock5.visible = true
-		$CanvasLayer/label_unlock5.visible = true
-	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) || Global.unlock_area5 == true : 
-		$CanvasLayer/sprite_unlock5.visible = false
-		$CanvasLayer/label_unlock5.visible = false
-		
-	
-	
 	if x > 5818 && x < 6618 && y > -2727 && y < -1927:
+		#$button_back_in_time.visible = true
+		
 		$CanvasLayer/label_backtime.visible = true
 		$CanvasLayer/sprite_backtime.visible = true
 	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
+		#$button_back_in_time.visible = false
 		$CanvasLayer/label_backtime.visible = false
 		$CanvasLayer/sprite_backtime.visible = false
-	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
-		$CanvasLayer/label_needScore.visible = false
-		$CanvasLayer/Panel_needScore.visible = false
-
-	
 	if (Global.unlock_area2):
 		$area2/CollisionPolygon2D.disabled = true
 		$area2/mist.visible = false
@@ -117,9 +108,10 @@ func _process(delta):
 		$area5/mist.visible = false
 		$button_unlock_area5.disabled = true
 	
-	if (Global.main_score >= MIN_SCORE):
-		#$button_back_in_time.disabled = false
-		canBackInTime = true
+	if (Global.main_score >= 1):
+		$button_back_in_time.disabled = false
+	#print(Global.main_score)
+	#(str(Global.main_score))
 	score_label.text = str(Global.main_score)
 	save()
 	Global.save_score(Global.main_score)
@@ -198,12 +190,12 @@ func _on_button_unlock_area5_pressed():
 	get_tree().change_scene("res://map_unlock/Control.tscn")
 
 
+func _on_button_voltarNoTempo_pressed():
+	pass # Replace with function body.
+
 func _on_button_back_in_time_pressed():
-	if (canBackInTime):
-		get_tree().change_scene("res://historia_final/scene1.tscn")
-	else:
-		$CanvasLayer/Panel_needScore.visible = true
-		$CanvasLayer/label_needScore.visible = true
+	print("EU")
+	get_tree().change_scene("res://historia_final/scene1.tscn")
 
 func _on_lixo1_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")

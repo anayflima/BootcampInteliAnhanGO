@@ -15,7 +15,7 @@ extents = Vector2( 947.989, 24.3528 )
 extents = Vector2( 12.3147, 611.352 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 63.5105, 40.175 )
+extents = Vector2( 34.3746, 37.3804 )
 
 [sub_resource type="SegmentShape2D" id=4]
 a = Vector2( 0.43103, -12.8408 )
@@ -107,7 +107,7 @@ font_data = SubResource( 25 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -0.0308762, 342.0 ],
-"_edit_vertical_guides_": [ -114.825, 816.496, -181.0 ]
+"_edit_vertical_guides_": [ -114.825, 816.496, -181.0, 839.0 ]
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -128,16 +128,17 @@ position = Vector2( 787.431, -777.209 )
 shape = SubResource( 2 )
 
 [node name="cesta" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 615.657, -910.702 )
+position = Vector2( 623.823, -883.896 )
 rotation = 0.127409
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="rede" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 468.39, -843.028 )
+position = Vector2( 493.578, -829.333 )
 shape = SubResource( 4 )
 
 [node name="rede2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 524.332, -750.281 )
+position = Vector2( 539.033, -731.151 )
 shape = SubResource( 5 )
 
 [node name="wall2" type="CollisionShape2D" parent="StaticBody2D"]
@@ -174,10 +175,10 @@ __meta__ = {
 }
 
 [node name="botaoJogar" type="Button" parent="."]
-margin_left = 458.34
-margin_top = 6.719
-margin_right = 544.34
-margin_bottom = 55.719
+margin_left = 88.0
+margin_top = 435.0
+margin_right = 227.0
+margin_bottom = 484.0
 custom_fonts/font = SubResource( 8 )
 text = "Arremessar"
 __meta__ = {
@@ -225,6 +226,7 @@ margin_bottom = 117.466
 custom_fonts/font = SubResource( 14 )
 align = 1
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -233,9 +235,10 @@ position = Vector2( 378, 322 )
 script = ExtResource( 4 )
 
 [node name="bodyball" type="RigidBody2D" parent="KinematicBody2D"]
-position = Vector2( 38, -52 )
+position = Vector2( 38, -54 )
 physics_material_override = SubResource( 15 )
 sleeping = true
+can_sleep = false
 __meta__ = {
 "_edit_group_": true
 }
@@ -295,7 +298,6 @@ __meta__ = {
 }
 
 [node name="Popup" type="Popup" parent="."]
-visible = true
 margin_left = 591.0
 margin_top = 336.0
 margin_right = 770.0

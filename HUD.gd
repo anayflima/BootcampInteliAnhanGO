@@ -1,8 +1,9 @@
 extends CanvasLayer
 
 signal restart_game
-
+var old_score = 0
 var high_score = 0
+var count = 0
 
 func _ready():
 	load_highscore()
@@ -12,7 +13,11 @@ func _ready():
 	$HighScoreLabel.hide()
 	
 func update_score(score):
-	Global.main_score = score
+	count += score - old_score
+	if count >= 1000:
+		Global.main_score += 1
+		count = 0
+	old_score = score
 	$ScoreLabel.text = str(score)
 
 func game_over():
@@ -30,7 +35,9 @@ func game_over():
 
 
 func _on_RestartButton_pressed():
+	old_score = 0 
 	emit_signal("restart_game")
+	
 
 func _on_GetOutButton_pressed():
 	Global.save_score(Global.main_score)

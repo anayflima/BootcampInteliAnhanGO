@@ -9,18 +9,27 @@ var verif_1 = true
 var point = true
 var radius = 50
 var slides = true
-
+var rng = RandomNumberGenerator.new()
+var ball_x : int
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	rng.randomize()
+	var my_random_number = rng.randi_range(0,4)
 	$button_play_again.visible = false
 	$botaoJogar.visible = true
 	$button_get_out.visible = false
 	$Popup.popup()
-	
-
-
-	
+	if my_random_number == 0 :
+		pass
+	elif my_random_number == 1:
+		$KinematicBody2D.position.x += 100
+	elif my_random_number == 2:
+		$KinematicBody2D.position.x += 200
+	elif my_random_number == 3:
+		$KinematicBody2D.position.x += 300
+	elif my_random_number == 4:
+		$KinematicBody2D.position.x -= 100
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,7 +37,7 @@ func _process(delta):
 	x = $KinematicBody2D.position.x
 	y = $KinematicBody2D.position.y
 	var angle = deg2rad($Node2D/angleslide.value)
-	var from = Vector2(36+x,y-51)
+	var from = Vector2(42+x,y-51)
 	var to = get_point(angle,radius)
 	
 	
@@ -67,6 +76,7 @@ func _process(delta):
 			if $Node2D/angleslide.value == $Node2D/angleslide.min_value:
 				verif_1 = true
 	$pontuacao.text = str(Global.score)
+	ball_x = $KinematicBody2D.position.x + $KinematicBody2D/bodyball.position.x
 	point()
 
 
@@ -96,7 +106,7 @@ func get_impulse(angle,size):
 	return out
 	
 func point():
-	if (x>776 && x<814 && y>132 && y<163 && point== true ):
+	if (ball_x>789 && ball_x<839 && $KinematicBody2D/bodyball.position.y>-193 && $KinematicBody2D/bodyball.position.y<-160 && point== true ):
 		Global.main_score += 5
 		Global.score += 1
 		point = false
@@ -116,7 +126,7 @@ func get_point(angle,radius):
 	var s = sin(angle)
 	x = $KinematicBody2D.position.x
 	y = $KinematicBody2D.position.y
-	var point = Vector2(36+x+c*radius,y-51-s*radius)
+	var point = Vector2(42+x+c*radius,y-51-s*radius)
 	return point
 
 func draw_line_angle(from, to):

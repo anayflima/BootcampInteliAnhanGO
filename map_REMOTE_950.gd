@@ -62,30 +62,30 @@ func _process(delta):
 		$CanvasLayer/label_skate.visible = false
 	
 	# Mostra texto para apertar no cadeado quando personagem está na região do cadeado
-	if y > -966 && y < -366 && x > 1694 && x < 2227 :
+	if y > -966 && y < -366 && x > 1694 && x < 2227 : 
 		$CanvasLayer/sprite_unlock2.visible = true
 		$CanvasLayer/label_unlock2.visible = true
-	if !(y > -966 && y < -264 && x > 1694 && x < 2227) || Global.unlock_area2 == true: 
+	if !(y > -966 && y < -366 && x > 1694 && x < 2227) : 
 		$CanvasLayer/sprite_unlock2.visible = false
 		$CanvasLayer/label_unlock2.visible = false
 	if y > 1053 && y < 1485 && x > 3031 && x < 3689 : 
-		$CanvasLayer/sprite_unlock3.visible = true
-		$CanvasLayer/label_unlock3.visible = true
-	if !(y > 1053 && y < 1485 && x > 3031 && x < 3689)|| Global.unlock_area3 == true : 
-		$CanvasLayer/sprite_unlock3.visible = false
-		$CanvasLayer/label_unlock3.visible = false
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > 1053 && y < 1485 && x > 3031 && x < 3689) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
 	if y > -927 && y < -390 && x > 5348 && x < 5881 : 
-		$CanvasLayer/sprite_unlock4.visible = true
-		$CanvasLayer/label_unlock4.visible = true
-	if !(y > -927 && y < -390 && x > 5348 && x < 5881) || Global.unlock_area4 == true : 
-		$CanvasLayer/sprite_unlock4.visible = false
-		$CanvasLayer/label_unlock4.visible = false
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -927 && y < -390 && x > 5348 && x < 5881) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
 	if y > -3079 && y < -2455 && x > 4713 && x < 5570 : 
-		$CanvasLayer/sprite_unlock5.visible = true
-		$CanvasLayer/label_unlock5.visible = true
-	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) || Global.unlock_area5 == true : 
-		$CanvasLayer/sprite_unlock5.visible = false
-		$CanvasLayer/label_unlock5.visible = false
+		$CanvasLayer/sprite_unlock2.visible = true
+		$CanvasLayer/label_unlock2.visible = true
+	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) : 
+		$CanvasLayer/sprite_unlock2.visible = false
+		$CanvasLayer/label_unlock2.visible = false
 		
 	
 	
