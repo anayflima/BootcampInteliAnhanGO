@@ -886,6 +886,20 @@ custom_styles/disabled = SubResource( 14 )
 custom_styles/normal = SubResource( 15 )
 icon = ExtResource( 20 )
 
+[node name="button_ping_teste" type="Button" parent="Node2D"]
+margin_left = 457.0
+margin_top = 1069.0
+margin_right = 662.0
+margin_bottom = 1112.0
+text = "ping pong"
+
+[node name="button_ping_teste2" type="Button" parent="Node2D"]
+margin_left = 614.667
+margin_top = 1149.13
+margin_right = 819.667
+margin_bottom = 1192.13
+text = "leva para outro"
+
 [node name="button_pingpong" type="Button" parent="Node2D"]
 margin_left = 457.202
 margin_top = 1091.75
@@ -1532,6 +1546,8 @@ __meta__ = {
 
 [connection signal="pressed" from="Node2D/button_back_in_time" to="Node2D" method="_on_button_back_in_time_pressed"]
 [connection signal="pressed" from="Node2D/button_basquete" to="Node2D" method="_on_button_basquete_pressed"]
+[connection signal="pressed" from="Node2D/button_ping_teste" to="Node2D" method="_on_button_ping_teste_pressed"]
+[connection signal="pressed" from="Node2D/button_ping_teste2" to="Node2D" method="_on_button_ping_teste2_pressed"]
 [connection signal="pressed" from="Node2D/button_pingpong" to="Node2D" method="_on_button_pingpong_pressed"]
 [connection signal="pressed" from="Node2D/button_skate" to="Node2D" method="_on_button_skate_pressed"]
 [connection signal="pressed" from="Node2D/button_unlock_area2" to="Node2D" method="_on_button_unlock_area2_pressed"]
