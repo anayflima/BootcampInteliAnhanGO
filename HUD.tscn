@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://HUD.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -26,6 +27,13 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=6]
 size = 50
 font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=25]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=26]
+size = 28
+font_data = SubResource( 25 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -96,6 +104,44 @@ margin_bottom = 76.3203
 rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 6 )
 text = "Voltar ao mapa"
+
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_left = 418.0
+margin_top = 247.0
+margin_right = 597.0
+margin_bottom = 370.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Popup"]
+position = Vector2( 95.1589, 63.093 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Popup"]
+margin_left = -105.0
+margin_top = -131.0
+margin_right = 324.0
+margin_bottom = 268.0
+custom_fonts/font = SubResource( 26 )
+text = "
+Este é o jogo da coleta de lixo! Aqui
+você deve controlar a lata de lixo, 
+desviando das árvores e coletando as 
+latinhas para acumular pontos! Sem 
+contar que a banana é um boost de 
+velocidade para você e a sacola é seu 
+escudo, te dando uma vida extra caso 
+esbarre em uma árvore! Para jogar, 
+basta girar seu celular para o lado que
+prefere ir. Aperte na tela para começar."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="GetOutButton" to="." method="_on_GetOutButton_pressed"]

@@ -10,6 +10,7 @@ var screen_max = 0
 
 func _ready():
 	$HUD.old_score = 0
+	$HUD/Popup.popup()
 	randomize()
 	get_tree().paused = false
 	on_screen_resize()
