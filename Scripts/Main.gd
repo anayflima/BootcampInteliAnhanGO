@@ -10,8 +10,7 @@ var rng = RandomNumberGenerator.new()
 const p1_x = 45
 var p1_y = DEFAULT_Y
 var p1_score = 0
-#var can_walk = true
-#var timer = null
+
 
 const p2_x = 990
 var p2_y = DEFAULT_Y
@@ -36,14 +35,7 @@ func _ready():
 	get_node("cima").visible = false
 	get_node("baixo").visible = false
 	$Popup.popup()
-#	timer = Timer.new()
-#	timer.set_one_shot(true)
-#	timer.set_wait_time(my_random_number)
-#	timer.connect("timeout",self,"timeout_is_completed")
-#	add_child(timer)
-#
-#func timeout_is_completed():
-#	can_walk = true
+
 
 func _input(_event):
 	if Input.is_action_just_pressed("ui_accept"):
@@ -93,22 +85,12 @@ func handle_movement_input(delta):
 		p1_y -= 300 * delta
 	if Input.is_action_pressed("ui_down"):
 		p1_y += 300 * delta
-	# IA 
-	#my_random_number = 0
 	if abs(ball.position.y - p2_y) > 25:
 		if ball.position.y > p2_y :
 			p2_y += my_random_number * delta
 		else:
 			p2_y -= my_random_number * delta
-#	if abs(ball.position.y - p2_y) > 25 && can_walk:
-#		while ball.position.y > p2_y :
-#			p2_y += 300 * delta
-#			can_walk = false
-#			timer.start()
-#		while ball.position.y < p2_y : 
-#			p2_y -= 300 * delta
-#			can_walk = false
-#			timer.start()
+
 
 func handle_score_event():
 	if score_event:

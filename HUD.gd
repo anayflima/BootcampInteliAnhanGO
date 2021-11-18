@@ -11,7 +11,8 @@ func _ready():
 	$RestartButton.hide()
 	$HighScoreCaption.hide()
 	$HighScoreLabel.hide()
-	
+
+#contagem para adição no main_score, com uma função recursiva
 func update_score(score):
 	count += score - old_score
 	if count >= 1000:
@@ -26,7 +27,7 @@ func game_over():
 	$HighScoreCaption.show()
 	$HighScoreLabel.show()
 	$GetOutButton.hide()
-	
+	#substitui o high score
 	if int($ScoreLabel.text) > high_score:
 		high_score = int($ScoreLabel.text)
 		save_highscore()
@@ -42,6 +43,7 @@ func _on_RestartButton_pressed():
 func _on_GetOutButton_pressed():
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
+
 
 func save_highscore():
 	var f = File.new()

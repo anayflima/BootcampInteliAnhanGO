@@ -15,8 +15,7 @@ func _on_player_game_over():
 
 	text = "HIGH SCORE: " + str(load_data()).pad_zeros(5)
 	
-#func check_score(score):
-#	#
+
 
 func create_save():
 	var score = File.new()

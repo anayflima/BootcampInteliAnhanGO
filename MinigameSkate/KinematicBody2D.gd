@@ -1,7 +1,5 @@
 extends KinematicBody2D
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+
 const GRAVITY = 10
 const JUMP_FORCE = 600
 
@@ -14,18 +12,18 @@ var is_squatting = false
 var local_gravity = GRAVITY
 var stomping = false
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	$AnimationPlayer.play("running")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta):
 	if not has_game_over:
 		if Input.is_action_pressed("ui_down") or is_squatting:
 			$AnimationPlayer.play("squatting")
 			stomping = true
 		elif Input.is_action_pressed("ui_accept") and not is_jumping:
-			#Global.play_jump_sound()
+			
 			is_jumping = true
 			velocity.y -= JUMP_FORCE
 			print_debug("ui_accept")

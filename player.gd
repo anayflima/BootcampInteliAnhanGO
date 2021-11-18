@@ -18,9 +18,7 @@ func _physics_process(delta):
 	vetor_entrada.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 	vetor_entrada.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	velocidade = vetor_entrada
-#	if vetor_entrada != Vector2.ZERO:
-#		initposition = position #atualiza a sposição e faz ele se mexer
-#		moving = true
+
 	if (vetor_entrada == Vector2.ZERO):
 		$AnimationPlayer.stop()
 	else:
