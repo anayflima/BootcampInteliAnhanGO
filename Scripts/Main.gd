@@ -1,7 +1,7 @@
 extends Node2D
 
 var BALL_NODE = preload("../Scenes/Ball.tscn")
-var ball = BALL_NODE.instance()
+var ball 
 
 const DEFAULT_Y = 150
 

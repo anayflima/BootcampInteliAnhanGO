@@ -126,16 +126,17 @@ texture = ExtResource( 3 )
 margin_left = -105.0
 margin_top = -131.0
 margin_right = 324.0
-margin_bottom = 268.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.955, 1 )
 custom_fonts/font = SubResource( 26 )
 text = "
 Este é o jogo da coleta de lixo! Aqui
 você deve controlar a lata de lixo, 
 desviando das árvores e coletando as 
-latinhas para acumular pontos! Sem 
-contar que a banana é um boost de 
-velocidade para você e a sacola é seu 
-escudo, te dando uma vida extra caso 
+latinhas,sacolas e bananas para 
+acumular pontos! A banana também é 
+um boost de velocidade e a sacola é um
+escudo, lhe dando uma vida extra caso 
 esbarre em uma árvore! Para jogar, 
 basta girar seu celular para o lado que
 prefere ir. Aperte na tela para começar."
