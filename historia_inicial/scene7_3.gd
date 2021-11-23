@@ -16,14 +16,13 @@ enum State {
 
 var current_state = State.READY
 var text_queue = []
+onready var text_label := $TextboxContainer2/MarginContainer/HBoxContainer/Label
 
 func _ready():
+	text_label.text = "{name}: Então eu devo ir para o Parque do Povo real para encontrar os códigos?".format({"name": character_name})
 	print("Starting state: State.READY")
 	hide_textbox()
-	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
 	queue_text("Anhangá: Isso mesmo! Você encontrará os códigos no parque, no local correspondente à posição do cadeado no mapa do jogo ou então poderá pedi-los à administração do Parque do Povo. Aproveite para visitar esse parque e conhecê-lo! Há muitas coisas divertidas para se fazer lá, como você verá ao longo do mapa. E boa sorte! Você tem uma longa jornada de redenção pela frente! ".format({"name": character_name}))
-	#queue_text("Nossa, onde estou??? Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro! Olha, Parque do Povo... Será que a floresta em que eu estava virou esse parque?")
-#	queue_text("Thanks for watching!")
 
 func _process(delta):
 	match current_state:

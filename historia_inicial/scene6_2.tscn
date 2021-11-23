@@ -116,7 +116,7 @@ rect_pivot_offset = Vector2( 86.063, 33.231 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Anhangá: Você, Ariel, de 1920, foi enviado(a) por mim para o futuro como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo. Esse portal estará na última área do parque."
+text = "Anhangá: Você, Jogador, de 1920, foi enviado(a) por mim para o futuro como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo. Esse portal estará na última área do parque."
 autowrap = true
 clip_text = true
 

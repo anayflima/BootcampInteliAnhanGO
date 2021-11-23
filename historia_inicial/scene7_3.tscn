@@ -192,7 +192,7 @@ rect_pivot_offset = Vector2( 86.063, 33.231 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Ariel: Então eu devo ir para o Parque do Povo real para encontrar os códigos?"
+text = "JOgador: Então eu devo ir para o Parque do Povo real para encontrar os códigos?"
 autowrap = true
 clip_text = true
 
