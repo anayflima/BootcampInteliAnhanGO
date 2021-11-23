@@ -1,0 +1,365 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://quiz_game/question1.gd" type="Script" id=1]
+[ext_resource path="res://Assets/placa.png" type="Texture" id=2]
+[ext_resource path="res://historia_final/anhanga_rosto.jpg" type="Texture" id=3]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=4]
+[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFontData" id=28]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=29]
+size = 22
+font_data = SubResource( 28 )
+
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
+
+[sub_resource type="StyleBoxEmpty" id=32]
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
+[sub_resource type="StyleBoxEmpty" id=34]
+
+[sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxEmpty" id=36]
+
+[sub_resource type="StyleBoxEmpty" id=37]
+
+[sub_resource type="StyleBoxEmpty" id=38]
+
+[sub_resource type="StyleBoxEmpty" id=39]
+
+[sub_resource type="DynamicFontData" id=40]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=41]
+size = 28
+font_data = SubResource( 40 )
+
+[sub_resource type="DynamicFontData" id=24]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=25]
+size = 20
+font_data = SubResource( 24 )
+
+[sub_resource type="Theme" id=26]
+default_font = SubResource( 25 )
+Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = null
+Button/styles/pressed = null
+
+[sub_resource type="DynamicFontData" id=42]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=43]
+size = 28
+font_data = SubResource( 42 )
+
+[sub_resource type="DynamicFontData" id=44]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=45]
+size = 28
+font_data = SubResource( 44 )
+
+[sub_resource type="DynamicFontData" id=46]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=47]
+size = 28
+font_data = SubResource( 46 )
+
+[sub_resource type="DynamicFontData" id=48]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=49]
+size = 28
+font_data = SubResource( 48 )
+
+[sub_resource type="DynamicFontData" id=50]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=51]
+size = 28
+font_data = SubResource( 50 )
+
+[node name="Textbox" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 521.046, 307.387 )
+scale = Vector2( 2.70444, 1.78519 )
+texture = ExtResource( 2 )
+
+[node name="Anhanga" type="Sprite" parent="."]
+position = Vector2( 209.486, 434.064 )
+scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 3 )
+
+[node name="TextboxContainer" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 311.403
+margin_top = -230.237
+margin_right = -112.597
+margin_bottom = -100.237
+rect_pivot_offset = Vector2( -27.937, -38.769 )
+
+[node name="Panel" type="Panel" parent="TextboxContainer"]
+margin_right = 600.0
+margin_bottom = 130.0
+rect_pivot_offset = Vector2( 112.063, 41.231 )
+custom_styles/panel = SubResource( 27 )
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
+margin_right = 600.0
+margin_bottom = 130.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="TextboxContainer/MarginContainer"]
+visible = false
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 592.0
+margin_bottom = 122.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 592.0
+margin_bottom = 122.0
+
+[node name="Start" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( 104.063, 33.231 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 29 )
+text = "*
+"
+
+[node name="Label" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 566.0
+margin_bottom = 114.0
+rect_pivot_offset = Vector2( 86.063, 33.231 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 29 )
+text = "Muito bem Jogador! Você sabia que o Parque do Povo oferece estruturas como aparelhos de ginástica de baixo impacto, parquinho infantil e ciclovia? Você se exercitou bastante nas fases anteriores, aproveite essas e outras atividades disponíveis no parque e movimente-se!"
+autowrap = true
+clip_text = true
+
+[node name="End" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_left = 570.0
+margin_top = 91.0
+margin_right = 584.0
+margin_bottom = 114.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( -589.937, -57.769 )
+size_flags_vertical = 8
+custom_fonts/font = SubResource( 29 )
+text = "v"
+
+[node name="TextboxContainer2" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 311.403
+margin_top = -216.237
+margin_right = -112.597
+margin_bottom = -116.237
+rect_pivot_offset = Vector2( -27.937, -38.769 )
+
+[node name="Panel" type="Panel" parent="TextboxContainer2"]
+margin_right = 600.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 112.063, 41.231 )
+custom_styles/panel = SubResource( 27 )
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer2"]
+margin_right = 600.0
+margin_bottom = 100.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="TextboxContainer2/MarginContainer"]
+visible = false
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 592.0
+margin_bottom = 92.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer2/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 592.0
+margin_bottom = 92.0
+
+[node name="Start" type="Label" parent="TextboxContainer2/MarginContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( 104.063, 33.231 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 29 )
+text = "*
+"
+
+[node name="Label" type="Label" parent="TextboxContainer2/MarginContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 566.0
+margin_bottom = 84.0
+rect_pivot_offset = Vector2( 86.063, 33.231 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 29 )
+text = "Ah que pena :(
+Vá ao Parque do Povo e confira quais estruturas existem no Parque do Povo."
+autowrap = true
+clip_text = true
+
+[node name="End" type="Label" parent="TextboxContainer2/MarginContainer/HBoxContainer"]
+margin_left = 570.0
+margin_top = 61.0
+margin_right = 584.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( -589.937, -57.769 )
+size_flags_vertical = 8
+custom_fonts/font = SubResource( 29 )
+text = "v"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 31.924
+margin_top = 545.992
+margin_right = 404.924
+margin_bottom = 685.993
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/hover = SubResource( 30 )
+custom_styles/pressed = SubResource( 31 )
+custom_styles/focus = SubResource( 32 )
+custom_styles/disabled = SubResource( 33 )
+custom_styles/normal = SubResource( 34 )
+icon = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 882.148
+margin_top = 545.992
+margin_right = 1255.15
+margin_bottom = 684.992
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/hover = SubResource( 35 )
+custom_styles/pressed = SubResource( 36 )
+custom_styles/focus = SubResource( 37 )
+custom_styles/disabled = SubResource( 38 )
+custom_styles/normal = SubResource( 39 )
+icon = ExtResource( 5 )
+
+[node name="option1" type="Button" parent="."]
+margin_left = 210.0
+margin_top = 173.0
+margin_right = 460.0
+margin_bottom = 228.0
+custom_fonts/font = SubResource( 41 )
+
+[node name="option2" type="Button" parent="."]
+margin_left = 560.0
+margin_top = 173.0
+margin_right = 810.0
+margin_bottom = 228.0
+theme = SubResource( 26 )
+custom_fonts/font = SubResource( 43 )
+
+[node name="option3" type="Button" parent="."]
+margin_left = 210.0
+margin_top = 253.0
+margin_right = 460.0
+margin_bottom = 308.0
+custom_fonts/font = SubResource( 45 )
+
+[node name="option4" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 560.0
+margin_top = 253.0
+margin_right = 810.0
+margin_bottom = 308.0
+custom_fonts/font = SubResource( 47 )
+
+[node name="answer1" type="Label" parent="."]
+margin_left = 217.22
+margin_top = 185.846
+margin_right = 454.22
+margin_bottom = 213.846
+custom_fonts/font = SubResource( 49 )
+text = "Quadras poliesportivas"
+
+[node name="answer2" type="Label" parent="."]
+margin_left = 238.449
+margin_top = 266.12
+margin_right = 475.449
+margin_bottom = 294.12
+custom_fonts/font = SubResource( 49 )
+text = "Roteiros botânicos"
+
+[node name="answer3" type="Label" parent="."]
+margin_left = 630.204
+margin_top = 186.182
+margin_right = 867.204
+margin_bottom = 214.182
+custom_fonts/font = SubResource( 49 )
+text = "Minhocário"
+
+[node name="answer4" type="Label" parent="."]
+margin_left = 601.383
+margin_top = 265.516
+margin_right = 768.383
+margin_bottom = 293.516
+custom_fonts/font = SubResource( 49 )
+text = "Quadra de areia"
+
+[node name="question" type="Label" parent="."]
+margin_left = 193.0
+margin_top = 103.0
+margin_right = 865.0
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 51 )
+text = "1-Selecione qual estrutura abaixo não existe no Parque do Povo:"
+
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="option1" to="." method="_on_option1_pressed"]
+[connection signal="pressed" from="option2" to="." method="_on_option2_pressed"]
+[connection signal="pressed" from="option3" to="." method="_on_option3_pressed"]
+[connection signal="pressed" from="option4" to="." method="_on_option4_pressed"]
