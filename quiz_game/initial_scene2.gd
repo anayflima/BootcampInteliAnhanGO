@@ -23,7 +23,7 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("{name}: Mas o que eu preciso fazer para juntar essa pontuação?".format({"name": character_name}))
+	queue_text("{name}: Opa, beleza! Estou pronto para qualquer desafio!".format({"name": character_name}))
 
 func _process(delta):
 	match current_state:

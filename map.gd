@@ -28,6 +28,7 @@ func _ready():
 	$button_pingpong.visible = false
 	$button_basquete.visible = false
 	$button_skate.visible = false
+	$button_question.visible = false
 	#$CanvasLayer/Panel_needScore.visible = false
 	#$CanvasLayer/label_needScore.visible = false
 #	Node2D/CanvasLayer/Panel_needScore
@@ -52,14 +53,22 @@ func _process(delta):
 		$button_basquete.visible = false
 		$CanvasLayer/sprite_basquete.visible = false
 		$CanvasLayer/label_basquete.visible = false
-	if x > 5364 && x < 6164 && y > -100 && y < 724:
+	if x > 3082 && x < 3682 && y > -56 && y < 556:
 		$button_skate.visible = true
 		$CanvasLayer/sprite_skate.visible = true
 		$CanvasLayer/label_skate.visible = true
-	if !(x > 5364 && x < 6164 && y > -100 && y < 724):
+	if !(x > 3082 && x < 3682 && y > -56 && y < 556):
 		$button_skate.visible = false
 		$CanvasLayer/sprite_skate.visible = false
 		$CanvasLayer/label_skate.visible = false
+	if x > 5700 && x < 6400 && y > -500 && y < 300:
+		$button_question.visible = true
+		$CanvasLayer/sprite_question.visible = true
+		$CanvasLayer/label_question.visible = true
+	if !(x > 5700 && x < 6400 && y > -500 && y < 300):
+		$button_question.visible = false
+		$CanvasLayer/sprite_question.visible = false
+		$CanvasLayer/label_question.visible = false
 	
 	# Mostra texto para apertar no cadeado quando personagem está na região do cadeado
 	if y > -966 && y < -366 && x > 1694 && x < 2227 :
@@ -171,6 +180,11 @@ func _on_button_skate_pressed():
 	save()
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MinigameSkate/game.tscn")
+	
+func _on_button_question_pressed():
+	save()
+	Global.save_score(Global.main_score)
+	get_tree().change_scene("res://quiz_game/initial_scene.tscn")
 
 func _on_button_unlock_area2_pressed():
 	save()
@@ -215,11 +229,5 @@ func _on_lixo3_pressed():
 
 func _on_lixo4_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
-
-
-
-
-
-
 
 

@@ -186,7 +186,7 @@ rect_pivot_offset = Vector2( 86.063, 33.231 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Jogador: Mas o que eu preciso fazer para juntar essa pontuação?"
+text = "Jogador: Opa, beleza! Estou pronto para qualquer desafio!"
 autowrap = true
 clip_text = true
 
