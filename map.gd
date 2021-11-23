@@ -162,17 +162,6 @@ func _on_button_basquete_pressed():
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://basquete/basquete_main.tscn")
 
-func _on_button_ping_teste_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://pingpong.tscn")
-
-
-func _on_button_ping_teste2_pressed():
-	save()
-	Global.save_score(Global.main_score)
-	get_tree().change_scene("res://MinigameSkate/game.tscn")
-
 func _on_button_pingpong_pressed():
 	save()
 	Global.save_score(Global.main_score)
