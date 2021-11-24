@@ -1,15 +1,11 @@
 extends Label
 
-#var score = 0
 var is_scoring = true
 var count = 0
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	pass 
+	
 func _physics_process(delta):
 	if is_scoring:
 		text = str(Global.game_score).pad_zeros(5)

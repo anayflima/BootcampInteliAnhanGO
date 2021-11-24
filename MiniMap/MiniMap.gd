@@ -1,16 +1,20 @@
 extends Control
 
-signal use_move_vector
+
 
 func _ready():
 	$CanvasLayer/ViewportContainer/Viewport/Node2D/KinematicBody2D/Camera2D.zoom=Vector2(16,16)
+	$Node2D/CanvasLayer/menu.visible = false
 	pass
 
 
+
 func _on_lixo1_pressed():
-	print("lixo1")
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
+func _process(delta):
+	$Node2D/CanvasLayer/ProgressBar.value = Global.main_score
+	
 
 #func _input(event):
 #	if event is InputEventScreenTouch or event is InputEventScreenDrag:
@@ -22,3 +26,14 @@ func _on_lixo1_pressed():
 #	var texture_center = $Node2D/CanvasLayer/TouchScreenButton.position + Vector2(81,81)
 #	return (event_position - texture_center).normalized()
 #
+
+
+func _on_options_pressed():
+	$Node2D/CanvasLayer/menu.visible = true
+
+
+func _on_resume_pressed():
+	$Node2D/CanvasLayer/menu.visible = false
+
+func _on_exit_pressed():
+	get_tree().quit()

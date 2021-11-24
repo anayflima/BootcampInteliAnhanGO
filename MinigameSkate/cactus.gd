@@ -1,9 +1,7 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+
 
 var velocity = Vector2()
 
@@ -20,6 +18,6 @@ func init(pos, anim):
 func stop():
 	Global.game_speed = 0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta):
-	position.x += Global.game_speed * -1 * delta #velocity * delta
+	position.x += Global.game_speed * -1 * delta 

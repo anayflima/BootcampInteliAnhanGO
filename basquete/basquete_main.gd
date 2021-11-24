@@ -1,3 +1,8 @@
+##################################################
+#### author : Guilherme Morais
+#### github : morais1244
+##################################################
+
 extends Node2D
 
 
@@ -20,6 +25,9 @@ func _ready():
 	$botaoJogar.visible = true
 	$button_get_out.visible = false
 	$Popup.popup()
+	
+	#randomizar posição
+	
 	if my_random_number == 0 :
 		pass
 	elif my_random_number == 1:
@@ -79,7 +87,7 @@ func _process(delta):
 	ball_x = $KinematicBody2D.position.x + $KinematicBody2D/bodyball.position.x
 	point()
 
-
+#após jogar 
 
 func _on_Button_pressed():
 	var force = $Node2D/forceslide.value
@@ -104,7 +112,7 @@ func get_impulse(angle,size):
 	var out = Vector2(fx,fy)
 	
 	return out
-	
+#marcar o ponto que o jogador fizer
 func point():
 	if (ball_x>789 && ball_x<839 && $KinematicBody2D/bodyball.position.y>-193 && $KinematicBody2D/bodyball.position.y<-160 && point== true ):
 		Global.main_score += 5
@@ -120,6 +128,7 @@ func _on_button_get_out_pressed():
 	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
+#ajustar o ponto com o cosseno e o seno
 
 func get_point(angle,radius):
 	var c = cos(angle)
@@ -128,6 +137,8 @@ func get_point(angle,radius):
 	y = $KinematicBody2D.position.y
 	var point = Vector2(42+x+c*radius,y-51-s*radius)
 	return point
+
+#fazer linha para mostrar o ângulo
 
 func draw_line_angle(from, to):
 	$linha.points = []

@@ -1,5 +1,7 @@
 extends Node
 
+#desbloqueios de área
+
 var character_name = "Ariel"
 var unlock_area2 = false
 var unlock_area3 = false
@@ -10,6 +12,8 @@ var first = true
 var first_score = true
 var main_score = 0
 var unlock_back_in_time = false 
+
+#salvar pontuação
 
 func save_score(score):
 	var file = File.new()

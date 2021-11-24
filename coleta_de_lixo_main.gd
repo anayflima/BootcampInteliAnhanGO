@@ -1,3 +1,9 @@
+##################################################
+#### main author : 
+#### github : 
+##################################################
+
+
 extends Node
 export (PackedScene) var ScoreItem
 export (PackedScene) var MeteorItem

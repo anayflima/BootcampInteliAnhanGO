@@ -16,6 +16,7 @@ var stomping = false
 func _ready():
 	$AnimationPlayer.play("running")
 
+#inputs de movimentação e ajuste de gravidade
 
 func _process(delta):
 	if not has_game_over:
@@ -46,6 +47,8 @@ func _process(delta):
 		if is_on_floor():
 			is_jumping = false
 			stomping = false
+
+#tocar som quando pula
 
 func _on_up_button_down():
 	if not is_jumping:

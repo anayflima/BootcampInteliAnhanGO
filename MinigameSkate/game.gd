@@ -1,3 +1,8 @@
+##################################################
+#### main author : 
+#### github : 
+##################################################
+
 extends Node2D
 
 var count = 0
@@ -8,7 +13,7 @@ func _ready():
 	$Popup.popup()
 	
 	
-
+#voltar para o mapa se algo acontecer
 func _process(delta):
 	if Input.is_key_pressed(KEY_ESCAPE):
 		Global.save_score(Global.main_score)

@@ -1,3 +1,8 @@
+##################################################
+#### main author : Domogoj Satrap
+#### github : https://github.com/Domogo
+##################################################
+
 extends Node2D
 
 var BALL_NODE = preload("../Scenes/Ball.tscn")
@@ -36,7 +41,7 @@ func _ready():
 	get_node("baixo").visible = false
 	$Popup.popup()
 
-
+#começar o jogo
 func _input(_event):
 	if Input.is_action_just_pressed("ui_accept"):
 		play()
@@ -67,6 +72,9 @@ func play():
 	get_node("TouchScreenButton").visible = false
 	get_node("cima").visible = true
 	get_node("baixo").visible = true
+
+#detectar ponto
+
 func check_point_scored():
 	if ball.position.x <= 0:
 		score_event = true
@@ -79,6 +87,7 @@ func check_point_scored():
 	if p1_score == 5 or p2_score == 5:
 		game_done = true
 
+#movimentação e ia do jogador adversário
 
 func handle_movement_input(delta):
 	if Input.is_action_pressed("ui_up"):
@@ -121,6 +130,7 @@ func update_score():
 	$Player1Score.text = str(p1_score)
 	$Player2Score.text = str(p2_score)
 
+#pontuação vencedora
 
 func handle_game_end():
 	if game_done:
