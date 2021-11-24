@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/folha-de-e-v-a-48x40cm-lisa-cor-verde-escuro-5mm_1_600.jpg-f1dc67a508313d4f08339c3126208930.stex"
+path="res://.import/mapa_completo.png-d50d63c3916383fdaf1928b8a779e18a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://folha-de-e-v-a-48x40cm-lisa-cor-verde-escuro-5mm_1_600.jpg"
-dest_files=[ "res://.import/folha-de-e-v-a-48x40cm-lisa-cor-verde-escuro-5mm_1_600.jpg-f1dc67a508313d4f08339c3126208930.stex" ]
+source_file="res://Assets/mapa_completo.png"
+dest_files=[ "res://.import/mapa_completo.png-d50d63c3916383fdaf1928b8a779e18a.stex" ]
 
 [params]
 
@@ -28,7 +28,6 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
-process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

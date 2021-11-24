@@ -5,7 +5,7 @@
 [ext_resource path="res://Meteor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ShieldItem.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Boost.tscn" type="PackedScene" id=5]
-[ext_resource path="res://folha-de-e-v-a-48x40cm-lisa-cor-verde-escuro-5mm_1_600.jpg" type="Texture" id=6]
+[ext_resource path="res://fundo_verde.jpg" type="Texture" id=6]
 [ext_resource path="res://Ship.tscn" type="PackedScene" id=7]
 [ext_resource path="res://HUD.tscn" type="PackedScene" id=8]
 

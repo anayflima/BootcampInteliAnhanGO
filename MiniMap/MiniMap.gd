@@ -11,6 +11,7 @@ func _ready():
 
 func _on_lixo1_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+<<<<<<< HEAD
 
 func _process(delta):
 	$Node2D/CanvasLayer/ProgressBar.value = Global.main_score
@@ -37,3 +38,5 @@ func _on_resume_pressed():
 
 func _on_exit_pressed():
 	get_tree().quit()
+=======
+>>>>>>> 236ee209bb5f7cd8e8744c9e90d2d28dcf03dee7

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://MinigameSkate/game.gd" type="Script" id=1]
 [ext_resource path="res://MinigameSkate/assets/sky-blue-183874_960_720.jpg" type="Texture" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://MinigameSkate/assets/restart-button.png" type="Texture" id=15]
 [ext_resource path="res://MinigameSkate/Button.gd" type="Script" id=16]
 [ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=17]
+[ext_resource path="res://button_assets/Pup_Up_Exit.png" type="Texture" id=18]
 
 [sub_resource type="RayShape2D" id=1]
 length = 45.6372
@@ -187,6 +188,16 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 28
 font_data = SubResource( 13 )
 
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxEmpty" id=18]
+
+[sub_resource type="StyleBoxEmpty" id=19]
+
 [node name="game" type="Node2D"]
 position = Vector2( 331.138, 380.049 )
 scale = Vector2( 1.5, 1.5 )
@@ -290,8 +301,8 @@ margin_left = 330.215
 margin_top = -235.0
 margin_right = 412.215
 margin_bottom = -200.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "SCORE"
 script = ExtResource( 11 )
 __meta__ = {
@@ -303,8 +314,8 @@ margin_left = 21.5443
 margin_top = -235.0
 margin_right = 181.544
 margin_bottom = -215.0
-custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.341176, 0.341176, 0.341176, 1 )
 text = "HIGH SCORE"
 script = ExtResource( 12 )
 __meta__ = {
@@ -399,13 +410,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
-[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
+[node name="X" type="Button" parent="Popup"]
+margin_left = 282.673
+margin_top = -140.066
+margin_right = 678.673
+margin_bottom = 249.934
+rect_scale = Vector2( 0.1, 0.1 )
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/focus = SubResource( 17 )
+custom_styles/disabled = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+icon = ExtResource( 18 )
+
 [connection signal="game_over" from="player" to="pause/Button" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="spawner" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="hud/high_score" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor/Sprite" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="sun" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="floor" method="_on_player_game_over"]
+[connection signal="game_over" from="player" to="hud/score" method="_on_player_game_over"]
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_Area2D_area_entered"]
 [connection signal="button_down" from="controller/up" to="player" method="_on_up_button_down"]
 [connection signal="button_up" from="controller/up" to="player" method="_on_up_button_up"]

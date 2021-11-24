@@ -83,4 +83,4 @@ func _on_Button2_pressed():
 	get_tree().change_scene("res://historia_inicial/scene6_2.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/scene7_1.tscn")
+	get_tree().change_scene("res://historia_inicial/scene7.tscn")

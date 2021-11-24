@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=5]
 [ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=6]
 [ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=7]
+[ext_resource path="res://button_assets/Pup_Up_Exit.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 947.989, 24.3528 )
@@ -96,12 +97,22 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 27
 font_data = SubResource( 23 )
 
-[sub_resource type="DynamicFontData" id=27]
+[sub_resource type="DynamicFontData" id=25]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=26]
 size = 28
-font_data = SubResource( 27 )
+font_data = SubResource( 25 )
+
+[sub_resource type="StyleBoxEmpty" id=27]
+
+[sub_resource type="StyleBoxEmpty" id=28]
+
+[sub_resource type="StyleBoxEmpty" id=29]
+
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -328,6 +339,19 @@ achar que tem a combinação exata de
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="X" type="Button" parent="Popup"]
+margin_left = 282.673
+margin_top = -140.066
+margin_right = 678.673
+margin_bottom = 249.934
+rect_scale = Vector2( 0.1, 0.1 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/focus = SubResource( 29 )
+custom_styles/disabled = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+icon = ExtResource( 8 )
 
 [connection signal="pressed" from="botaoJogar" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="button_play_again" to="." method="_on_button_play_again_pressed"]
