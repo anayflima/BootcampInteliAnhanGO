@@ -23,7 +23,7 @@ var score = 0;
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("Muito bem!\nVocê completou a sequência de perguntas. Sua pontuação é {score} de 15.\nAtenção: não adianta tentar responder as perguntas que você já respondeu para ganhar mais pontos. Isso não irá funcionar!".format({"score": Global.quiz_score}))
+	queue_text("Muito bem!\nVocê completou a sequência de perguntas. Sua pontuação é {score} de 15.\nAtenção: não adianta tentar responder as perguntas que você já respondeu para ganhar mais pontos. Isso não irá funcionar!".format({"score": score}))
 
 
 func _process(delta):
@@ -79,6 +79,4 @@ func _on_Tween_tween_completed(object, key):
 	text_label.text = "Muito bem {name}! Você sabia que o Parque do Povo oferece estruturas como aparelhos de ginástica de baixo impacto, parquinho infantil e ciclovia? Você se exercitou bastante nas fases anteriores, aproveite essas e outras atividades disponíveis no parque e movimente-se!".format({"name": character_name})
 
 func _on_Button2_pressed():
-	Global.quiz_score = 0
-	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")

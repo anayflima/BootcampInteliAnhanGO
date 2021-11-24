@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-const CHAR_READ_RATE = 0.03
+const CHAR_READ_RATE = 0.05
 onready var textbox_container = $TextboxContainer2
 onready var start_symbol = $TextboxContainer2/MarginContainer/HBoxContainer/Start
 onready var end_symbol = $TextboxContainer2/MarginContainer/HBoxContainer/End

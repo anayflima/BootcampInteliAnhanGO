@@ -49,6 +49,7 @@ func _process(delta):
 func _on_Ship_add_points(s):
 	score += s
 #	Global.main_score += s
+	print(Global.main_score)
 	$HUD.update_score(score)
 	$SpawnTimer.start()
 

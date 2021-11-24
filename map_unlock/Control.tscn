@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://map_unlock/LineEdit.gd" type="Script" id=1]
+[ext_resource path="res://LineEdit.gd" type="Script" id=1]
 [ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=2]
 [ext_resource path="res://map_unlock/Button.gd" type="Script" id=3]
 [ext_resource path="res://Assets/BG.jpg" type="Texture" id=4]

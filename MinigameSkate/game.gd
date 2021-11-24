@@ -1,6 +1,6 @@
 ##################################################
-#### main author : 
-#### github : 
+#### main author : Raphael D. Pinheiro
+#### github : https://github.com/raphaklaus/godot-trex-game
 ##################################################
 
 extends Node2D

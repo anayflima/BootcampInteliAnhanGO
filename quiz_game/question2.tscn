@@ -31,22 +31,22 @@ font_data = SubResource( 2 )
 
 [sub_resource type="StyleBoxEmpty" id=8]
 
-[sub_resource type="DynamicFontData" id=9]
+[sub_resource type="DynamicFontData" id=14]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=15]
 size = 28
-font_data = SubResource( 9 )
+font_data = SubResource( 14 )
 
-[sub_resource type="DynamicFontData" id=11]
+[sub_resource type="DynamicFontData" id=16]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=12]
+[sub_resource type="DynamicFont" id=17]
 size = 20
-font_data = SubResource( 11 )
+font_data = SubResource( 16 )
 
-[sub_resource type="Theme" id=13]
-default_font = SubResource( 12 )
+[sub_resource type="Theme" id=18]
+default_font = SubResource( 17 )
 Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -59,36 +59,36 @@ Button/styles/hover = null
 Button/styles/normal = null
 Button/styles/pressed = null
 
-[sub_resource type="DynamicFontData" id=14]
+[sub_resource type="DynamicFontData" id=19]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=15]
+[sub_resource type="DynamicFont" id=20]
 size = 28
-font_data = SubResource( 14 )
+font_data = SubResource( 19 )
 
-[sub_resource type="DynamicFontData" id=16]
+[sub_resource type="DynamicFontData" id=25]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=17]
+[sub_resource type="DynamicFont" id=26]
 size = 28
-font_data = SubResource( 16 )
+font_data = SubResource( 25 )
 
-[sub_resource type="DynamicFontData" id=18]
+[sub_resource type="DynamicFontData" id=27]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=19]
+[sub_resource type="DynamicFont" id=28]
 size = 28
-font_data = SubResource( 18 )
+font_data = SubResource( 27 )
 
-[sub_resource type="StyleBoxEmpty" id=20]
+[sub_resource type="StyleBoxEmpty" id=35]
 
-[sub_resource type="StyleBoxEmpty" id=21]
+[sub_resource type="StyleBoxEmpty" id=36]
 
-[sub_resource type="StyleBoxEmpty" id=22]
+[sub_resource type="StyleBoxEmpty" id=37]
 
-[sub_resource type="StyleBoxEmpty" id=23]
+[sub_resource type="StyleBoxEmpty" id=38]
 
-[sub_resource type="StyleBoxEmpty" id=24]
+[sub_resource type="StyleBoxEmpty" id=39]
 
 [node name="Textbox" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -265,22 +265,22 @@ margin_left = 210.0
 margin_top = 208.0
 margin_right = 460.0
 margin_bottom = 263.0
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 15 )
 
 [node name="option2" type="Button" parent="."]
 margin_left = 560.0
 margin_top = 208.0
 margin_right = 810.0
 margin_bottom = 263.0
-theme = SubResource( 13 )
-custom_fonts/font = SubResource( 15 )
+theme = SubResource( 18 )
+custom_fonts/font = SubResource( 20 )
 
 [node name="answer1" type="Label" parent="."]
 margin_left = 217.22
 margin_top = 220.846
 margin_right = 454.22
 margin_bottom = 248.846
-custom_fonts/font = SubResource( 17 )
+custom_fonts/font = SubResource( 26 )
 text = "Verdadeiro"
 align = 1
 
@@ -289,7 +289,7 @@ margin_left = 569.134
 margin_top = 221.182
 margin_right = 806.134
 margin_bottom = 249.182
-custom_fonts/font = SubResource( 17 )
+custom_fonts/font = SubResource( 26 )
 text = "Falso"
 align = 1
 
@@ -298,7 +298,7 @@ margin_left = 149.0
 margin_top = 108.0
 margin_right = 915.0
 margin_bottom = 167.0
-custom_fonts/font = SubResource( 19 )
+custom_fonts/font = SubResource( 28 )
 text = "2- O Parque do Povo possuí um destino adequado para reciclagem de materiais e uma composteira para matérias orgânicos?"
 align = 1
 autowrap = true
@@ -309,11 +309,11 @@ margin_top = 545.992
 margin_right = 1255.15
 margin_bottom = 684.992
 rect_scale = Vector2( 0.3, 0.3 )
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/focus = SubResource( 22 )
-custom_styles/disabled = SubResource( 23 )
-custom_styles/normal = SubResource( 24 )
+custom_styles/hover = SubResource( 35 )
+custom_styles/pressed = SubResource( 36 )
+custom_styles/focus = SubResource( 37 )
+custom_styles/disabled = SubResource( 38 )
+custom_styles/normal = SubResource( 39 )
 icon = ExtResource( 5 )
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

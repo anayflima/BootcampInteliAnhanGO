@@ -1,9 +1,8 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://HUD.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=3]
-[ext_resource path="res://button_assets/Pup_Up_Exit.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -29,22 +28,12 @@ font_data = ExtResource( 2 )
 size = 50
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFontData" id=7]
+[sub_resource type="DynamicFontData" id=25]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=26]
 size = 28
-font_data = SubResource( 7 )
-
-[sub_resource type="StyleBoxEmpty" id=9]
-
-[sub_resource type="StyleBoxEmpty" id=10]
-
-[sub_resource type="StyleBoxEmpty" id=11]
-
-[sub_resource type="StyleBoxEmpty" id=12]
-
-[sub_resource type="StyleBoxEmpty" id=13]
+font_data = SubResource( 25 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -139,7 +128,7 @@ margin_top = -131.0
 margin_right = 324.0
 margin_bottom = 232.0
 rect_scale = Vector2( 0.955, 1 )
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 26 )
 text = "
 Este é o jogo da coleta de lixo! Aqui
 você deve controlar a lata de lixo, 
@@ -154,19 +143,6 @@ prefere ir. Aperte na tela para começar."
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="X" type="Button" parent="Popup"]
-margin_left = 282.673
-margin_top = -140.066
-margin_right = 678.673
-margin_bottom = 249.934
-rect_scale = Vector2( 0.1, 0.1 )
-custom_styles/hover = SubResource( 9 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/focus = SubResource( 11 )
-custom_styles/disabled = SubResource( 12 )
-custom_styles/normal = SubResource( 13 )
-icon = ExtResource( 4 )
 
 [connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="GetOutButton" to="." method="_on_GetOutButton_pressed"]
