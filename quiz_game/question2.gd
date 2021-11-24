@@ -20,7 +20,6 @@ func _on_option1_pressed():
 	if (Global.second_question):
 		Global.quiz_score += 5
 		Global.main_score += 5
-		print("deu 2")
 		Global.second_question = false
 
 func _on_option2_pressed():

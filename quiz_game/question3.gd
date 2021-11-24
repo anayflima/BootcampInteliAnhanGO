@@ -22,7 +22,6 @@ func _on_option1_pressed():
 	if (Global.third_question):
 		Global.quiz_score += 5
 		Global.main_score += 5
-		print("deu 3")
 		Global.third_question = false
 
 func _on_option2_pressed():

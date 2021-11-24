@@ -50,7 +50,6 @@ func _on_option4_pressed():
 	if (Global.first_question):
 		Global.quiz_score += 5
 		Global.main_score += 5
-		print("deu 1")
 		Global.first_question = false
 	correct_label.text = "Muito bem {name}! Você sabia que o Parque do Povo oferece estruturas como aparelhos de ginástica de baixo impacto, parquinho infantil e ciclovia? Você se exercitou bastante nas fases anteriores, aproveite essas e outras atividades disponíveis no parque e movimente-se!".format({"name": character_name})
 
