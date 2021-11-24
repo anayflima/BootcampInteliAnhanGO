@@ -12,7 +12,8 @@ func _ready():
 	$HighScoreCaption.hide()
 	$HighScoreLabel.hide()
 
-#contagem para adição no main_score, com uma função recursiva
+# contagem para adição no main_score.
+# A cada 100 pontos no minigame do skate, ganha-se um ponto no score principal 
 func update_score(score):
 	count += score - old_score
 	if count >= 100:
