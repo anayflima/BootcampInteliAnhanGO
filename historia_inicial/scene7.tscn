@@ -1,0 +1,163 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://historia_inicial/scene8_1.gd" type="Script" id=1]
+[ext_resource path="res://Assets/placa.png" type="Texture" id=2]
+[ext_resource path="res://historia_final/anhanga_rosto.jpg" type="Texture" id=3]
+[ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=4]
+[ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=5]
+[ext_resource path="res://Assets/mapa_completo.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="StyleBoxEmpty" id=11]
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[node name="Textbox" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 516.309, 306.455 )
+scale = Vector2( 2.70444, 1.78519 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 162, 134 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TextboxContainer" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 620.0
+margin_top = -545.0
+margin_right = -4.0
+margin_bottom = -115.0
+rect_pivot_offset = Vector2( -27.937, -38.769 )
+
+[node name="Panel" type="Panel" parent="TextboxContainer"]
+margin_right = 400.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 112.063, 41.231 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
+margin_right = 400.0
+margin_bottom = 430.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="TextboxContainer/MarginContainer"]
+visible = false
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 392.0
+margin_bottom = 422.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 392.0
+margin_bottom = 422.0
+
+[node name="Start" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_right = 14.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( 104.063, 33.231 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 3 )
+text = "*
+"
+
+[node name="Label" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_left = 18.0
+margin_right = 366.0
+margin_bottom = 414.0
+rect_pivot_offset = Vector2( 86.063, 33.231 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+text = "Anhangá: Há 5 áreas no parque. Cada uma das 4 primeiras áreas contém um minigame principal. Na última você encontrará um portal para voltar no tempo. Mas atenção! Você precisa juntar 100 pontos para conseguir voltar no tempo. Quanto mais você joga os minigames, mais pontos você ganha e, portanto, mais próximo você fica de voltar no tempo. Além disso, há latas de lixo espalhadas pelo parque, uma em cada área do parque. Clicando nelas, você poderá entrar em  um minigame especial, de coleta de lixo, o que lhe ajudará a ganhar mais pontos."
+autowrap = true
+clip_text = true
+
+[node name="End" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+margin_left = 370.0
+margin_top = 391.0
+margin_right = 384.0
+margin_bottom = 414.0
+rect_min_size = Vector2( 14, 0 )
+rect_pivot_offset = Vector2( -589.937, -57.769 )
+size_flags_vertical = 8
+custom_fonts/font = SubResource( 3 )
+text = "v"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 31.924
+margin_top = 545.992
+margin_right = 404.924
+margin_bottom = 685.993
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/disabled = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+icon = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 882.148
+margin_top = 545.992
+margin_right = 1255.15
+margin_bottom = 684.992
+rect_scale = Vector2( 0.3, 0.3 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/focus = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+icon = ExtResource( 5 )
+
+[node name="map" type="Sprite" parent="."]
+position = Vector2( 319, 270 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 6 )
+
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

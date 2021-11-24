@@ -1,10 +1,10 @@
 extends CanvasLayer
 
 const CHAR_READ_RATE = 0.03
-onready var textbox_container = $TextboxContainer3
-onready var start_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/Start
-onready var end_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/End
-onready var label = $TextboxContainer3/MarginContainer/HBoxContainer/Label
+onready var textbox_container = $TextboxContainer
+onready var start_symbol = $TextboxContainer/MarginContainer/HBoxContainer/Start
+onready var end_symbol = $TextboxContainer/MarginContainer/HBoxContainer/End
+onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
 
 var character_name = Global.character_name
 
@@ -17,16 +17,11 @@ enum State {
 var current_state = State.READY
 var text_queue = []
 
-onready var text_label := $TextboxContainer/MarginContainer/HBoxContainer/Label
-onready var text_label2 := $TextboxContainer2/MarginContainer/HBoxContainer/Label
-
 func _ready():
-	text_label.text = "Anhangá: Você, {name}, de 1920, foi enviado(a) por mim para o futuro como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo. Esse portal estará na última área do parque.".format({"name": character_name})
-	text_label2.text = "{name}: Mas o que eu preciso fazer para juntar essa pontuação?".format({"name": character_name})
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("Anhangá: Juntar pontuação só será possível por meio de minigames espalhados pelo mapa, que vão desde atividades físicas e esportes até coletar o lixo do parque. Não será fácil, mas só assim eu poderei permitir que você retorne ao seu tempo. Lembre-se: essa área de preservação e lazer só existe porque pessoas do passado escolheram não desmatar!".format({"name": character_name}))
-
+	queue_text("Anhangá: Há 5 áreas no parque. Cada uma das 4 primeiras áreas contém um minigame principal. Na última você encontrará um portal para voltar no tempo. Mas atenção! Você precisa juntar 100 pontos para conseguir voltar no tempo. Quanto mais você joga os minigames, mais pontos você ganha e, portanto, mais próximo você fica de voltar no tempo. Além disso, há latas de lixo espalhadas pelo parque, uma em cada área do parque. Clicando nelas, você poderá entrar em  um minigame especial, de coleta de lixo, o que lhe ajudará a ganhar mais pontos.".format({"name": character_name}))
+	
 
 func _process(delta):
 	match current_state:
@@ -80,7 +75,7 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/scene6_2.tscn")
+	get_tree().change_scene("res://historia_inicial/scene6_3.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/scene7.tscn")
+	get_tree().change_scene("res://historia_inicial/scene7_1.tscn")
