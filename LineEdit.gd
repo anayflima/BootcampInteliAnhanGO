@@ -6,7 +6,6 @@ onready var response_node: Label = self.get_parent().get_node("Label2")
 
 
 func _on_LineEdit_text_entered(new_text):
-	Global.character_name = new_text 
 	response_node.show()
 	print(Global.area_to_unlock)
 	if Global.area_to_unlock == 2 && new_text == "1234":

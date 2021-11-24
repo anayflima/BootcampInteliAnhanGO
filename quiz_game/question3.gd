@@ -19,6 +19,11 @@ func _on_option1_pressed():
 	$option2.disabled = true
 	$option1.modulate = Color(0,255,0,0.4)
 	correct_label.text = "Booooa {name}! O parque possui sete roteiros botânicos e estão distribuídos por todo parque. Como você sabe o desmatamento é um grande desrespeito com a natureza, por isso, é muito legal ter um pedacinho de cada bioma brasileiro dentro da cidade não é mesmo? Valoriza a natureza no nosso dia-a-dia.".format({"name": character_name})
+	if (Global.third_question):
+		Global.quiz_score += 5
+		Global.main_score += 5
+		print("deu 3")
+		Global.third_question = false
 
 func _on_option2_pressed():
 	$TextboxContainer2.show()
@@ -30,7 +35,10 @@ func _on_option2_pressed():
 
 
 func _on_Button2_pressed():
+	Global.quiz_score = 0
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 func _on_Button_pressed():
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://quiz_game/final_scene.tscn")

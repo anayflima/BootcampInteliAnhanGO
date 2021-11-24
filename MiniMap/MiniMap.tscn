@@ -700,7 +700,7 @@ font_data = SubResource( 50 )
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=53]
-size = 20
+size = 28
 font_data = SubResource( 52 )
 
 [sub_resource type="DynamicFontData" id=54]

@@ -10,6 +10,10 @@ var first = true
 var first_score = true
 var main_score = 0
 var unlock_back_in_time = false 
+var first_question = true
+var second_question = true
+var third_question = true
+var quiz_score = 0
 
 func save_score(score):
 	var file = File.new()

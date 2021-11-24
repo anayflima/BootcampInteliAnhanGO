@@ -23,6 +23,7 @@ func _on_Timer2_timeout():
 		Global.game_score += 1
 		count+=1
 		if count >= 100:
+			Global.save_score(Global.main_score)
 			Global.main_score += 1
 			count = 0
 			
