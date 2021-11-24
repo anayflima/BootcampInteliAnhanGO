@@ -31,3 +31,8 @@ func _physics_process(delta):
 		elif (vetor_entrada.y < 0):
 			$AnimationPlayer.play("move_up")
 	move_and_slide(velocidade*500)
+
+
+#func _on_MiniMap_use_move_vector(move_vector):
+#	move_and_slide(move_vector*162)
+#	$Sprite.flip_h = move_vector.x < 0
