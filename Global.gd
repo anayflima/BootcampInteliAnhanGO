@@ -56,7 +56,7 @@ func play_died_sound():
 	audio_player.play()
 
 func play_jump_sound():
-	audio_player.stream = load("res://MinigameSkate/assets/jump.wav")
+	#audio_player.stream = load("res://MinigameSkate/assets/jump.wav")
 	audio_player.play()
 
 
