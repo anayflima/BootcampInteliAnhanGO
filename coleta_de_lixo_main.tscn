@@ -22,7 +22,7 @@ scale = Vector2( 10000, 100000 )
 texture = ExtResource( 6 )
 
 [node name="Ship" parent="." instance=ExtResource( 7 )]
-position = Vector2( 301.571, 307 )
+position = Vector2( 301.571, 247 )
 z_index = 1
 speed = 500
 speed_increase = 0.15

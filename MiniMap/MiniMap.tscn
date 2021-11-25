@@ -1,4 +1,4 @@
-[gd_scene load_steps=122 format=2]
+[gd_scene load_steps=124 format=2]
 
 [ext_resource path="res://MiniMap/MiniMap.gd" type="Script" id=1]
 [ext_resource path="res://MiniMap/Node2D.gd" type="Script" id=2]
@@ -459,6 +459,13 @@ tracks/0/keys = {
 [sub_resource type="StyleBoxEmpty" id=29]
 
 [sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="DynamicFontData" id=70]
+font_path = "res://historia_inicial/Born2bSportyV10.ttf"
+
+[sub_resource type="DynamicFont" id=71]
+size = 20
+font_data = SubResource( 70 )
 
 [sub_resource type="CapsuleShape2D" id=31]
 radius = 14.1108
@@ -1067,6 +1074,22 @@ custom_styles/focus = SubResource( 28 )
 custom_styles/disabled = SubResource( 29 )
 custom_styles/normal = SubResource( 30 )
 icon = ExtResource( 22 )
+
+[node name="back_initial_story" type="Button" parent="CanvasLayer/ViewportContainer/Viewport/Node2D"]
+margin_left = 35.0
+margin_top = 594.0
+margin_right = 164.0
+margin_bottom = 644.0
+
+[node name="Label" type="Label" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/back_initial_story"]
+margin_left = 10.9236
+margin_top = 3.58472
+margin_right = 118.924
+margin_bottom = 46.5847
+custom_fonts/font = SubResource( 71 )
+text = "Voltar para
+história inicial"
+align = 1
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="CanvasLayer/ViewportContainer/Viewport/Node2D"]
 position = Vector2( 1702.63, -260.539 )
@@ -1763,6 +1786,12 @@ text = "Aperte no lata de lixo para entrar no minigame!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button" type="Button" parent="CanvasLayer/ViewportContainer/Viewport/Node2D"]
+margin_left = 10.0
+margin_top = 350.0
+margin_right = 22.0
+margin_bottom = 370.0
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 127, 75 )
@@ -2769,6 +2798,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="back_initial_story" type="Button" parent="Node2D"]
+margin_left = 35.0
+margin_top = 594.0
+margin_right = 164.0
+margin_bottom = 644.0
+
+[node name="Label" type="Label" parent="Node2D/back_initial_story"]
+margin_left = 10.9236
+margin_top = 3.58472
+margin_right = 118.924
+margin_bottom = 46.5847
+custom_fonts/font = SubResource( 71 )
+text = "Voltar para
+história inicial"
+align = 1
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 52 )
 volume_db = 7.177
@@ -2789,6 +2834,7 @@ volume_db = 7.177
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Node2D/button_back_in_time" to="Node2D" method="_on_button_back_in_time_pressed"]
 [connection signal="pressed" from="Node2D/button_basquete" to="Node2D" method="_on_button_basquete_pressed"]
 [connection signal="pressed" from="Node2D/button_pingpong" to="Node2D" method="_on_button_pingpong_pressed"]
@@ -2806,3 +2852,4 @@ volume_db = 7.177
 [connection signal="pressed" from="Node2D/CanvasLayer/menu/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="Node2D/CanvasLayer/menu/exit" to="." method="_on_exit_pressed"]
 [connection signal="toggled" from="Node2D/CanvasLayer/menu/music" to="." method="_on_music_toggled"]
+[connection signal="pressed" from="Node2D/back_initial_story" to="." method="_on_Button_pressed"]

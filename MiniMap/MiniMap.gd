@@ -33,5 +33,6 @@ func _on_options_pressed():
 
 func _on_music_toggled(button_pressed):
 	$AudioStreamPlayer.stop()
-	
 
+func _on_Button_pressed():
+	get_tree().change_scene("res://historia_inicial/scene7_3.tscn")
