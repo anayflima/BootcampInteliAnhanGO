@@ -132,10 +132,7 @@ func _process(delta):
 	score_label.text = str(Global.main_score)
 	save()
 	Global.save_score(Global.main_score)
-#
-#func set_mm():
-#	mm = map.instance()
-#	$KinematicBody2D/Camera2D.add_child(mm)
+
 
 func save():
 	var saved_position = {

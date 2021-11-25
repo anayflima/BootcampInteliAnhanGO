@@ -18,8 +18,8 @@ func _on_Timer2_timeout():
 	if is_scoring:
 		Global.game_score += 1
 		count+=1
-		if count >= 100:
-			Global.main_score += 1
+		if count >= 10:
+			Global.main_score += 0.1
 			count = 0
 			
 		if (Global.game_score > 0 and Global.game_score % 100 == 0):

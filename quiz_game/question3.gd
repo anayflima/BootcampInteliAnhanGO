@@ -27,10 +27,17 @@ func _on_option2_pressed():
 	$option2.disabled = true
 	$option2.modulate = Color(255,0,0,0.4)
 	wrong_label.text = "É {name}... acho que você vai precisar ir ao parque um pouco mais. Vá até lá e volte para responder essa pergunta novamente.".format({"name": character_name})
-
+	if (Global.third_question):
+		Global.quiz_score += 5
+		Global.main_score += 5
+		print("deu 3")
+		Global.third_question = false
 
 func _on_Button2_pressed():
+	Global.quiz_score = 0
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
 
 func _on_Button_pressed():
+	Global.save_score(Global.main_score)
 	get_tree().change_scene("res://quiz_game/final_scene.tscn")
