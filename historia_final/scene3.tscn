@@ -19,15 +19,15 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 22
 font_data = SubResource( 2 )
 
-[sub_resource type="StyleBoxEmpty" id=9]
+[sub_resource type="StyleBoxEmpty" id=4]
 
-[sub_resource type="StyleBoxEmpty" id=10]
+[sub_resource type="StyleBoxEmpty" id=5]
 
-[sub_resource type="StyleBoxEmpty" id=11]
+[sub_resource type="StyleBoxEmpty" id=6]
 
-[sub_resource type="StyleBoxEmpty" id=12]
+[sub_resource type="StyleBoxEmpty" id=7]
 
-[sub_resource type="StyleBoxEmpty" id=13]
+[sub_resource type="StyleBoxEmpty" id=8]
 
 [node name="Textbox" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -113,11 +113,11 @@ margin_top = 410.087
 margin_right = 420.028
 margin_bottom = 550.088
 rect_scale = Vector2( 0.3, 0.3 )
-custom_styles/hover = SubResource( 9 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/focus = SubResource( 11 )
-custom_styles/disabled = SubResource( 12 )
-custom_styles/normal = SubResource( 13 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/focus = SubResource( 6 )
+custom_styles/disabled = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
 icon = ExtResource( 3 )
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
