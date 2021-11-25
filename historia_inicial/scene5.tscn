@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://historia_inicial/scene5.gd" type="Script" id=1]
-[ext_resource path="res://historia_inicial/Cena4.png" type="Texture" id=2]
+[ext_resource path="res://historia_inicial/Cena5.png" type="Texture" id=2]
 [ext_resource path="res://historia_inicial/Voltar.png" type="Texture" id=3]
 [ext_resource path="res://historia_inicial/Continuar.png" type="Texture" id=4]
 
@@ -45,8 +45,8 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 510.316, 179.328 )
-scale = Vector2( 2.75, 2.75 )
+position = Vector2( 512.333, 273.89 )
+scale = Vector2( 2.6, 2.0367 )
 texture = ExtResource( 2 )
 
 [node name="TextboxContainer" type="MarginContainer" parent="."]
