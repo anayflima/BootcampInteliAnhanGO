@@ -34,15 +34,15 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 size = 28
 font_data = SubResource( 5 )
 
-[sub_resource type="StyleBoxEmpty" id=15]
+[sub_resource type="StyleBoxEmpty" id=7]
 
-[sub_resource type="StyleBoxEmpty" id=16]
+[sub_resource type="StyleBoxEmpty" id=8]
 
-[sub_resource type="StyleBoxEmpty" id=17]
+[sub_resource type="StyleBoxEmpty" id=9]
 
-[sub_resource type="StyleBoxEmpty" id=18]
+[sub_resource type="StyleBoxEmpty" id=10]
 
-[sub_resource type="StyleBoxEmpty" id=19]
+[sub_resource type="StyleBoxEmpty" id=11]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 0.987821, 0.982676 )
@@ -148,39 +148,33 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Popup"]
 position = Vector2( 95.1589, 63.093 )
-scale = Vector2( 0.3, 0.3 )
+scale = Vector2( 0.33, 0.3 )
 texture = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="Popup"]
-margin_left = -102.969
-margin_top = -80.4741
-margin_right = 312.031
-margin_bottom = 273.526
+margin_left = -100.0
+margin_top = -110.0
+margin_right = 315.0
+margin_bottom = 321.0
 custom_fonts/font = SubResource( 6 )
-text = "Bem-vindo ao ping pong! Aqui você deve
-vencer nosso mestre fantasma para 
-ganhar pontos e conseguir desbloquear
-novos games e áreas do mapa! Você é 
-o personagem à esquerda da tela e 
-o controla clicando na parte superior
-da tela para ir para cima, e clicando na
-parte inferior para ir para baixo.
-                 Boa sorte!"
+text = "Bem-vindo ao jogo de tênis! Aqui você deve vencer nosso mestre fantasma para  ganhar pontos e conseguir desbloquear novos games e áreas do mapa! Você é  o personagem à esquerda da tela e  o controla clicando na parte superior da tela para ir para cima, e clicando na parte inferior para ir para baixo. Para começar, clique em qualquer lugar da tela. 
+                                 Boa sorte!"
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="X" type="Button" parent="Popup"]
-margin_left = 282.673
+margin_left = 300.0
 margin_top = -140.066
-margin_right = 678.673
+margin_right = 696.0
 margin_bottom = 249.934
 rect_scale = Vector2( 0.1, 0.1 )
-custom_styles/hover = SubResource( 15 )
-custom_styles/pressed = SubResource( 16 )
-custom_styles/focus = SubResource( 17 )
-custom_styles/disabled = SubResource( 18 )
-custom_styles/normal = SubResource( 19 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 icon = ExtResource( 12 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -115,7 +115,7 @@ func get_impulse(angle,size):
 #marcar o ponto que o jogador fizer
 func point():
 	if (ball_x>789 && ball_x<839 && $KinematicBody2D/bodyball.position.y>-193 && $KinematicBody2D/bodyball.position.y<-160 && point== true ):
-		Global.main_score += 5
+		Global.main_score += 10
 		Global.score += 1
 		point = false
 
