@@ -18,12 +18,11 @@ enum State {
 
 var current_state = State.READY
 var text_queue = []
-var score = 0;
 
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("Muito bem!\nVocê completou a sequência de perguntas. Sua pontuação é {score} de 15.\nAtenção: não adianta tentar responder as perguntas que você já respondeu para ganhar mais pontos. Isso não irá funcionar!".format({"score": score}))
+	queue_text("Muito bem!\nVocê completou a sequência de perguntas. Sua pontuação é {score} de 15.\nAtenção: não adianta tentar responder as perguntas que você já respondeu para ganhar mais pontos. Isso não irá funcionar!".format({"score": Global.quiz_score}))
 
 
 func _process(delta):

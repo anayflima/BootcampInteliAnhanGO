@@ -21,9 +21,7 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("Anhangá: O mapa desse jogo foi baseado em um parque real, o Parque do Povo, localizado no distrito do Itaim Bibi, em São Paulo. Durante sua jornada de exploração do mapa, você encontrará áreas bloqueadas. Para ter acesso a elas, procure por um cadeado na fronteira da névoa. Clicando nele, você precisará inserir um código para desbloquear a área, e esse código só será encontrado no Parque do Povo do mundo real.".format({"name": character_name}))
-	#queue_text("Nossa, onde estou??? Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro! Olha, Parque do Povo... Será que a floresta em que eu estava virou esse parque?")
-#	queue_text("Thanks for watching!")
+	queue_text("Viajante, parabéns por ter completado essa jornada e chegado até aqui! {name} aprendeu que desmatar afeta tanto o presente quanto o futuro. Portanto, não desmate! E aproveite as áreas de preservação que há ao seu redor. Visite mais os parques de sua cidade! Você viu que há muito o que se fazer neles!".format({"name": character_name}))
 
 func _process(delta):
 	match current_state:
@@ -77,7 +75,5 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/scene6_3.tscn")
+	get_tree().change_scene("res://historia_final/scene2.tscn")
 
-func _on_Button_pressed():
-	get_tree().change_scene("res://historia_inicial/scene7_2.tscn")

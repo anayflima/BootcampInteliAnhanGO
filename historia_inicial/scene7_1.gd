@@ -1,10 +1,10 @@
 extends CanvasLayer
 
 const CHAR_READ_RATE = 0.03
-onready var textbox_container = $TextboxContainer3
-onready var start_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/Start
-onready var end_symbol = $TextboxContainer3/MarginContainer/HBoxContainer/End
-onready var label = $TextboxContainer3/MarginContainer/HBoxContainer/Label
+onready var textbox_container = $TextboxContainer
+onready var start_symbol = $TextboxContainer/MarginContainer/HBoxContainer/Start
+onready var end_symbol = $TextboxContainer/MarginContainer/HBoxContainer/End
+onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
 
 var character_name = Global.character_name
 
@@ -21,7 +21,7 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("Anhangá: Você, {name}, de 1920, foi enviado(a) por mim para o futuro como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo.".format({"name": character_name}))
+	queue_text("Anhangá: O mapa desse jogo foi baseado em um parque real, o Parque do Povo, localizado no distrito do Itaim Bibi, em São Paulo. Durante sua jornada de exploração do mapa, você encontrará áreas bloqueadas. Para ter acesso a elas, procure por um cadeado na fronteira da névoa. Clicando nele, você precisará inserir um código para desbloquear a área, e esse código só será encontrado no Parque do Povo do mundo real.".format({"name": character_name}))
 	#queue_text("Nossa, onde estou??? Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro! Olha, Parque do Povo... Será que a floresta em que eu estava virou esse parque?")
 #	queue_text("Thanks for watching!")
 
@@ -77,7 +77,7 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://historia_inicial/scene4.tscn")
+	get_tree().change_scene("res://historia_inicial/scene7.tscn")
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://MiniMap/MiniMap.tscn")
+	get_tree().change_scene("res://historia_inicial/scene7_2.tscn")

@@ -147,8 +147,8 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Popup"]
-position = Vector2( 95.1589, 63.093 )
-scale = Vector2( 0.33, 0.3 )
+position = Vector2( 95.159, 72 )
+scale = Vector2( 0.33, 0.33 )
 texture = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="Popup"]
@@ -157,7 +157,7 @@ margin_top = -110.0
 margin_right = 315.0
 margin_bottom = 321.0
 custom_fonts/font = SubResource( 6 )
-text = "Bem-vindo ao jogo de tênis! Aqui você deve vencer nosso mestre fantasma para  ganhar pontos e conseguir desbloquear novos games e áreas do mapa! Você é  o personagem à esquerda da tela e  o controla clicando na parte superior da tela para ir para cima, e clicando na parte inferior para ir para baixo. Para começar, clique em qualquer lugar da tela. 
+text = "Bem-vindo ao jogo de tênis! Aqui você deve vencer nosso mestre fantasma para  ganhar pontos e conseguir desbloquear novos games e áreas do mapa! Você é  o personagem à esquerda da tela e  o controla clicando na parte superior da tela para ir para cima, e clicando na parte inferior para ir para baixo. Ganha quem completar 5 pontos primeiro. Para começar, clique em qualquer lugar da tela. 
                                  Boa sorte!"
 autowrap = true
 __meta__ = {

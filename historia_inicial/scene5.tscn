@@ -45,8 +45,8 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 512.333, 273.89 )
-scale = Vector2( 2.6, 2.0367 )
+position = Vector2( 512.333, 286.904 )
+scale = Vector2( 2.6, 2.3 )
 texture = ExtResource( 2 )
 
 [node name="TextboxContainer" type="MarginContainer" parent="."]

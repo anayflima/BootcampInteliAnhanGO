@@ -21,7 +21,7 @@ func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
 	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("Anhangá: Você, {name}, de 1920, foi enviado(a) por mim para o futuro como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo. Esse portal estará na última área do parque.".format({"name": character_name}))
+	queue_text("Anhangá: Você, {name}, de 1920, foi enviado(a) por mim para 2021 como castigo por seu desmatamento. Agora, a única maneira de se redimir é juntando a pontuação necessária para poder desbloquear o portal que te levará de volta para o seu tempo. Esse portal estará na última área do parque.".format({"name": character_name}))
 	#queue_text("Nossa, onde estou??? Uauuuu, 2022! O Anhangá me mandou mesmo para o futuro! Olha, Parque do Povo... Será que a floresta em que eu estava virou esse parque?")
 #	queue_text("Thanks for watching!")
 

@@ -77,3 +77,5 @@ func _on_Tween_tween_completed(object, key):
 func _on_Button2_pressed():
 	get_tree().change_scene("res://historia_final/scene1.tscn")
 
+func _on_Button_pressed():
+	get_tree().change_scene("res://historia_final/scene3.tscn")

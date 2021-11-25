@@ -32,18 +32,21 @@ extents = Vector2( 13.0156, 853.992 )
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=8]
+size = 20
 font_data = SubResource( 7 )
 
 [sub_resource type="DynamicFontData" id=9]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=10]
+size = 20
 font_data = SubResource( 9 )
 
 [sub_resource type="DynamicFontData" id=11]
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=12]
+size = 20
 font_data = SubResource( 11 )
 
 [sub_resource type="DynamicFontData" id=13]
@@ -111,7 +114,6 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-editor/display_folded = true
 position = Vector2( 507.532, 596.133 )
 scale = Vector2( 0.55, 0.55 )
 
@@ -186,10 +188,10 @@ __meta__ = {
 }
 
 [node name="button_play_again" type="Button" parent="."]
-margin_left = 555.148
-margin_top = 6.71948
-margin_right = 674.148
-margin_bottom = 41.7195
+margin_left = 485.732
+margin_top = 7.0
+margin_right = 635.732
+margin_bottom = 57.0
 custom_fonts/font = SubResource( 10 )
 text = "Jogar novamente"
 __meta__ = {
@@ -197,10 +199,10 @@ __meta__ = {
 }
 
 [node name="button_get_out" type="Button" parent="."]
-margin_left = 683.979
-margin_top = 6.6635
-margin_right = 789.979
-margin_bottom = 41.6635
+margin_left = 661.0
+margin_top = 7.0
+margin_right = 811.0
+margin_bottom = 57.0
 custom_fonts/font = SubResource( 12 )
 text = "Voltar ao mapa"
 __meta__ = {
