@@ -89,7 +89,30 @@ func _process(delta):
 	if !(y > -3079 && y < -2455 && x > 4713 && x < 5570) || Global.unlock_area5 == true : 
 		$CanvasLayer/sprite_unlock5.visible = false
 		$CanvasLayer/label_unlock5.visible = false
-		
+	if x < 1067 && x > 261 && y > -278 && y < 263 : 
+		$CanvasLayer/latas_lixo/label_lata1.visible = true
+		$CanvasLayer/latas_lixo/sprite_lata1.visible = true
+	if !(x< 1067 && x > 261 && y > -278 && y < 263) : 
+		$CanvasLayer/latas_lixo/label_lata1.visible = false
+		$CanvasLayer/latas_lixo/sprite_lata1.visible = false
+	if x < 4064 && x > 3034 && y > -1374.539 && y < -726.539 : 
+		$CanvasLayer/latas_lixo/label_lata2.visible = true
+		$CanvasLayer/latas_lixo/sprite_lata2.visible = true
+	if !(x< 4064 && x > 3034 && y > -1374.539 && y < -726.539) : 
+		$CanvasLayer/latas_lixo/label_lata2.visible = false
+		$CanvasLayer/latas_lixo/sprite_lata2.visible = false
+	if x < 5215.629 && x > 4166.629 && y > 721.461 && y < 1346.461 : 
+		$CanvasLayer/latas_lixo/label_lata3.visible = true
+		$CanvasLayer/latas_lixo/sprite_lata3.visible = true
+	if !(x< 5215.629 && x > 4166.629 && y > 721.461 && y < 1346.461) : 
+		$CanvasLayer/latas_lixo/label_lata3.visible = false
+		$CanvasLayer/latas_lixo/sprite_lata3.visible = false
+	if x < 4068.629 && x > 3105.629 && y > -3227.539 && y < -2628.539 : 
+		$CanvasLayer/latas_lixo/label_lata4.visible = true
+		$CanvasLayer/latas_lixo/sprite_lata4.visible = true
+	if !(x< 4068.629 && x > 3105.629 && y > -3227.539 && y < -2628.539) : 
+		$CanvasLayer/latas_lixo/label_lata4.visible = false
+		$CanvasLayer/latas_lixo/sprite_lata4.visible = false
 	
 	
 	if x > 5818 && x < 6618 && y > -2727 && y < -1927:

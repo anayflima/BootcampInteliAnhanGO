@@ -61,6 +61,10 @@
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "TX Tileset Grass.png 1"
@@ -71,6 +75,10 @@
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
 2/name = "TX Tileset Grass.png 2"
@@ -81,6 +89,10 @@
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
 3/name = "TX Tileset Grass.png 3"
@@ -91,6 +103,10 @@
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
 4/name = "TX Tileset Grass.png 4"
@@ -101,6 +117,10 @@
 4/tile_mode = 0
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
 5/name = "TX Tileset Grass.png 5"
@@ -111,6 +131,10 @@
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
 
@@ -126,6 +150,10 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "TX_Tileset_Grass_Bordas.png 1"
@@ -136,6 +164,10 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
 2/name = "TX_Tileset_Grass_Bordas.png 2"
@@ -146,6 +178,10 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
 3/name = "TX_Tileset_Grass_Bordas.png 3"
@@ -156,6 +192,11 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 2 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -177,6 +218,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "[A]Water5_pipo.png 1"
@@ -187,6 +232,11 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 4 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -203,6 +253,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
 3/name = "[A]Water5_pipo.png 3"
@@ -222,6 +276,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 3/autotile/z_index_map = [  ]
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
 4/name = "[A]Water5_pipo.png 4"
@@ -232,6 +290,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 4/tile_mode = 0
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
 5/name = "[A]Water5_pipo.png 5"
@@ -242,6 +304,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
 
@@ -257,9 +323,14 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/autotile/spacing = 0
 0/autotile/occluder_map = [  ]
 0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
 0/autotile/z_index_map = [  ]
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "[A]Flower_pipo.png 1"
@@ -273,9 +344,14 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 1/autotile/spacing = 0
 1/autotile/occluder_map = [  ]
 1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
 1/autotile/z_index_map = [  ]
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
 2/name = "[A]Flower_pipo.png 2"
@@ -289,9 +365,14 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 2/autotile/spacing = 0
 2/autotile/occluder_map = [  ]
 2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
 2/autotile/z_index_map = [  ]
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
 3/name = "[A]Flower_pipo.png 3"
@@ -302,6 +383,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
 
@@ -314,6 +399,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 1/name = "[A]Dirt2_pipo.png 1"
@@ -324,6 +413,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
 2/name = "[A]Dirt2_pipo.png 2"
@@ -334,6 +427,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
 3/name = "[A]Dirt2_pipo.png 3"
@@ -344,6 +441,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
 4/name = "[A]Dirt2_pipo.png 4"
@@ -354,6 +455,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 4/tile_mode = 0
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
 5/name = "[A]Dirt2_pipo.png 5"
@@ -364,6 +469,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
 6/name = "[A]Dirt2_pipo.png 6"
@@ -374,6 +483,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 6/tile_mode = 0
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
 6/shapes = [  ]
 6/z_index = 0
 7/name = "[A]Dirt2_pipo.png 7"
@@ -384,6 +497,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 7/tile_mode = 0
 7/occluder_offset = Vector2( 0, 0 )
 7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
 7/shapes = [  ]
 7/z_index = 0
 8/name = "[A]Dirt2_pipo.png 8"
@@ -394,6 +511,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 8/tile_mode = 0
 8/occluder_offset = Vector2( 0, 0 )
 8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
 8/shapes = [  ]
 8/z_index = 0
 
@@ -551,6 +672,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 36 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -567,6 +693,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 37 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -583,6 +714,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 2/tile_mode = 0
 2/occluder_offset = Vector2( 0, 0 )
 2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 38 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -599,6 +735,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 39 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -624,6 +765,10 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 4/autotile/z_index_map = [  ]
 4/occluder_offset = Vector2( 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
 5/name = "TX Plant.png 5"
@@ -634,6 +779,11 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 40 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
@@ -654,6 +804,10 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 
@@ -666,6 +820,10 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 
@@ -678,6 +836,10 @@ points = PoolVector2Array( 26.6667, 102.667, 77.3611, 101.972, 64.1667, 119.333,
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
 
@@ -776,7 +938,6 @@ handle_input_locally = false
 render_target_update_mode = 3
 
 [node name="Node2D" type="Node2D" parent="CanvasLayer/ViewportContainer/Viewport"]
-editor/display_folded = true
 position = Vector2( 448.371, 575.539 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -879,8 +1040,8 @@ position = Vector2( 736.289, 310.474 )
 rotation = -1.5708
 scale = Vector2( 100, 50 )
 texture = ExtResource( 16 )
-vframes = 3
 hframes = 8
+vframes = 3
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/button_back_in_time"]
@@ -1079,8 +1240,8 @@ __meta__ = {
 position = Vector2( -1.05029, 0.442749 )
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 24 )
-vframes = 4
 hframes = 4
+vframes = 4
 frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/KinematicBody2D"]
@@ -1672,7 +1833,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="música" type="TextureButton" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu"]
+[node name="music" type="TextureButton" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu"]
 margin_left = 670.0
 margin_top = 296.0
 margin_right = 720.0
@@ -1696,13 +1857,83 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="latas_lixo" type="Control" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata1" type="Sprite" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata1" type="Label" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata2" type="Sprite" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata2" type="Label" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata3" type="Sprite" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata3" type="Label" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata4" type="Sprite" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata4" type="Label" parent="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Sprite" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 127, 75 )
 scale = Vector2( 0.661457, 0.567708 )
 texture = ExtResource( 50 )
 
 [node name="Node2D" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 448.371, 575.539 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -1805,8 +2036,8 @@ position = Vector2( 736.289, 310.474 )
 rotation = -1.5708
 scale = Vector2( 100, 50 )
 texture = ExtResource( 16 )
-vframes = 3
 hframes = 8
+vframes = 3
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/button_back_in_time"]
@@ -1954,6 +2185,9 @@ custom_styles/focus = SubResource( 28 )
 custom_styles/disabled = SubResource( 29 )
 custom_styles/normal = SubResource( 30 )
 icon = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="lixo2" type="Button" parent="Node2D"]
 margin_left = 3502.0
@@ -1967,6 +2201,9 @@ custom_styles/focus = SubResource( 28 )
 custom_styles/disabled = SubResource( 29 )
 custom_styles/normal = SubResource( 30 )
 icon = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="lixo3" type="Button" parent="Node2D"]
 margin_left = 4658.0
@@ -1995,7 +2232,7 @@ custom_styles/normal = SubResource( 30 )
 icon = ExtResource( 22 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="Node2D"]
-position = Vector2( 1702.63, -260.539 )
+position = Vector2( 883.629, -277.539 )
 script = ExtResource( 23 )
 __meta__ = {
 "_edit_group_": true
@@ -2005,8 +2242,8 @@ __meta__ = {
 position = Vector2( -1.05029, 0.442749 )
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 24 )
-vframes = 4
 hframes = 4
+vframes = 4
 frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/KinematicBody2D"]
@@ -2297,11 +2534,13 @@ tile_data = PoolIntArray( -5504976, 0, 0, -5439440, 0, 0, -5373905, 0, 0, -53739
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D"]
 
 [node name="sprite_basquete" type="Sprite" parent="Node2D/CanvasLayer"]
+visible = false
 position = Vector2( 527, 565 )
 scale = Vector2( 0.347289, 0.0421769 )
 texture = ExtResource( 39 )
 
 [node name="label_basquete" type="Label" parent="Node2D/CanvasLayer"]
+visible = false
 margin_left = 314.0
 margin_top = 549.0
 margin_right = 770.0
@@ -2417,9 +2656,10 @@ texture = ExtResource( 39 )
 
 [node name="label_backtime" type="Label" parent="Node2D/CanvasLayer"]
 margin_left = 297.0
-margin_top = 552.0
+margin_top = 551.0
 margin_right = 767.0
-margin_bottom = 580.0
+margin_bottom = 579.0
+rect_scale = Vector2( 1.35, 1.5 )
 custom_fonts/font = SubResource( 53 )
 text = "Aperte no tornado para voltar no tempo!"
 __meta__ = {
@@ -2542,14 +2782,14 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Node2D/CanvasLayer/menu"]
-position = Vector2( 573.5, 313.5 )
-scale = Vector2( 7.60417, 1.97917 )
+position = Vector2( 574, 313.5 )
+scale = Vector2( 9.375, 1.97917 )
 texture = ExtResource( 45 )
 
 [node name="resume" type="Button" parent="Node2D/CanvasLayer/menu"]
-margin_left = 418.0
-margin_top = 292.0
-margin_right = 480.0
+margin_left = 385.0
+margin_top = 289.0
+margin_right = 447.0
 margin_bottom = 346.0
 custom_styles/hover = SubResource( 63 )
 custom_styles/pressed = SubResource( 64 )
@@ -2562,9 +2802,9 @@ __meta__ = {
 }
 
 [node name="exit" type="Button" parent="Node2D/CanvasLayer/menu"]
-margin_left = 544.0
+margin_left = 553.0
 margin_top = 292.0
-margin_right = 606.0
+margin_right = 615.0
 margin_bottom = 346.0
 custom_styles/hover = SubResource( 63 )
 custom_styles/pressed = SubResource( 64 )
@@ -2577,10 +2817,10 @@ __meta__ = {
 }
 
 [node name="label_continue" type="Label" parent="Node2D/CanvasLayer/menu"]
-margin_left = 395.0
+margin_left = 365.0
 margin_top = 268.0
-margin_right = 493.0
-margin_bottom = 296.0
+margin_right = 463.0
+margin_bottom = 297.0
 custom_fonts/font = SubResource( 57 )
 text = "continuar"
 __meta__ = {
@@ -2588,20 +2828,20 @@ __meta__ = {
 }
 
 [node name="label_exit" type="Label" parent="Node2D/CanvasLayer/menu"]
-margin_left = 511.0
-margin_top = 268.0
-margin_right = 635.0
-margin_bottom = 296.0
+margin_left = 514.0
+margin_top = 267.0
+margin_right = 638.0
+margin_bottom = 295.0
 custom_fonts/font = SubResource( 57 )
 text = "sair do jogo"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="música" type="TextureButton" parent="Node2D/CanvasLayer/menu"]
-margin_left = 670.0
+[node name="music" type="TextureButton" parent="Node2D/CanvasLayer/menu"]
+margin_left = 716.0
 margin_top = 296.0
-margin_right = 720.0
+margin_right = 766.0
 margin_bottom = 344.0
 toggle_mode = true
 texture_normal = ExtResource( 48 )
@@ -2611,13 +2851,84 @@ __meta__ = {
 }
 
 [node name="label_musica" type="Label" parent="Node2D/CanvasLayer/menu"]
-margin_left = 658.0
-margin_top = 270.0
-margin_right = 732.0
-margin_bottom = 329.0
+margin_left = 705.0
+margin_top = 267.0
+margin_right = 774.0
+margin_bottom = 326.0
 custom_fonts/font = SubResource( 57 )
 text = "música
 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="latas_lixo" type="Control" parent="Node2D/CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata1" type="Sprite" parent="Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata1" type="Label" parent="Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata2" type="Sprite" parent="Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata2" type="Label" parent="Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata3" type="Sprite" parent="Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata3" type="Label" parent="Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_lata4" type="Sprite" parent="Node2D/CanvasLayer/latas_lixo"]
+position = Vector2( 542.5, 565 )
+scale = Vector2( 0.368566, 0.0421769 )
+texture = ExtResource( 39 )
+
+[node name="label_lata4" type="Label" parent="Node2D/CanvasLayer/latas_lixo"]
+margin_left = 296.0
+margin_top = 552.0
+margin_right = 788.0
+margin_bottom = 580.0
+custom_fonts/font = SubResource( 57 )
+text = "Aperte no lata de lixo para entrar no minigame!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -2639,6 +2950,9 @@ volume_db = 7.177
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/lixo2" to="CanvasLayer/ViewportContainer/Viewport/Node2D" method="_on_lixo2_pressed"]
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/lixo3" to="CanvasLayer/ViewportContainer/Viewport/Node2D" method="_on_lixo3_pressed"]
 [connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/lixo4" to="CanvasLayer/ViewportContainer/Viewport/Node2D" method="_on_lixo4_pressed"]
+[connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/ViewportContainer/Viewport/Node2D/CanvasLayer/menu/exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Node2D/button_back_in_time" to="Node2D" method="_on_button_back_in_time_pressed"]
 [connection signal="pressed" from="Node2D/button_basquete" to="Node2D" method="_on_button_basquete_pressed"]
 [connection signal="pressed" from="Node2D/button_pingpong" to="Node2D" method="_on_button_pingpong_pressed"]
@@ -2655,3 +2969,4 @@ volume_db = 7.177
 [connection signal="pressed" from="Node2D/CanvasLayer/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Node2D/CanvasLayer/menu/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="Node2D/CanvasLayer/menu/exit" to="." method="_on_exit_pressed"]
+[connection signal="toggled" from="Node2D/CanvasLayer/menu/music" to="." method="_on_music_toggled"]
