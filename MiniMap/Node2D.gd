@@ -14,10 +14,6 @@ func _ready():
 		$area3/CollisionPolygon2D.disabled = false
 		$area4/CollisionPolygon2D.disabled = false
 		$area5/CollisionPolygon2D.disabled = false
-#		$area2/CollisionPolygon2D.disabled = true
-#		$area3/CollisionPolygon2D.disabled = true
-#		$area4/CollisionPolygon2D.disabled = true
-#		$area5/CollisionPolygon2D.disabled = true
 		Global.first = false
 	if (Global.first_score):
 		var dir = Directory.new()
@@ -29,11 +25,9 @@ func _ready():
 	$button_basquete.visible = false
 	$button_skate.visible = false
 	$button_question.visible = false
-	#$CanvasLayer/Panel_needScore.visible = false
-	#$CanvasLayer/label_needScore.visible = false
-#	Node2D/CanvasLayer/Panel_needScore
-#	Node2D/CanvasLayer/sprite_pingpong
+
 func _process(delta):
+	
 	var x = $KinematicBody2D.position.x
 	var y = $KinematicBody2D.position.y
 	# Mostra botões dos minigames quando o personagem se aproxima deles
@@ -132,7 +126,10 @@ func _process(delta):
 	score_label.text = str(Global.main_score)
 	save()
 	Global.save_score(Global.main_score)
-
+#
+#func set_mm():
+#	mm = map.instance()
+#	$KinematicBody2D/Camera2D.add_child(mm)
 
 func save():
 	var saved_position = {
