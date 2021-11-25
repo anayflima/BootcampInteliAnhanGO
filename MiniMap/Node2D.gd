@@ -15,10 +15,10 @@ func _ready():
 		$area4/CollisionPolygon2D.disabled = false
 		$area5/CollisionPolygon2D.disabled = false
 		Global.first = false
-	if (Global.first_score):
-		var dir = Directory.new()
-		dir.remove("user://saved_score.dat")
-		Global.first_score = false
+#	if (Global.first_score):
+#		var dir = Directory.new()
+#		dir.remove("user://saved_score.dat")
+#		Global.first_score = false
 	$KinematicBody2D.position = load_data()
 	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
@@ -141,7 +141,6 @@ func save():
 	file.store_line(to_json(saved_position))
 	file.close()
 
-
 func load_data():
 	var file = File.new()
 	if not file.file_exists("user://saved_data.dat"):
@@ -223,5 +222,7 @@ func _on_lixo3_pressed():
 
 func _on_lixo4_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
+	
+
 
 

@@ -16,6 +16,7 @@ var first_question = true
 var second_question = true
 var third_question = true
 var quiz_score = 0
+var button_music = false
 
 #salvar pontuação
 
@@ -34,6 +35,7 @@ func load_score():
 	var score = content
 	file.close()
 	return score
+	
 
 # Basketball minigame global variables
 var score = 0
