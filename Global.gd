@@ -20,6 +20,8 @@ var third_question = true
 var quiz_score = 0
 var button_music = false
 
+var initial_score = 90 # 90 para teste. Para jogo real a pontuacao começa com 0
+
 #salvar pontuação
 
 func save_score(score):
@@ -31,7 +33,7 @@ func save_score(score):
 func load_score():
 	var file = File.new()
 	if not file.file_exists("user://saved_score.dat"):
-		return 0
+		return initial_score
 	file.open("user://saved_score.dat", File.READ)
 	var content = file.get_float()
 	var score = content

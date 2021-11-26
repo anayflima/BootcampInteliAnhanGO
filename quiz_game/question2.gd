@@ -17,6 +17,11 @@ func _on_option1_pressed():
 	$option1.disabled = true
 	$option2.disabled = true
 	$option1.modulate = Color(0,255,0,0.4)
+	if (Global.second_question):
+		Global.quiz_score += 5
+		Global.main_score += 5
+		print("deu 2")
+		Global.second_question = false
 
 func _on_option2_pressed():
 	$TextboxContainer2.show()
@@ -25,11 +30,7 @@ func _on_option2_pressed():
 	$option2.disabled = true
 	$option2.modulate = Color(255,0,0,0.4)
 	wrong_label.text = "Poxaa {name}! \nVisite o parque para saber mais sobre o destino que o parque dá para o lixo.".format({"name": character_name})
-	if (Global.second_question):
-		Global.quiz_score += 5
-		Global.main_score += 5
-		print("deu 2")
-		Global.second_question = false
+	
 
 func _on_Button2_pressed():
 	Global.quiz_score = 0

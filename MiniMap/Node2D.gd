@@ -27,7 +27,9 @@ func _ready():
 	$button_question.visible = false
 
 func _process(delta):
-	
+	if (canBackInTime):
+		$CanvasLayer/label_needScore.visible = false
+		$CanvasLayer/Panel_needScore.visible = false
 	var x = $KinematicBody2D.position.x
 	var y = $KinematicBody2D.position.y
 	# Mostra botões dos minigames quando o personagem se aproxima deles
@@ -55,11 +57,11 @@ func _process(delta):
 		$button_skate.visible = false
 		$CanvasLayer/sprite_skate.visible = false
 		$CanvasLayer/label_skate.visible = false
-	if x > 5700 && x < 6400 && y > -500 && y < 300:
+	if x > 5568 && x < 6168 && y > -400 && y < 200:
 		$button_question.visible = true
 		$CanvasLayer/sprite_question.visible = true
 		$CanvasLayer/label_question.visible = true
-	if !(x > 5700 && x < 6400 && y > -500 && y < 300):
+	if !(x > 5568 && x < 6168 && y > -400 && y < 200):
 		$button_question.visible = false
 		$CanvasLayer/sprite_question.visible = false
 		$CanvasLayer/label_question.visible = false
@@ -230,6 +232,7 @@ func _on_button_back_in_time_pressed():
 	if (canBackInTime):
 		get_tree().change_scene("res://historia_final/scene1.tscn")
 	else:
+		print("entrei aq")
 		$CanvasLayer/Panel_needScore.visible = true
 		$CanvasLayer/label_needScore.visible = true
 
@@ -240,6 +243,7 @@ func _on_lixo2_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
 func _on_lixo3_pressed():
+	print("lixo3")
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
 func _on_lixo4_pressed():
