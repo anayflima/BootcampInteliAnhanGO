@@ -394,10 +394,10 @@ texture = ExtResource( 17 )
 [node name="Label" type="Label" parent="Popup"]
 margin_left = -98.0
 margin_top = -83.0
-margin_right = 313.0
-margin_bottom = 274.0
+margin_right = 302.0
+margin_bottom = 244.0
 custom_fonts/font = SubResource( 14 )
-text = "Essa é a nossa pista de skate! Seja bem-vindo! Nela, a cada segundo que  passa o desafio aumenta! Tente pular os muros e desviar dos pássaros para juntar mais pontos!  Como jogar: controle o personagem através das  setas direcionais para cima e para  baixo, localizadas na direita da tela, e desvie dos obstáculos!"
+text = "Essa é a nossa pista de skate! Seja bem-vindo(a)! Nela, a cada segundo que  passa o desafio aumenta! Tente pular os muros e desviar dos pássaros para juntar mais pontos!  Como jogar: controle o personagem através das setas direcionais para cima e para baixo, localizadas no inferior da tela, e desvie dos obstáculos!"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

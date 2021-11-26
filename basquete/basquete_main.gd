@@ -23,7 +23,7 @@ func _ready():
 	var my_random_number = rng.randi_range(0,4)
 	$button_play_again.visible = false
 	$botaoJogar.visible = true
-	$button_get_out.visible = false
+	$button_get_out.visible = true
 	$Popup.popup()
 	
 	#randomizar posição
@@ -57,9 +57,9 @@ func _process(delta):
 		count += 1
 	if count == 150:
 		$button_play_again.visible = true
-		$button_get_out.visible = true
+		#$button_get_out.visible = true
 
-	if ($KinematicBody2D/bodyball.position.y<0):
+	if ($KinematicBody2D/bodyball.position.y<-60):
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 	if slides :

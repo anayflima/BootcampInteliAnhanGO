@@ -33,7 +33,7 @@ extents = Vector2( 13.0156, 853.992 )
 font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 
 [sub_resource type="DynamicFont" id=8]
-size = 20
+size = 28
 font_data = SubResource( 7 )
 
 [sub_resource type="DynamicFontData" id=9]
@@ -189,8 +189,8 @@ __meta__ = {
 
 [node name="botaoJogar" type="Button" parent="."]
 margin_left = 88.0
-margin_top = 435.0
-margin_right = 227.0
+margin_top = 426.0
+margin_right = 243.0
 margin_bottom = 484.0
 custom_fonts/font = SubResource( 8 )
 text = "Arremessar"
@@ -332,7 +332,7 @@ margin_top = -80.0
 margin_right = 317.0
 margin_bottom = 274.0
 custom_fonts/font = SubResource( 26 )
-text = "Essa é a nossa quadra de basquete! Seu objetivo aqui é combinar a direção e a força certas para acertar a cesta e acumular pontos! Como jogar: Clique em Arremessar quando achar que tem a combinação exata de ângulo e força!"
+text = "Essa é a nossa quadra de basquete! Seu objetivo aqui é combinar a direção e a força certas para acertar a cesta e acumular pontos! Como jogar: Clique em \"Arremessar\" quando achar que tem a combinação exata de ângulo e força!"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

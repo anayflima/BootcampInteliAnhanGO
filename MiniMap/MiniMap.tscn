@@ -1976,10 +1976,10 @@ __meta__ = {
 }
 
 [node name="button_unlock_area2" type="Button" parent="Node2D"]
-margin_left = 1900.0
-margin_top = -666.74
-margin_right = 2273.0
-margin_bottom = -259.74
+margin_left = 1832.09
+margin_top = -670.734
+margin_right = 2205.09
+margin_bottom = -263.734
 rect_scale = Vector2( 0.8, 0.8 )
 custom_styles/hover = SubResource( 21 )
 custom_styles/pressed = SubResource( 22 )

@@ -164,10 +164,10 @@ __meta__ = {
 }
 
 [node name="X" type="Button" parent="Popup"]
-margin_left = 300.0
-margin_top = -140.066
-margin_right = 696.0
-margin_bottom = 249.934
+margin_left = 310.0
+margin_top = -145.0
+margin_right = 706.0
+margin_bottom = 245.0
 rect_scale = Vector2( 0.1, 0.1 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 8 )

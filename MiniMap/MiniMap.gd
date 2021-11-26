@@ -10,9 +10,6 @@ func _on_lixo1_pressed():
 	get_tree().change_scene("res://coleta_de_lixo_main.tscn")
 
 func _process(delta):
-#	if $Node2D/CanvasLayer/menu/music.pressed == false:
-#		if (!$AudioStreamPlayer.playing):
-#			$AudioStreamPlayer.play()
 	$Node2D/CanvasLayer/ProgressBar.value = Global.main_score
 
 
@@ -29,13 +26,7 @@ func _on_options_pressed():
 		$Node2D/CanvasLayer/menu.visible = true
 
 func _on_music_toggled(button_pressed):
-#	var MusicController = preload("res://autoloads/Music.tscn").instance()
-#	add_child(MusicController)
 	Global.resume_music()
-#	print("parar2")
-#	MusicController.stream = background_music
-#	MusicController.stop()
-	#$AudioStreamPlayer.stop()
 
 func _on_Button_pressed():
 	get_tree().change_scene("res://historia_inicial/scene7_3.tscn")
