@@ -48,7 +48,7 @@ func _physics_process(delta):
 		if shield > 0:
 			shield -= 10
 		else:
-			$ShieldSprite.hide()
+
 			health -= 10
 	else:
 		$HitEffect.emitting = false
@@ -66,7 +66,7 @@ func _on_ItemCollectArea_area_entered(area):
 		shield = 100.0
 		$AnimationPlayer.play("shield_activate")
 		$ShieldAudioPlayer.play()
-		$ShieldSprite.show()
+
 		
 	if area.is_in_group("boost"):
 		boost = 2.0
