@@ -15,8 +15,8 @@ func _ready():
 #contagem para adição no main_score, com uma função recursiva
 func update_score(score):
 	count += score - old_score
-	if count >= 100:
-		Global.main_score += 0.1
+	if count >= 300:
+		Global.main_score += 1
 		count = 0
 	old_score = score
 	$ScoreLabel.text = str(score)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://basquete/basquete_main.gd" type="Script" id=1]
 [ext_resource path="res://basquete/pixil-frame-0 (7).png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://basquete/download-removebg-preview.png" type="Texture" id=5]
 [ext_resource path="res://basquete/pixil-frame-0 (8) (1).png" type="Texture" id=6]
 [ext_resource path="res://MinigameSkate/assets/pedra.png" type="Texture" id=7]
+[ext_resource path="res://button_assets/Pup_Up_Exit.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 947.989, 24.3528 )
@@ -105,6 +106,16 @@ font_path = "res://historia_inicial/Born2bSportyV10.ttf"
 [sub_resource type="DynamicFont" id=26]
 size = 28
 font_data = SubResource( 25 )
+
+[sub_resource type="StyleBoxEmpty" id=27]
+
+[sub_resource type="StyleBoxEmpty" id=28]
+
+[sub_resource type="StyleBoxEmpty" id=29]
+
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -301,36 +312,44 @@ __meta__ = {
 
 [node name="Popup" type="Popup" parent="."]
 visible = true
-margin_left = 591.0
-margin_top = 336.0
-margin_right = 770.0
-margin_bottom = 459.0
+margin_left = 649.697
+margin_top = 379.051
+margin_right = 834.697
+margin_bottom = 502.051
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Sprite" type="Sprite" parent="Popup"]
-position = Vector2( 95.1589, 63.093 )
-scale = Vector2( 0.3, 0.3 )
+position = Vector2( 95.159, 20 )
+scale = Vector2( 0.31, 0.2 )
 texture = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="Popup"]
-margin_left = -102.969
-margin_top = -80.4741
-margin_right = 312.031
-margin_bottom = 273.526
+margin_left = -103.0
+margin_top = -80.0
+margin_right = 317.0
+margin_bottom = 274.0
 custom_fonts/font = SubResource( 26 )
-text = "Essa é a nossa quadra de basquete! 
-Seu objetivo aqui é combinar a direção 
-e a força certas para acertar a cesta 
-e acumular pontos! 
-Como jogar: Clique na botão quando 
-achar que tem a combinação exata de 
-ângulo e força!"
+text = "Essa é a nossa quadra de basquete! Seu objetivo aqui é combinar a direção e a força certas para acertar a cesta e acumular pontos! Como jogar: Clique em Arremessar quando achar que tem a combinação exata de ângulo e força!"
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="X" type="Button" parent="Popup"]
+margin_left = 290.0
+margin_top = -120.0
+margin_right = 686.0
+margin_bottom = 270.0
+rect_scale = Vector2( 0.1, 0.1 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/focus = SubResource( 29 )
+custom_styles/disabled = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+icon = ExtResource( 8 )
 
 [connection signal="pressed" from="botaoJogar" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="button_play_again" to="." method="_on_button_play_again_pressed"]

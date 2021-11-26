@@ -59,7 +59,7 @@ func _process(delta):
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 
-	if ($KinematicBody2D/bodyball.position.y<-335):
+	if ($KinematicBody2D/bodyball.position.y<0):
 		$button_play_again.visible = true
 		$button_get_out.visible = true
 	if slides :

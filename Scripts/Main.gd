@@ -82,7 +82,7 @@ func check_point_scored():
 	if ball.position.x >= 1000:
 		score_event = true
 		p1_score += 1
-		Global.main_score += 0.2 
+		Global.main_score += 1
 	update_score()
 	if p1_score == 5 or p2_score == 5:
 		game_done = true
