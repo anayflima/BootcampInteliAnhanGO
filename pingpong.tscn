@@ -157,8 +157,7 @@ margin_top = -110.0
 margin_right = 315.0
 margin_bottom = 321.0
 custom_fonts/font = SubResource( 6 )
-text = "Bem-vindo ao jogo de tênis! Aqui você deve vencer nosso mestre fantasma para  ganhar pontos e conseguir desbloquear novos games e áreas do mapa! Você é  o personagem à esquerda da tela e  o controla clicando na parte superior da tela para ir para cima, e clicando na parte inferior para ir para baixo. Ganha quem completar 5 pontos primeiro. Para começar, clique em qualquer lugar da tela. 
-                                 Boa sorte!"
+text = "Bem-vindo ao jogo de tênis! Aqui você deve vencer nosso mestre fantasma para  ganhar pontos e conseguir desbloquear novos games e áreas do mapa! Você é  o personagem à esquerda da tela e  o controla clicando na parte superior da tela para ir para cima, e clicando na parte inferior para ir para baixo. Ganha quem completar 5 pontos primeiro. Para começar, clique em qualquer lugar da tela."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

@@ -20,7 +20,7 @@ var text_queue = []
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("Anhangá: Há 5 áreas no parque. Cada uma das 4 primeiras áreas contém um minigame principal. Na última você encontrará um portal para voltar no tempo. Mas atenção! Você precisa juntar 100 pontos para conseguir voltar no tempo. Quanto mais você joga os minigames, mais pontos você ganha e, portanto, mais próximo você fica de voltar no tempo. Além disso, há latas de lixo espalhadas pelo parque, uma em cada área do parque. Clicando nelas, você poderá entrar em  um minigame especial, de coleta de lixo, o que lhe ajudará a ganhar mais pontos.".format({"name": character_name}))
+	queue_text("Anhangá: Há 5 áreas no parque. Cada uma das 4 primeiras áreas contém um minigame principal. Na última você encontrará um portal para voltar no tempo. Mas atenção! Você precisa juntar 100 pontos para conseguir voltar no tempo. Quanto mais você joga os minigames, mais pontos você ganha e, portanto, mais próximo você fica de voltar no tempo. Além disso, há latas de lixo espalhadas pelo parque, uma em cada área do parque. Clicando nelas, você poderá entrar em um minigame especial, de coleta de lixo, que lhe ajudará a ganhar mais pontos.".format({"name": character_name}))
 	
 
 func _process(delta):

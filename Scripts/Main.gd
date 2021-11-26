@@ -2,8 +2,8 @@
 #### main author : Domogoj Satrap
 #### github : https://github.com/Domogo
 ##################################################
-
 extends Node2D
+
 
 var BALL_NODE = preload("../Scenes/Ball.tscn")
 var ball 

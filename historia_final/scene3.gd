@@ -20,8 +20,7 @@ var text_queue = []
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	#queue_text("Há muito tempo, contava-se a lenda de um espírito protetor das florestas, rios e animais, denominado Anhangá, um ser metamorfo e capaz de criar ilusões. Ele comumente se revelava como um veado branco, iluminado, que defendia e punia os que faziam mal à selva. Com o passar dos anos, a cidade foi tomando conta da floresta e, por conta do desmatamento, o Anhangá ressurgiu...")
-	queue_text("Viajante, parabéns por ter completado essa jornada e chegado até aqui! {name} aprendeu que desmatar afeta tanto o presente quanto o futuro. Portanto, não desmate! E aproveite as áreas de preservação que há ao seu redor. Visite mais os parques de sua cidade! Você viu que há muito o que se fazer neles!".format({"name": character_name}))
+	queue_text("Anhangá: Viajante, parabéns por ter completado essa jornada e chegado até aqui! {name} aprendeu que desmatar afeta tanto o presente quanto o futuro. Portanto, não desmate! E aproveite as áreas de preservação que há ao seu redor. Visite mais os parques de sua cidade! Você viu que há muito o que se fazer neles!".format({"name": character_name}))
 
 func _process(delta):
 	match current_state:

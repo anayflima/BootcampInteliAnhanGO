@@ -48,8 +48,18 @@ var player_global_x = 361
 var player_global_y = 463
 
 func _ready():
+	var MusicController = preload("res://autoloads/Music.tscn").instance()
+	add_child(MusicController)
+	MusicController.play_music()
 	add_child(audio_player)
 	start()
+
+func resume_music():
+#	var MusicController = preload("res://autoloads/Music.tscn").instance()
+#	add_child(MusicController)
+	print("parar")
+	#$Music.stream = background_music
+	$MusicController.resume_music()
 
 func play_died_sound():
 	audio_player.stream = load("res://MinigameSkate/assets/died.wav")

@@ -15,10 +15,10 @@ func _ready():
 		$area4/CollisionPolygon2D.disabled = false
 		$area5/CollisionPolygon2D.disabled = false
 		Global.first = false
-#	if (Global.first_score):
-#		var dir = Directory.new()
-#		dir.remove("user://saved_score.dat")
-#		Global.first_score = false
+	if (Global.first_score):
+		var dir = Directory.new()
+		dir.remove("user://saved_score.dat")
+		Global.first_score = false
 	$KinematicBody2D.position = load_data()
 	Global.main_score = Global.load_score()
 	$button_pingpong.visible = false
@@ -114,14 +114,13 @@ func _process(delta):
 		$CanvasLayer/latas_lixo/label_lata4.visible = false
 		$CanvasLayer/latas_lixo/sprite_lata4.visible = false
 	
-	
-	if x > 5818 && x < 6618 && y > -2727 && y < -1927:
+	if x > 5422 && x < 6022 && y > -2787 && y < -2187:
 		$CanvasLayer/label_backtime.visible = true
 		$CanvasLayer/sprite_backtime.visible = true
-	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
+	if !(x > 5422 && x < 6022 && y > -2787 && y < -2187):
 		$CanvasLayer/label_backtime.visible = false
 		$CanvasLayer/sprite_backtime.visible = false
-	if !(x > 5818 && x < 6618 && y > -2727 && y < -1927):
+	if !(x > 5422 && x < 6022 && y > -2787 && y < -2187):
 		$CanvasLayer/label_needScore.visible = false
 		$CanvasLayer/Panel_needScore.visible = false
 

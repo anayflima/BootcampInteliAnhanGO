@@ -123,20 +123,21 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 311.403
-margin_top = -230.237
+margin_top = -239.237
 margin_right = -112.597
-margin_bottom = -100.237
+margin_bottom = -89.237
 rect_pivot_offset = Vector2( -27.937, -38.769 )
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
 margin_right = 600.0
-margin_bottom = 130.0
+margin_bottom = 150.0
 rect_pivot_offset = Vector2( 112.063, 41.231 )
 custom_styles/panel = SubResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
+margin_top = -1.0
 margin_right = 600.0
-margin_bottom = 130.0
+margin_bottom = 149.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
 custom_constants/margin_left = 8
@@ -147,13 +148,13 @@ visible = false
 margin_left = 8.0
 margin_top = 8.0
 margin_right = 592.0
-margin_bottom = 122.0
+margin_bottom = 142.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer"]
 margin_left = 8.0
 margin_top = 8.0
 margin_right = 592.0
-margin_bottom = 122.0
+margin_bottom = 142.0
 
 [node name="Start" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
 margin_right = 14.0
@@ -168,7 +169,7 @@ text = "*
 [node name="Label" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
 margin_left = 18.0
 margin_right = 566.0
-margin_bottom = 114.0
+margin_bottom = 134.0
 rect_pivot_offset = Vector2( 86.063, 33.231 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -179,9 +180,9 @@ clip_text = true
 
 [node name="End" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
 margin_left = 570.0
-margin_top = 91.0
+margin_top = 111.0
 margin_right = 584.0
-margin_bottom = 114.0
+margin_bottom = 134.0
 rect_min_size = Vector2( 14, 0 )
 rect_pivot_offset = Vector2( -589.937, -57.769 )
 size_flags_vertical = 8
@@ -189,6 +190,7 @@ custom_fonts/font = SubResource( 3 )
 text = "v"
 
 [node name="TextboxContainer2" type="MarginContainer" parent="."]
+visible = false
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0

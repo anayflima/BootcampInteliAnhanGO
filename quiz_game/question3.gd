@@ -18,7 +18,7 @@ func _on_option1_pressed():
 	$option1.disabled = true
 	$option2.disabled = true
 	$option1.modulate = Color(0,255,0,0.4)
-	correct_label.text = "Booooa {name}! O parque possui sete roteiros botânicos e estão distribuídos por todo parque. Como você sabe o desmatamento é um grande desrespeito com a natureza, por isso, é muito legal ter um pedacinho de cada bioma brasileiro dentro da cidade não é mesmo? Valoriza a natureza no nosso dia-a-dia.".format({"name": character_name})
+	correct_label.text = "Booooa {name}! O parque possui sete roteiros botânicos que estão distribuídos por todo o parque. Como você sabe, o desmatamento é um grande desrespeito para com a natureza. Por isso, é muito legal ter um pedacinho de cada bioma brasileiro dentro da cidade, não é mesmo? Valoriza a natureza no nosso dia a dia.".format({"name": character_name})
 
 func _on_option2_pressed():
 	$TextboxContainer2.show()
