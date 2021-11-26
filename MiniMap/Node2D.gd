@@ -2,7 +2,7 @@ extends Node2D
 
 onready var score_label: = $CanvasLayer/Label2
 
-var MIN_SCORE = 1;
+var MIN_SCORE = 100;
 var canBackInTime = false;
 # Called when the node enters the scene tree for the first time.
 func _ready():

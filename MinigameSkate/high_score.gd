@@ -8,6 +8,10 @@ func _ready():
 	print_debug(OS.get_user_data_dir())
 
 func _on_player_game_over():
+	if (Global.first_high_score_skate):
+		var dir = Directory.new()
+		dir.remove("user://score.save")
+		Global.first_high_score_skate = false
 	visible = true
 	var current_high_score = load_data()
 	if Global.game_score > current_high_score:

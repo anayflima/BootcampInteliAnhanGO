@@ -58,6 +58,11 @@ func load_highscore():
 	if not f.file_exists("user://data.bin"):
 		high_score = 0
 		return
+		
+	if (Global.first_high_score_trash):
+		var dir = Directory.new()
+		dir.remove("user://data.bin")
+		Global.first_high_score_trash = false
 	
 	f.open("user://data.bin", File.READ)
 	high_score = int(f.get_as_text())
